@@ -179,6 +179,9 @@ def audit_linear_coefficients(
             if all_nonneg and any(v["expected_sign"] == "-" for v in violations)
             else ""
         )
+        summary_items = ", ".join(
+            f"{v['feature']}={v['coefficient']:+.4f}" for v in violations[:5]
+        )
         alerts.append(
             AuditAlert(
                 module="deploycheck",
@@ -187,7 +190,7 @@ def audit_linear_coefficients(
                 title="Clinical coefficient directionality inversion detected",
                 message=(
                     f"{len(violations)} clinical risk marker(s) have inverted coefficient signs "
-                    f"({', '.join(v['feature'] + '=' + f'{v['coefficient']:+.4f}' for v in violations[:5])}){sign_note}"
+                    f"({summary_items}){sign_note}"
                 ),
                 file=file_label,
                 location=location_label,

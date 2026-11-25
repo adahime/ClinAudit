@@ -1,8 +1,23 @@
 # `clinaudit`
 
+[![Study Archive DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24527474.svg)](https://doi.org/10.5281/zenodo.24527474)
+[![CKMAIcalc Safety Audit DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24527280.svg)](https://doi.org/10.5281/zenodo.24527280)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB.svg)](pyproject.toml)
+[![Dependencies: stdlib + NumPy](https://img.shields.io/badge/Dependencies-stdlib%20%2B%20NumPy-2ea44f.svg)](pyproject.toml)
+
 **Lightweight, zero-heavy-dependency forensic auditing suite for clinical AI studies, Source Data workbooks, evaluation pipelines, and deployed clinical risk calculators.**
 
-`clinaudit` requires **only the Python standard library and NumPy** (zero `pandas`, `scipy`, `scikit-learn`, or `openpyxl` dependencies), enabling deterministic integration into journal editorial screening, peer-review workflows, and CI/CD pipelines across Python 3.10–3.15.
+`clinaudit` requires **only the Python standard library and NumPy** (zero `pandas`, `scipy`, `scikit-learn`, or `openpyxl` dependencies), enabling sub-second deterministic integration into journal editorial screening, peer-review workflows, and CI/CD pipelines across Python 3.10–3.15.
+
+### Headline Empirical Findings (2026 Cross-Journal Audit & Late-2025 Validation)
+
+- **2026 Cross-Journal Auditability (`N0 = 3,380` screened → `N1 = 306` eligible; 100% full-text retrieved):** Across *PLOS Medicine*, *npj Digital Medicine*, and *Nature Communications*, 74.5% (228/306) claimed public artifacts, yet only **65.0% (199/306)** provided live auditable code or data, and **5.65% (10/177)** of newly published GitHub links were already unreachable or code-free.
+- **Synthetic Benchmark (`400` deterministic cases, `seed = 2026`):** **99.0% sensitivity**, **100.0% specificity**, **F1 = 0.995**, median runtime **0.66 ms/case** (P95 6.06 ms).
+- **Prospective 2026 Blind Deployment (`v0.1.0`) & Unflagged Controls:** Uncovered verifiable undisclosed defects in **3.57% (6/168)** of directly parsed 2026 studies (**3.45%** downloaded; ≥3.02% auditable)—including a live *PLOS Medicine* risk calculator (`CKMAIcalc`) predicting 10-year cardiovascular mortality exceeding all-cause mortality for **26.1% (858/3,293)** of NHANES women—with **0/50** additional defects in randomly sampled unflagged controls within accessible artifacts (`NPV = 100.0%`, `FOR = 0.0%`, 95% upper bound 7.1%).
+- **Out-of-Time Late-2025 Validation (Frozen `v0.2.0`, Sep–Dec 2025):** Maintained an **8.9% parsed (4/45)** alert rate at **368 ms/paper** (0 crashes) and exposed via `EVAL-004` triage a constant-seed bootstrap bug printing **25 machine-epsilon SDs (`10⁻¹⁶`–`10⁻²⁹⁶`)** verbatim into *Nature Communications*.
+
+![ClinAudit Editorial Pre-Publication Verification Pipeline and Case-Interception Matrix](figures/Figure4_Editorial_PreCheck_Workflow.png)
 
 ---
 
@@ -97,6 +112,8 @@ python benchmarks/run_synthetic_benchmark.py
 
 Stratified sensitivity across injected fault intensities: **97.1% mild** (66/68; the 2 conservative misses are boundary mild paired-$Z$ contrasts statistically indistinguishable from extreme inter-model correlation $\rho > 0.97$), **100.0% moderate** (68/68), and **100.0% severe** (64/64).
 
+![ClinAudit Synthetic Benchmark, 2026 Deployment, and Late-2025 Out-of-Time Validation](figures/Figure3_ClinAudit_Benchmark_and_Deployment.png)
+
 ---
 
 ## Reproducing the 2026 & Late-2025 Cross-Journal Empirical Study
@@ -120,7 +137,22 @@ python benchmarks/run_synthetic_benchmark.py
 
 ---
 
-## Author & License
+## Permanent Archives, Citation & License
 
+- **Full Study & Software Archive (Zenodo, `v0.2.0`):** https://doi.org/10.5281/zenodo.24527474 *(Concept DOI: `10.5281/zenodo.24527473`; matches immutable git tag `v0.2.0`)*
+- **Standalone `CKMAIcalc` Clinical Safety Verification Archive (Zenodo):** https://doi.org/10.5281/zenodo.24527280
 - **Author:** Xingyu Zhang ([ORCID: 0009-0005-6181-7465](https://orcid.org/0009-0005-6181-7465))
 - **License:** MIT License (see [LICENSE](LICENSE))
+
+```bibtex
+@software{zhang_2026_clinaudit,
+  author       = {Zhang, Xingyu},
+  title        = {{ClinAudit v0.2.0: Automated Pre-Publication Forensic Auditing Suite and 2026 Cross-Journal Clinical ML Study Archive}},
+  year         = 2026,
+  month        = nov,
+  publisher    = {Zenodo},
+  version      = {0.2.0},
+  doi          = {10.5281/zenodo.24527474},
+  url          = {https://doi.org/10.5281/zenodo.24527474}
+}
+```
