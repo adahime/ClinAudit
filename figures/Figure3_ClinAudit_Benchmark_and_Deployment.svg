@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="490" viewBox="0 0 1120 490">
+<style>
+  text { font-family: Arial, Helvetica, sans-serif; fill: #0F172A; }
+  .panel-lbl { font-size: 18px; font-weight: 700; fill: #0F172A; }
+  .title { font-size: 14px; font-weight: 700; fill: #0F172A; }
+  .subtitle { font-size: 11px; fill: #475569; }
+  .axis-lbl { font-size: 11.5px; font-weight: 600; fill: #1E293B; }
+  .tick { font-size: 10.5px; fill: #334155; }
+  .val { font-size: 10px; font-weight: 700; fill: #0F172A; }
+  .small { font-size: 9.5px; fill: #475569; }
+</style>
+<rect width="1120" height="490" fill="#FFFFFF"/>
+<text x="18" y="28" class="panel-lbl">a</text>
+<text x="40" y="28" class="title">400-Case Synthetic Fault-Injection Benchmark (seed = 2026)</text>
+<text x="40" y="44" class="subtitle">50 clean controls + 50 mild/moderate/severe faults per module; overall F1 = 0.995 (med 0.66 ms)</text>
+<rect x="62" y="56" width="11" height="11" rx="2" fill="#0072B2"/>
+<text x="77" y="65" class="small">Sensitivity (%)</text>
+<rect x="192" y="56" width="11" height="11" rx="2" fill="#009E73"/>
+<text x="207" y="65" class="small">Specificity (%)</text>
+<rect x="322" y="56" width="11" height="11" rx="2" fill="#56B4E9"/>
+<text x="337" y="65" class="small">F1 Score (%)</text>
+<line x1="62" y1="354.0" x2="527" y2="354.0" stroke="#E2E8F0" stroke-width="1"/>
+<text x="55" y="357.5" text-anchor="end" class="tick">0%</text>
+<line x1="62" y1="304.0" x2="527" y2="304.0" stroke="#E2E8F0" stroke-width="1"/>
+<text x="55" y="307.5" text-anchor="end" class="tick">20%</text>
+<line x1="62" y1="254.0" x2="527" y2="254.0" stroke="#E2E8F0" stroke-width="1"/>
+<text x="55" y="257.5" text-anchor="end" class="tick">40%</text>
+<line x1="62" y1="204.0" x2="527" y2="204.0" stroke="#E2E8F0" stroke-width="1"/>
+<text x="55" y="207.5" text-anchor="end" class="tick">60%</text>
+<line x1="62" y1="154.0" x2="527" y2="154.0" stroke="#E2E8F0" stroke-width="1"/>
+<text x="55" y="157.5" text-anchor="end" class="tick">80%</text>
+<line x1="62" y1="104.0" x2="527" y2="104.0" stroke="#E2E8F0" stroke-width="1"/>
+<text x="55" y="107.5" text-anchor="end" class="tick">100%</text>
+<line x1="62" y1="84" x2="62" y2="354" stroke="#334155" stroke-width="1.2"/>
+<line x1="62" y1="354" x2="527" y2="354" stroke="#334155" stroke-width="1.2"/>
+<text x="20" y="219.0" text-anchor="middle" transform="rotate(-90 20,219.0)" class="axis-lbl">Performance (%)</text>
+<rect x="75.5" y="104.0" width="20" height="250.0" rx="2" fill="#0072B2"/>
+<text x="85.5" y="100.0" text-anchor="middle" style="font-size:7.8px;font-weight:700;">100</text>
+<rect x="98.5" y="104.0" width="20" height="250.0" rx="2" fill="#009E73"/>
+<text x="108.5" y="100.0" text-anchor="middle" style="font-size:7.8px;font-weight:700;">100</text>
+<rect x="121.5" y="104.0" width="20" height="250.0" rx="2" fill="#56B4E9"/>
+<text x="131.5" y="100.0" text-anchor="middle" style="font-size:7.8px;font-weight:700;">100</text>
+<text x="108.5" y="370" text-anchor="middle" style="font-size:10px;font-weight:700;">M1 Leakage</text>
+<text x="108.5" y="384" text-anchor="middle" class="small">3.59 ms</text>
+<rect x="168.5" y="104.0" width="20" height="250.0" rx="2" fill="#0072B2"/>
+<text x="178.5" y="100.0" text-anchor="middle" style="font-size:7.8px;font-weight:700;">100</text>
+<rect x="191.5" y="104.0" width="20" height="250.0" rx="2" fill="#009E73"/>
+<text x="201.5" y="100.0" text-anchor="middle" style="font-size:7.8px;font-weight:700;">100</text>
+<rect x="214.5" y="104.0" width="20" height="250.0" rx="2" fill="#56B4E9"/>
+<text x="224.5" y="100.0" text-anchor="middle" style="font-size:7.8px;font-weight:700;">100</text>
+<text x="201.5" y="370" text-anchor="middle" style="font-size:10px;font-weight:700;">M2 EvalCheck</text>
+<text x="201.5" y="384" text-anchor="middle" class="small">0.26 ms</text>
+<rect x="261.5" y="114.0" width="20" height="240.0" rx="2" fill="#0072B2"/>
+<text x="271.5" y="110.0" text-anchor="middle" style="font-size:7.8px;font-weight:700;">96</text>
+<rect x="284.5" y="104.0" width="20" height="250.0" rx="2" fill="#009E73"/>
+<text x="294.5" y="100.0" text-anchor="middle" style="font-size:7.8px;font-weight:700;">100</text>
+<rect x="307.5" y="109.1" width="20" height="244.9" rx="2" fill="#56B4E9"/>
+<text x="317.5" y="105.1" text-anchor="middle" style="font-size:7.8px;font-weight:700;">98</text>
+<text x="294.5" y="370" text-anchor="middle" style="font-size:10px;font-weight:700;">M3 StatCheck</text>
+<text x="294.5" y="384" text-anchor="middle" class="small">0.27 ms</text>
+<rect x="354.5" y="104.0" width="20" height="250.0" rx="2" fill="#0072B2"/>
+<text x="364.5" y="100.0" text-anchor="middle" style="font-size:7.8px;font-weight:700;">100</text>
+<rect x="377.5" y="104.0" width="20" height="250.0" rx="2" fill="#009E73"/>
+<text x="387.5" y="100.0" text-anchor="middle" style="font-size:7.8px;font-weight:700;">100</text>
+<rect x="400.5" y="104.0" width="20" height="250.0" rx="2" fill="#56B4E9"/>
+<text x="410.5" y="100.0" text-anchor="middle" style="font-size:7.8px;font-weight:700;">100</text>
+<text x="387.5" y="370" text-anchor="middle" style="font-size:10px;font-weight:700;">M4 Deploy</text>
+<text x="387.5" y="384" text-anchor="middle" class="small">3.01 ms</text>
+<rect x="447.5" y="106.5" width="20" height="247.5" rx="2" fill="#0072B2"/>
+<text x="457.5" y="102.5" text-anchor="middle" style="font-size:7.8px;font-weight:700;">99.0</text>
+<rect x="470.5" y="104.0" width="20" height="250.0" rx="2" fill="#009E73"/>
+<text x="480.5" y="100.0" text-anchor="middle" style="font-size:7.8px;font-weight:700;">100</text>
+<rect x="493.5" y="105.2" width="20" height="248.8" rx="2" fill="#56B4E9"/>
+<text x="503.5" y="101.2" text-anchor="middle" style="font-size:7.8px;font-weight:700;">99.5</text>
+<text x="480.5" y="370" text-anchor="middle" style="font-size:10px;font-weight:700;">Overall</text>
+<text x="480.5" y="384" text-anchor="middle" class="small">0.66 ms</text>
+<rect x="50" y="405" width="480" height="62" rx="6" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+<text x="64" y="425" style="font-size:10px;font-weight:700;fill:#0F172A;">Severity Breakdown (200 Injected Faults + 200 Realistic Edge-Case Clean Controls):</text>
+<text x="64" y="441" class="small">• Mild faults: 97.1% recall (2 conservative paired-Z boundary FN kept to preserve 100.0% specificity).</text>
+<text x="64" y="456" class="small">• Moderate &amp; severe faults: 100.0% recall | 0 / 200 false positives | Pure Python + NumPy (0 heavy deps).</text>
+<line x1="555" y1="20" x2="555" y2="472" stroke="#E2E8F0" stroke-width="1.5"/>
+<text x="575" y="28" class="panel-lbl">b</text>
+<text x="598" y="28" class="title">Real-World 2026 Audit &amp; Out-of-Time Late-2025 External Validation</text>
+<text x="598" y="44" class="subtitle">Blind 2026 (168/174), in-sample v0.2.0, &amp; frozen OOT Sep–Dec 2025 (45/46 parsed)</text>
+<text x="585" y="68" class="axis-lbl">Alert Adjudication Outcome (Number of Flagged Papers)</text>
+<rect x="585" y="76" width="10" height="10" rx="2" fill="#D55E00"/>
+<text x="599" y="85" style="font-size:8.8px;fill:#334155;">Undisclosed Defect</text>
+<rect x="701" y="76" width="10" height="10" rx="2" fill="#E69F00"/>
+<text x="715" y="85" style="font-size:8.8px;fill:#334155;">Minor Error</text>
+<rect x="789" y="76" width="10" height="10" rx="2" fill="#009E73"/>
+<text x="803" y="85" style="font-size:8.8px;fill:#334155;">Triage Control</text>
+<rect x="885" y="76" width="10" height="10" rx="2" fill="#94A3B8"/>
+<text x="899" y="85" style="font-size:8.8px;fill:#334155;">False Positive</text>
+<text x="585" y="108" style="font-size:9.8px;font-weight:700;">v0.1.0 Blind (2026)</text>
+<text x="585" y="120" style="font-size:8.4px;fill:#475569;">20/168 parsed (11.9%)</text>
+<rect x="718.0" y="98" width="34.2" height="24" fill="#D55E00" stroke="#FFFFFF" stroke-width="1"/>
+<text x="735.1" y="114" text-anchor="middle" style="font-size:9.5px;font-weight:700;fill:#FFFFFF;">3</text>
+<rect x="752.2" y="98" width="11.4" height="24" fill="#E69F00" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="763.6" y="98" width="22.8" height="24" fill="#009E73" stroke="#FFFFFF" stroke-width="1"/>
+<text x="775.0" y="114" text-anchor="middle" style="font-size:9.5px;font-weight:700;fill:#FFFFFF;">2</text>
+<rect x="786.4" y="98" width="159.6" height="24" fill="#94A3B8" stroke="#FFFFFF" stroke-width="1"/>
+<text x="866.2" y="114" text-anchor="middle" style="font-size:9.5px;font-weight:700;fill:#FFFFFF;">14</text>
+<text x="953.0" y="114" style="font-size:9.2px;font-weight:700;fill:#0F172A;">3/6 (2 blind new)</text>
+<text x="585" y="148" style="font-size:9.8px;font-weight:700;">v0.2.0 Calib. (2026*)</text>
+<text x="585" y="160" style="font-size:8.4px;fill:#475569;">22/168 parsed (13.1%)</text>
+<rect x="718.0" y="138" width="68.4" height="24" fill="#D55E00" stroke="#FFFFFF" stroke-width="1"/>
+<text x="752.2" y="154" text-anchor="middle" style="font-size:9.5px;font-weight:700;fill:#FFFFFF;">6</text>
+<rect x="786.4" y="138" width="11.4" height="24" fill="#E69F00" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="797.8" y="138" width="22.8" height="24" fill="#009E73" stroke="#FFFFFF" stroke-width="1"/>
+<text x="809.2" y="154" text-anchor="middle" style="font-size:9.5px;font-weight:700;fill:#FFFFFF;">2</text>
+<rect x="820.6" y="138" width="148.2" height="24" fill="#94A3B8" stroke="#FFFFFF" stroke-width="1"/>
+<text x="894.7" y="154" text-anchor="middle" style="font-size:9.5px;font-weight:700;fill:#FFFFFF;">13</text>
+<text x="975.8" y="154" style="font-size:9.2px;font-weight:700;fill:#0F172A;">6/6 (*in-sample)</text>
+<text x="585" y="188" style="font-size:9.8px;font-weight:700;">v0.2.0 OOT (Sep–Dec 25)</text>
+<text x="585" y="200" style="font-size:8.4px;fill:#475569;">4/45 parsed (8.9%)</text>
+<rect x="718.0" y="178" width="12.0" height="24" fill="#D55E00" stroke="#FFFFFF" stroke-width="1"/>
+<text x="724.0" y="194" text-anchor="middle" style="font-size:9.5px;font-weight:700;fill:#FFFFFF;">1</text>
+<rect x="730.0" y="178" width="34.2" height="24" fill="#94A3B8" stroke="#FFFFFF" stroke-width="1"/>
+<text x="747.1" y="194" text-anchor="middle" style="font-size:9.5px;font-weight:700;fill:#FFFFFF;">3</text>
+<text x="771.2" y="194" style="font-size:9.2px;font-weight:700;fill:#0F172A;">1/4 hit (ε-SD bug)</text>
+<text x="585" y="232" class="axis-lbl">Confirmed Real-World Findings &amp; Triage Controls by Module</text>
+<rect x="590" y="244" width="245" height="102" rx="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.6"/>
+<rect x="590" y="244" width="245" height="24" rx="5" fill="#0072B2"/>
+<text x="600" y="260" style="font-size:10.5px;font-weight:700;fill:#FFFFFF;">M1: Split Leakage</text>
+<text x="600" y="286" style="font-size:10px;font-weight:700;fill:#0F172A;">1 / 1 (100% precision)</text>
+<text x="600" y="302" style="font-size:8.8px;fill:#334155;">Caught Chen et al. (02991-x) blind:</text>
+<text x="600" y="315" style="font-size:8.8px;fill:#334155;">63%–69% exact test clones across 4 omics</text>
+<text x="600" y="328" style="font-size:8.8px;fill:#334155;">modalities.</text>
+<rect x="845" y="244" width="245" height="102" rx="6" fill="#FFFFFF" stroke="#56B4E9" stroke-width="1.6"/>
+<rect x="845" y="244" width="245" height="24" rx="5" fill="#56B4E9"/>
+<text x="855" y="260" style="font-size:10.5px;font-weight:700;fill:#FFFFFF;">M2: EvalCheck</text>
+<text x="855" y="286" style="font-size:10px;font-weight:700;fill:#0F172A;">2026: 4/6 valid | OOT 2025: 1/1</text>
+<text x="855" y="302" style="font-size:8.8px;fill:#334155;">Lin, Axelsson* (2026); 2 triage controls</text>
+<text x="855" y="315" style="font-size:8.8px;fill:#334155;">(Fletcher-Lloyd, Wang); OOT Xiao* (ε-SD</text>
+<text x="855" y="328" style="font-size:8.8px;fill:#334155;">bug).</text>
+<rect x="590" y="356" width="245" height="102" rx="6" fill="#FFFFFF" stroke="#E69F00" stroke-width="1.6"/>
+<rect x="590" y="356" width="245" height="24" rx="5" fill="#E69F00"/>
+<text x="600" y="372" style="font-size:10.5px;font-weight:700;fill:#FFFFFF;">M3: StatCheck</text>
+<text x="600" y="398" style="font-size:10px;font-weight:700;fill:#0F172A;">2026: 3/16 | OOT 2025: 0/3 schema FP</text>
+<text x="600" y="414" style="font-size:8.8px;fill:#334155;">Turki* (44.7× √2000 CI collapse), Jin</text>
+<text x="600" y="427" style="font-size:8.8px;fill:#334155;">(27.6× &amp; P=10⁻¹⁶¹), Zhou* (inverted</text>
+<text x="600" y="440" style="font-size:8.8px;fill:#334155;">CI).</text>
+<rect x="845" y="356" width="245" height="102" rx="6" fill="#FFFFFF" stroke="#D55E00" stroke-width="1.6"/>
+<rect x="845" y="356" width="245" height="24" rx="5" fill="#D55E00"/>
+<text x="855" y="372" style="font-size:10.5px;font-weight:700;fill:#FFFFFF;">M4: DeployCheck</text>
+<text x="855" y="398" style="font-size:10px;font-weight:700;fill:#0F172A;">1 / 1 (100% precision)</text>
+<text x="855" y="414" style="font-size:8.8px;fill:#334155;">Zhu (CKMAI abs(coef_vec) sign flip +</text>
+<text x="855" y="427" style="font-size:8.8px;fill:#334155;">26.1% female impossible CVD &gt;</text>
+<text x="855" y="440" style="font-size:8.8px;fill:#334155;">All-cause mortality).</text>
+</svg>

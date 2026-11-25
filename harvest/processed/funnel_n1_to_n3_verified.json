@@ -1,0 +1,162 @@
+{
+  "dropped_after_html_abstract_rescreen": [
+    {
+      "doi": "10.1038/s41467-026-79690-4",
+      "journal": "nature_communications",
+      "reason": "no_quantitative_prediction_metric",
+      "title": "A multimodal ultrasound foundation model for diagnosis of unexplained lymphadenopathy"
+    },
+    {
+      "doi": "10.1038/s41746-026-03047-w",
+      "journal": "npj_digital_medicine",
+      "reason": "no_quantitative_prediction_metric",
+      "title": "Shaping the future of cancer screening with artificial intelligence-empowered multi-cancer early detection"
+    },
+    {
+      "doi": "10.1038/s41746-026-03132-0",
+      "journal": "npj_digital_medicine",
+      "reason": "no_quantitative_prediction_metric",
+      "title": "Clinicians vs. artificial intelligence in patient outcome prediction in the intensive care unit"
+    },
+    {
+      "doi": "10.1038/s41746-026-03151-x",
+      "journal": "npj_digital_medicine",
+      "reason": "no_quantitative_prediction_metric",
+      "title": "Full end-to-end diagnostic workflow automation of 3D OCT via foundation model-driven AI for retinal diseases"
+    },
+    {
+      "doi": "10.1038/s41746-026-03154-8",
+      "journal": "npj_digital_medicine",
+      "reason": "no_quantitative_prediction_metric",
+      "title": "Modernizing evidence generation for clinical artificial intelligence: the case for adaptive platform trials"
+    },
+    {
+      "doi": "10.1038/s41746-026-03207-y",
+      "journal": "npj_digital_medicine",
+      "reason": "no_quantitative_prediction_metric",
+      "title": "Automated pancreatic cancer pathology image segmentation using deep learning to quantify lymphocyte stroma ratio"
+    },
+    {
+      "doi": "10.1038/s41746-026-03156-6",
+      "journal": "npj_digital_medicine",
+      "reason": "no_quantitative_prediction_metric",
+      "title": "Vision wearables with artificial intelligence to close the sensory gap in patient characterization"
+    },
+    {
+      "doi": "10.1038/s41746-026-03426-3",
+      "journal": "npj_digital_medicine",
+      "reason": "no_quantitative_prediction_metric",
+      "title": "RETBind: a patient-level multimodal foundation model for unified cross-modal retinal representation learning"
+    },
+    {
+      "doi": "10.1038/s41746-026-03463-y",
+      "journal": "npj_digital_medicine",
+      "reason": "no_quantitative_prediction_metric",
+      "title": "Deep learning retinal vascular biomarker predicts preeclampsia in a multicenter prospective cohort"
+    },
+    {
+      "doi": "10.1038/s41746-026-03467-8",
+      "journal": "npj_digital_medicine",
+      "reason": "no_quantitative_prediction_metric",
+      "title": "Multimodal CT-pathology imaging deep learning model for risk stratification in resected stage I lung adenocarcinoma"
+    }
+  ],
+  "github_gt_breakdown": {
+    "valid_code_repo_html": 146,
+    "http_403": 20,
+    "readme_or_noncode_only": 2,
+    "recovered_valid_code_via_api": 7,
+    "user_profile_only_no_repo": 1,
+    "404_not_found_or_private": 1
+  },
+  "overall": {
+    "N1_eligible": 306,
+    "fulltext_retrieved": 306,
+    "pct_fulltext": 100.0,
+    "N2_claims_public_code": 194,
+    "N2_claims_public_data": 116,
+    "N2_claims_any_artifact": 228,
+    "github_url_listed": 177,
+    "github_404_or_private": 1,
+    "github_empty_or_no_code": 2,
+    "github_profile_only": 1,
+    "github_non_auditable_total": 24,
+    "pct_github_non_auditable": 13.56,
+    "N3_verifiably_auditable_code": 153,
+    "N3_verifiably_auditable_data": 127,
+    "N3_verifiably_auditable_any": 190,
+    "restricted_data_only": 126,
+    "pct_auditable_any": 62.09,
+    "pct_auditable_code": 50.0,
+    "pct_auditable_data": 41.5,
+    "pct_restricted_data_only": 41.18
+  },
+  "by_journal": {
+    "nature_communications": {
+      "N1_eligible": 81,
+      "fulltext_retrieved": 81,
+      "pct_fulltext": 100.0,
+      "N2_claims_public_code": 61,
+      "N2_claims_public_data": 74,
+      "N2_claims_any_artifact": 80,
+      "github_url_listed": 59,
+      "github_404_or_private": 0,
+      "github_empty_or_no_code": 1,
+      "github_profile_only": 1,
+      "github_non_auditable_total": 7,
+      "pct_github_non_auditable": 11.86,
+      "N3_verifiably_auditable_code": 52,
+      "N3_verifiably_auditable_data": 76,
+      "N3_verifiably_auditable_any": 79,
+      "restricted_data_only": 3,
+      "pct_auditable_any": 97.53,
+      "pct_auditable_code": 64.2,
+      "pct_auditable_data": 93.83,
+      "pct_restricted_data_only": 3.7
+    },
+    "npj_digital_medicine": {
+      "N1_eligible": 215,
+      "fulltext_retrieved": 215,
+      "pct_fulltext": 100.0,
+      "N2_claims_public_code": 124,
+      "N2_claims_public_data": 38,
+      "N2_claims_any_artifact": 139,
+      "github_url_listed": 112,
+      "github_404_or_private": 1,
+      "github_empty_or_no_code": 1,
+      "github_profile_only": 0,
+      "github_non_auditable_total": 17,
+      "pct_github_non_auditable": 15.18,
+      "N3_verifiably_auditable_code": 95,
+      "N3_verifiably_auditable_data": 48,
+      "N3_verifiably_auditable_any": 105,
+      "restricted_data_only": 120,
+      "pct_auditable_any": 48.84,
+      "pct_auditable_code": 44.19,
+      "pct_auditable_data": 22.33,
+      "pct_restricted_data_only": 55.81
+    },
+    "plos_medicine": {
+      "N1_eligible": 10,
+      "fulltext_retrieved": 10,
+      "pct_fulltext": 100.0,
+      "N2_claims_public_code": 9,
+      "N2_claims_public_data": 4,
+      "N2_claims_any_artifact": 9,
+      "github_url_listed": 6,
+      "github_404_or_private": 0,
+      "github_empty_or_no_code": 0,
+      "github_profile_only": 0,
+      "github_non_auditable_total": 0,
+      "pct_github_non_auditable": 0.0,
+      "N3_verifiably_auditable_code": 6,
+      "N3_verifiably_auditable_data": 3,
+      "N3_verifiably_auditable_any": 6,
+      "restricted_data_only": 3,
+      "pct_auditable_any": 60.0,
+      "pct_auditable_code": 60.0,
+      "pct_auditable_data": 30.0,
+      "pct_restricted_data_only": 30.0
+    }
+  }
+}

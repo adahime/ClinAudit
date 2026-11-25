@@ -1,0 +1,21 @@
+# Python caches & build artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# NEVER commit downloaded third-party copyrighted publisher articles, PDFs, or Source Data workbooks
+harvest/artifacts_n3/
+harvest/external_2025/artifacts/
+harvest/xml_cache/
+harvest/raw/*.json
+!harvest/raw/harvest_manifest.json
+cases/case1_02991x/official_files/
+plos_safety_package/_official_cache_do_not_redistribute/
+github_release_repo/
+*.pdf
+*.xlsx
+*.xls
+*.zip

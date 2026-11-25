@@ -1,0 +1,50 @@
+{
+  "downloaded_at_utc": "2026-11-25T04:01:59.327106+00:00",
+  "files": {
+    "41746_2026_2991_MOESM4_ESM.xlsx": {
+      "bytes": 6995030,
+      "sha256": "16a82a0a69dee18e1ccd2ca473d903118b86f44ae45041817dd76e478b03f8f9",
+      "md5": "5e50aff845ddb4a3f36229a53cbd3732",
+      "source_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41746-026-02991-x/MediaObjects/41746_2026_2991_MOESM4_ESM.xlsx",
+      "final_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41746-026-02991-x/MediaObjects/41746_2026_2991_MOESM4_ESM.xlsx",
+      "http_status": 200,
+      "content_type": "application/octet-stream"
+    },
+    "41746_2026_2991_MOESM1_ESM.pdf": {
+      "bytes": 5296983,
+      "sha256": "8794c5678b577bd180ecb73f2b340b5db31e4c7d06abc83d95aeb3c03e3e9f7b",
+      "md5": "9eddaf140b537d8d026e0022bfd5769e",
+      "source_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41746-026-02991-x/MediaObjects/41746_2026_2991_MOESM1_ESM.pdf",
+      "final_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41746-026-02991-x/MediaObjects/41746_2026_2991_MOESM1_ESM.pdf",
+      "http_status": 200,
+      "content_type": "application/pdf"
+    },
+    "epmc_PMC13737307_fulltext.xml": {
+      "bytes": 153343,
+      "sha256": "d093413d100da289494cf08d8dcbce70f1e42c43daae3e89cd841a12e57a21d7",
+      "md5": "a8145b9f2cfa6f0722c9ec8aeb160b9e",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13737307/fullTextXML",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13737307/fullTextXML",
+      "http_status": 200,
+      "content_type": "application/xml"
+    },
+    "springer_article.html": {
+      "bytes": 469333,
+      "sha256": "f3cfde0664aafbbd2489b6a86aaca61e7235f2116bdbc8d4ac75220b6ad4b2a8",
+      "md5": "0f5b80d61fa5ec362f0678be113b3b4a",
+      "source_url": "https://www.nature.com/articles/s41746-026-02991-x",
+      "final_url": "https://www.nature.com/articles/s41746-026-02991-x?error=cookies_not_supported&code=9f730272-5ccb-49a6-8943-7f80cd0ec5d9",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8"
+    },
+    "TCGA-OV-Drug-Response-Prediction_main.zip": {
+      "bytes": 576412,
+      "sha256": "dfae76daf9451c09e58a74bd676d95bf3f3722eafed3ebc465a54373886e8af2",
+      "md5": "4677d85bb86e9447f3246b23bad2215d",
+      "source_url": "https://github.com/AFS-lunlun/TCGA-OV-Drug-Response-Prediction/archive/refs/heads/main.zip",
+      "final_url": "https://codeload.github.com/AFS-lunlun/TCGA-OV-Drug-Response-Prediction/zip/refs/heads/main",
+      "http_status": 200,
+      "content_type": "application/zip"
+    }
+  }
+}

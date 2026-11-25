@@ -1,0 +1,366 @@
+{
+  "seed_initial_30": 2026,
+  "seed_extension_20": 2026050,
+  "population_unflagged": 154,
+  "sample_size_total": 50,
+  "clopper_pearson_95ci_upper_if_0_of_50_pct": 7.11,
+  "initial_30_dois": [
+    "10.1038/s41467-025-66758-w",
+    "10.1038/s41467-025-68198-y",
+    "10.1038/s41467-026-72713-0",
+    "10.1038/s41467-026-73021-3",
+    "10.1038/s41467-026-73088-y",
+    "10.1038/s41467-026-73636-6",
+    "10.1038/s41467-026-74077-x",
+    "10.1038/s41467-026-78143-2",
+    "10.1038/s41467-026-78768-3",
+    "10.1038/s41467-026-79283-1",
+    "10.1038/s41746-025-02298-3",
+    "10.1038/s41746-025-02319-1",
+    "10.1038/s41746-026-02390-2",
+    "10.1038/s41746-026-02474-z",
+    "10.1038/s41746-026-02487-8",
+    "10.1038/s41746-026-02548-y",
+    "10.1038/s41746-026-02564-y",
+    "10.1038/s41746-026-02598-2",
+    "10.1038/s41746-026-02600-x",
+    "10.1038/s41746-026-02651-0",
+    "10.1038/s41746-026-02722-2",
+    "10.1038/s41746-026-02735-x",
+    "10.1038/s41746-026-02774-4",
+    "10.1038/s41746-026-02868-z",
+    "10.1038/s41746-026-02879-w",
+    "10.1038/s41746-026-02915-9",
+    "10.1038/s41746-026-03010-9",
+    "10.1038/s41746-026-03065-8",
+    "10.1038/s41746-026-03079-2",
+    "10.1371/journal.pmed.1004868"
+  ],
+  "added_20_audit": [
+    {
+      "idx": 31,
+      "doi": "10.1038/s41467-026-68579-x",
+      "journal_key": "nature_communications",
+      "pub_date": "2026-01-20",
+      "dir": "10.1038_s41467-026-68579-x",
+      "n_files": 3,
+      "n_code_files": 0,
+      "n_tab_files": 3,
+      "title": "Large-scale serum N-glycomics tracks N-glycosylation dynamics in hepatocellular carcinoma progression and enables early diagnosis.",
+      "pattern_hits": []
+    },
+    {
+      "idx": 32,
+      "doi": "10.1038/s41467-026-68972-6",
+      "journal_key": "nature_communications",
+      "pub_date": "2026-01-31",
+      "dir": "10.1038_s41467-026-68972-6",
+      "n_files": 15,
+      "n_code_files": 13,
+      "n_tab_files": 2,
+      "title": "Plasma proteome mediates the associations between air pollution exposure and disease risk.",
+      "pattern_hits": []
+    },
+    {
+      "idx": 33,
+      "doi": "10.1038/s41467-026-72347-2",
+      "journal_key": "nature_communications",
+      "pub_date": "2026-04-28",
+      "dir": "10.1038_s41467-026-72347-2",
+      "n_files": 36,
+      "n_code_files": 22,
+      "n_tab_files": 14,
+      "title": "Graph augmented transformers improve chemotherapy toxicity symptom extraction from clinical notes.",
+      "pattern_hits": []
+    },
+    {
+      "idx": 34,
+      "doi": "10.1038/s41467-026-72436-2",
+      "journal_key": "nature_communications",
+      "pub_date": "2026-04-27",
+      "dir": "10.1038_s41467-026-72436-2",
+      "n_files": 42,
+      "n_code_files": 40,
+      "n_tab_files": 1,
+      "title": "A self-supervised electrocardiogram foundation model for empowering cardiovascular disease prediction and genetic factor discovery.",
+      "pattern_hits": []
+    },
+    {
+      "idx": 35,
+      "doi": "10.1038/s41467-026-74122-9",
+      "journal_key": "nature_communications",
+      "pub_date": "2026-06-15",
+      "dir": "10.1038_s41467-026-74122-9",
+      "n_files": 2,
+      "n_code_files": 0,
+      "n_tab_files": 2,
+      "title": "Speech as a biomarker for supported diagnosis of major depressive disorder using self-supervised representations.",
+      "pattern_hits": []
+    },
+    {
+      "idx": 36,
+      "doi": "10.1038/s41467-026-74472-4",
+      "journal_key": "nature_communications",
+      "pub_date": "2026-07-20",
+      "dir": "10.1038_s41467-026-74472-4",
+      "n_files": 1,
+      "n_code_files": 0,
+      "n_tab_files": 0,
+      "title": "A precision-constrained framework for evaluating noninvasive biomarkers in MASLD and beyond.",
+      "pattern_hits": []
+    },
+    {
+      "idx": 37,
+      "doi": "10.1038/s41467-026-75642-0",
+      "journal_key": "nature_communications",
+      "pub_date": "2026-07-17",
+      "dir": "10.1038_s41467-026-75642-0",
+      "n_files": 1,
+      "n_code_files": 0,
+      "n_tab_files": 1,
+      "title": "Measuring cardiac stroke volume through in-ear audio sensing.",
+      "pattern_hits": []
+    },
+    {
+      "idx": 38,
+      "doi": "10.1038/s41467-026-77038-6",
+      "journal_key": "nature_communications",
+      "pub_date": "2026-08-24",
+      "dir": "10.1038_s41467-026-77038-6",
+      "n_files": 39,
+      "n_code_files": 29,
+      "n_tab_files": 10,
+      "title": "iEVIP: a dual-inspired intelligent platform for smart response extracellular vesicle isolation and single-vesicle profiling.",
+      "pattern_hits": []
+    },
+    {
+      "idx": 39,
+      "doi": "10.1038/s41467-026-77183-y",
+      "journal_key": "nature_communications",
+      "pub_date": "2026-09-16",
+      "dir": "10.1038_s41467-026-77183-y",
+      "n_files": 43,
+      "n_code_files": 40,
+      "n_tab_files": 3,
+      "title": "Deep learning coupled with scalable domain-specific structural validation expands RNA virus discovery from metatranscriptomes.",
+      "pattern_hits": []
+    },
+    {
+      "idx": 40,
+      "doi": "10.1038/s41467-026-77355-w",
+      "journal_key": "nature_communications",
+      "pub_date": "2026-09-03",
+      "dir": "10.1038_s41467-026-77355-w",
+      "n_files": 1,
+      "n_code_files": 0,
+      "n_tab_files": 1,
+      "title": "Microbial-derived tryptophan metabolites in the infant gut associate with increased risk of asthma following cesarean section.",
+      "pattern_hits": []
+    },
+    {
+      "idx": 41,
+      "doi": "10.1038/s41467-026-78899-7",
+      "journal_key": "nature_communications",
+      "pub_date": "2026-10-23",
+      "dir": "10.1038_s41467-026-78899-7",
+      "n_files": 4,
+      "n_code_files": 1,
+      "n_tab_files": 3,
+      "title": "Small molecule biomarkers predictive of Chagas disease progression.",
+      "pattern_hits": []
+    },
+    {
+      "idx": 42,
+      "doi": "10.1038/s41746-026-02520-w",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-03-24",
+      "dir": "10.1038_s41746-026-02520-w",
+      "n_files": 40,
+      "n_code_files": 40,
+      "n_tab_files": 0,
+      "title": "Clinical utility of foundation models in musculoskeletal MRI for biomarker fidelity and predictive outcomes.",
+      "pattern_hits": []
+    },
+    {
+      "idx": 43,
+      "doi": "10.1038/s41746-026-02634-1",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-04-24",
+      "dir": "10.1038_s41746-026-02634-1",
+      "n_files": 2,
+      "n_code_files": 0,
+      "n_tab_files": 2,
+      "title": "Exploring the limits of localization: federated model stacking improves hospital-level prediction in a national research network.",
+      "pattern_hits": []
+    },
+    {
+      "idx": 44,
+      "doi": "10.1038/s41746-026-02697-0",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-05-04",
+      "dir": "10.1038_s41746-026-02697-0",
+      "n_files": 40,
+      "n_code_files": 40,
+      "n_tab_files": 0,
+      "title": "Multimodal deep learning model for multiclass classification of renal tumors.",
+      "pattern_hits": []
+    },
+    {
+      "idx": 45,
+      "doi": "10.1038/s41746-026-02708-0",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-05-10",
+      "dir": "10.1038_s41746-026-02708-0",
+      "n_files": 2,
+      "n_code_files": 2,
+      "n_tab_files": 0,
+      "title": "Multi-dimensional MRI representation and privileged learning approaches to functional outcome prediction for ischemic stroke patients.",
+      "pattern_hits": []
+    },
+    {
+      "idx": 46,
+      "doi": "10.1038/s41746-026-02754-8",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-05-14",
+      "dir": "10.1038_s41746-026-02754-8",
+      "n_files": 1,
+      "n_code_files": 1,
+      "n_tab_files": 0,
+      "title": "Predicting dynamic individual out-of-hospital cardiac arrest risks using explainable machine learning: a multicenter study in China.",
+      "pattern_hits": []
+    },
+    {
+      "idx": 47,
+      "doi": "10.1038/s41746-026-02782-4",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-05-27",
+      "dir": "10.1038_s41746-026-02782-4",
+      "n_files": 7,
+      "n_code_files": 5,
+      "n_tab_files": 2,
+      "title": "Personalised thrombo-embolic risk prediction after endometrial cancer surgery: an explainable AI approach using SHAP.",
+      "pattern_hits": [
+        {
+          "pattern": "smote_oversample",
+          "file": "gh_01_train.py",
+          "line": 20,
+          "text": "from imblearn.over_sampling import RandomOverSampler"
+        },
+        {
+          "pattern": "smote_oversample",
+          "file": "gh_01_train.py",
+          "line": 94,
+          "text": "# Workflow: Preprocessing -> RandomOverSampler -> Classifier"
+        },
+        {
+          "pattern": "smote_oversample",
+          "file": "gh_01_train.py",
+          "line": 98,
+          "text": "('sampler', RandomOverSampler(random_state=42)),"
+        },
+        {
+          "pattern": "smote_oversample",
+          "file": "gh_02_feature_elimination.py",
+          "line": 18,
+          "text": "from imblearn.over_sampling import RandomOverSampler"
+        },
+        {
+          "pattern": "smote_oversample",
+          "file": "gh_02_feature_elimination.py",
+          "line": 163,
+          "text": "('sampler', RandomOverSampler(random_state=42)),"
+        },
+        {
+          "pattern": "smote_oversample",
+          "file": "gh_03_svm_optimization.py",
+          "line": 11,
+          "text": "from imblearn.over_sampling import RandomOverSampler"
+        },
+        {
+          "pattern": "smote_oversample",
+          "file": "gh_03_svm_optimization.py",
+          "line": 47,
+          "text": "# RandomOverSampler only takes effect during training (fit), skipped during testing/validation."
+        },
+        {
+          "pattern": "smote_oversample",
+          "file": "gh_03_svm_optimization.py",
+          "line": 50,
+          "text": "('sampler', RandomOverSampler(random_state=42)),"
+        },
+        {
+          "pattern": "hardcoded_dca_thr",
+          "file": "gh_05_plot_dca_curve.py",
+          "line": 42,
+          "text": "def calculate_net_benefit(y_true, y_proba, thresholds):"
+        },
+        {
+          "pattern": "hardcoded_dca_thr",
+          "file": "gh_05_plot_dca_curve.py",
+          "line": 46,
+          "text": "net_benefits = []"
+        },
+        {
+          "pattern": "hardcoded_dca_thr",
+          "file": "gh_05_plot_dca_curve.py",
+          "line": 55,
+          "text": "net_benefits.append(0.0)"
+        },
+        {
+          "pattern": "hardcoded_dca_thr",
+          "file": "gh_05_plot_dca_curve.py",
+          "line": 71,
+          "text": "net_benefits.append(nb)"
+        },
+        {
+          "pattern": "hardcoded_dca_thr",
+          "file": "gh_05_plot_dca_curve.py",
+          "line": 80,
+          "text": "return np.array(net_benefits), np.array(treat_all_nbs)"
+        },
+        {
+          "pattern": "hardcoded_dca_thr",
+          "file": "gh_05_plot_dca_curve.py",
+          "line": 90,
+          "text": "nb_model, nb_all = calculate_net_benefit(y_test.values, y_pred_proba, thresholds)"
+        }
+      ]
+    },
+    {
+      "idx": 48,
+      "doi": "10.1038/s41746-026-02834-9",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-06-03",
+      "dir": "10.1038_s41746-026-02834-9",
+      "n_files": 8,
+      "n_code_files": 8,
+      "n_tab_files": 0,
+      "title": "A multimodal deep learning model predicting hyperprogressive disease for PD-1 blockade in advanced hepatocellular carcinoma.",
+      "pattern_hits": []
+    },
+    {
+      "idx": 49,
+      "doi": "10.1038/s41746-026-02926-6",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-06-23",
+      "dir": "10.1038_s41746-026-02926-6",
+      "n_files": 29,
+      "n_code_files": 29,
+      "n_tab_files": 0,
+      "title": "IVCM-Insight: automated interactive interpretation of in vivo confocal microscopy.",
+      "pattern_hits": []
+    },
+    {
+      "idx": 50,
+      "doi": "10.1038/s41746-026-03150-y",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-08-17",
+      "dir": "10.1038_s41746-026-03150-y",
+      "n_files": 1,
+      "n_code_files": 0,
+      "n_tab_files": 0,
+      "title": "Lightweight non-contrast CT-based multimodal artificial intelligence for subtype classification of hepatic cystic echinococcosis in resource-limited clinical settings",
+      "pattern_hits": []
+    }
+  ]
+}

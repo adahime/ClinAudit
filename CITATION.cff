@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use ClinAudit or the 2026 cross-journal clinical ML audit datasets, please cite this software and accompanying manuscript."
+title: "ClinAudit: Lightweight Pre-Publication Forensic Auditing Suite for Clinical Machine Learning Pipelines"
+version: "0.2.0"
+date-released: "2026-11-25"
+license: MIT
+authors:
+  - family-names: "Zhang"
+    given-names: "Xingyu"
+    orcid: "https://orcid.org/0009-0005-6181-7465"
+    email: "takuru1048596@gmail.com"
+keywords:
+  - clinical machine learning
+  - prediction models
+  - data leakage
+  - meta-research
+  - pre-publication verification
+  - clinical epidemiology
+  - decision curve analysis
+  - risk calculator safety

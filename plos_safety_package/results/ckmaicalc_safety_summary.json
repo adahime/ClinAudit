@@ -1,0 +1,73 @@
+{
+  "doi": "10.1371/journal.pmed.1005078",
+  "n_nhanes": 6896,
+  "n_female": 3293,
+  "n_male": 3603,
+  "official_hashes": {
+    "S1_Data.xlsx": {
+      "bytes": 2530686,
+      "sha256": "ae6248050bb6143ed09dd7c58f1f9e045ccb806e16190071ff4f3889bed1aaeb",
+      "expected_sha256": "ae6248050bb6143ed09dd7c58f1f9e045ccb806e16190071ff4f3889bed1aaeb",
+      "exact_match": true
+    },
+    "data_HOS.xlsx": {
+      "bytes": 41988,
+      "sha256": "7beb0ab9868d8bdb96e0399cd0dd3cd2d58c2a6a6c027fd485d8b67c8ba9e889",
+      "expected_sha256": "7beb0ab9868d8bdb96e0399cd0dd3cd2d58c2a6a6c027fd485d8b67c8ba9e889",
+      "exact_match": true
+    },
+    "CKMAI_paper_code.zip": {
+      "bytes": 9574,
+      "sha256": "ec9da40d61c89b1ad1145a99b6150ce9c5742218fce2260422cdf5243f82c74c",
+      "expected_sha256": "ec9da40d61c89b1ad1145a99b6150ce9c5742218fce2260422cdf5243f82c74c",
+      "exact_match": true
+    },
+    "CKMAIcalc.zip": {
+      "bytes": 1699753,
+      "sha256": "084549029fd7cace024dd502cfadc6f8c2ec347351ed8ff4d00bbd3a96e86ecc",
+      "expected_sha256": "084549029fd7cace024dd502cfadc6f8c2ec347351ed8ff4d00bbd3a96e86ecc",
+      "exact_match": true
+    }
+  },
+  "code_r_line_648": "weights <- abs(coef_vec)",
+  "sign_inversion": {
+    "n_flipped_protective_features": 6,
+    "flipped_features": [
+      "LYM",
+      "ALB",
+      "SCR",
+      "EGFR",
+      "Education3",
+      "PIR3"
+    ],
+    "all_cause_c_published": 0.8384,
+    "all_cause_c_signed": 0.8723,
+    "all_cause_c_5fold_oof_signed": 0.8702,
+    "cvd_c_published": 0.8574,
+    "cvd_c_age_alone": 0.8569,
+    "cvd_c_signed": 0.8917,
+    "cvd_c_5fold_oof_signed": 0.8899,
+    "age_sex_adjusted_lrt_published": 93.4,
+    "age_sex_adjusted_lrt_signed": 339.77,
+    "pct_lrt_destroyed": 72.51,
+    "pearson_r_ckmai_age": 0.8987
+  },
+  "sex_encoding_bug": {
+    "nomogram_allcause_sex_coef": -0.468765,
+    "nomogram_cvd_sex_coef": 0.66214,
+    "logistic_ckm_high_sex_coef": 0.860522,
+    "female_impossible_cvd_gt_allcause_n": 858,
+    "female_impossible_cvd_gt_allcause_pct": 26.06,
+    "female_impossible_after_fix_n": 0,
+    "male_impossible_n": 0,
+    "female_mean_10y_cvd_true_pct": 4.25,
+    "female_mean_10y_cvd_buggy_pct": 12.08,
+    "female_10y_cvd_inflation_ratio": 2.84,
+    "female_10y_cvd_median_ratio": 3.72,
+    "female_mean_ckm_high_true_pct": 11.48,
+    "female_mean_ckm_high_buggy_pct": 32.11,
+    "female_ckm_high_inflation_ratio": 2.8,
+    "overall_ckm_high_auc_true": 0.8383,
+    "overall_ckm_high_auc_buggy": 0.7892
+  }
+}

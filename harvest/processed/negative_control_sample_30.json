@@ -1,0 +1,247 @@
+{
+  "seed": 2026,
+  "population_unflagged": 154,
+  "sample_size": 30,
+  "sample": [
+    {
+      "doi": "10.1038/s41467-025-66758-w",
+      "journal_key": "nature_communications",
+      "pub_date": "2026-04-28",
+      "dir": "10.1038_s41467-025-66758-w",
+      "n_files": 1,
+      "title": "Face aging rate quantifies change in biological age to predict cancer outcomes."
+    },
+    {
+      "doi": "10.1038/s41467-025-68198-y",
+      "journal_key": "nature_communications",
+      "pub_date": "2026-01-07",
+      "dir": "10.1038_s41467-025-68198-y",
+      "n_files": 7,
+      "title": "Prehospital real-time AI for trauma mortality prediction: a multi-institutional and multi-national validation study."
+    },
+    {
+      "doi": "10.1038/s41467-026-72713-0",
+      "journal_key": "nature_communications",
+      "pub_date": "2026-05-11",
+      "dir": "10.1038_s41467-026-72713-0",
+      "n_files": 5,
+      "title": "Direct carbapenemase typing from disc diffusion antibiograms with MALCA (MAchine Learning CArbapenemase)."
+    },
+    {
+      "doi": "10.1038/s41467-026-73021-3",
+      "journal_key": "nature_communications",
+      "pub_date": "2026-05-13",
+      "dir": "10.1038_s41467-026-73021-3",
+      "n_files": 10,
+      "title": "Clinically-applicable prediction of hospital stay and patient similarity retrieval in paediatric cardiology using machine learning."
+    },
+    {
+      "doi": "10.1038/s41467-026-73088-y",
+      "journal_key": "nature_communications",
+      "pub_date": "2026-05-20",
+      "dir": "10.1038_s41467-026-73088-y",
+      "n_files": 41,
+      "title": "Multi-modal AI for comprehensive breast cancer prognostication."
+    },
+    {
+      "doi": "10.1038/s41467-026-73636-6",
+      "journal_key": "nature_communications",
+      "pub_date": "2026-06-04",
+      "dir": "10.1038_s41467-026-73636-6",
+      "n_files": 10,
+      "title": "Wearable, broadband auscultation patch with cantilever pressure transducer for remote healthcare monitoring."
+    },
+    {
+      "doi": "10.1038/s41467-026-74077-x",
+      "journal_key": "nature_communications",
+      "pub_date": "2026-06-11",
+      "dir": "10.1038_s41467-026-74077-x",
+      "n_files": 40,
+      "title": "Benchmarking large language models for cell-free RNA diagnostic biomarker discovery."
+    },
+    {
+      "doi": "10.1038/s41467-026-78143-2",
+      "journal_key": "nature_communications",
+      "pub_date": "2026-10-05",
+      "dir": "10.1038_s41467-026-78143-2",
+      "n_files": 22,
+      "title": "ProFormer: generalizable classification of single-cell and plasma proteomes using deep learning."
+    },
+    {
+      "doi": "10.1038/s41467-026-78768-3",
+      "journal_key": "nature_communications",
+      "pub_date": "2026-11-09",
+      "dir": "10.1038_s41467-026-78768-3",
+      "n_files": 13,
+      "title": "LLM ensemble PREVIA predicts future PTSD risk from emergency department trauma narratives with expert-level accuracy."
+    },
+    {
+      "doi": "10.1038/s41467-026-79283-1",
+      "journal_key": "nature_communications",
+      "pub_date": "2026-11-20",
+      "dir": "10.1038_s41467-026-79283-1",
+      "n_files": 1,
+      "title": "Benefits and harms of antihypertensive treatment a modelling study in 5.5 million electronic health records."
+    },
+    {
+      "doi": "10.1038/s41746-025-02298-3",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-01-06",
+      "dir": "10.1038_s41746-025-02298-3",
+      "n_files": 40,
+      "title": "Holistic AI in medicine; improved performance and explainability."
+    },
+    {
+      "doi": "10.1038/s41746-025-02319-1",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-01-08",
+      "dir": "10.1038_s41746-025-02319-1",
+      "n_files": 8,
+      "title": "Advanced breath analysis through hierarchical deep convolutional neural network for multi-cancer screening."
+    },
+    {
+      "doi": "10.1038/s41746-026-02390-2",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-02-16",
+      "dir": "10.1038_s41746-026-02390-2",
+      "n_files": 9,
+      "title": "Artificial intelligence-based incident analysis and learning system to enhance patient safety and improve treatment quality."
+    },
+    {
+      "doi": "10.1038/s41746-026-02474-z",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-02-27",
+      "dir": "10.1038_s41746-026-02474-z",
+      "n_files": 15,
+      "title": "Deep learning for fast screening and localization of spinal dural arteriovenous fistulas to enhance clinical workflow."
+    },
+    {
+      "doi": "10.1038/s41746-026-02487-8",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-03-13",
+      "dir": "10.1038_s41746-026-02487-8",
+      "n_files": 40,
+      "title": "Federated clinical concept and disease semantic learning for congenital heart disease diagnosis."
+    },
+    {
+      "doi": "10.1038/s41746-026-02548-y",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-03-19",
+      "dir": "10.1038_s41746-026-02548-y",
+      "n_files": 26,
+      "title": "Real-world unified denoising for multi-organ fast MRI: a large-scale prospective validation."
+    },
+    {
+      "doi": "10.1038/s41746-026-02564-y",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-03-21",
+      "dir": "10.1038_s41746-026-02564-y",
+      "n_files": 4,
+      "title": "High-sensitivity pan-cancer AI assessment of lymph node metastasis via uncertainty quantification."
+    },
+    {
+      "doi": "10.1038/s41746-026-02598-2",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-04-08",
+      "dir": "10.1038_s41746-026-02598-2",
+      "n_files": 8,
+      "title": "Towards noninvasive blood count using a deep learning pipeline from bulbar conjunctiva videos."
+    },
+    {
+      "doi": "10.1038/s41746-026-02600-x",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-04-06",
+      "dir": "10.1038_s41746-026-02600-x",
+      "n_files": 6,
+      "title": "Towards a physics informed digital twin to predict cerebral blood flow and cerebral vascular regulation."
+    },
+    {
+      "doi": "10.1038/s41746-026-02651-0",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-04-18",
+      "dir": "10.1038_s41746-026-02651-0",
+      "n_files": 40,
+      "title": "AI Augmented Confocal Laser Endomicroscopy for Rapid Intraoperative Diagnosis of Brain Tumors."
+    },
+    {
+      "doi": "10.1038/s41746-026-02722-2",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-05-08",
+      "dir": "10.1038_s41746-026-02722-2",
+      "n_files": 40,
+      "title": "Deep learning models for acute kidney injury prediction: multi-center external validation and evaluation under simulated continuous monitoring conditions."
+    },
+    {
+      "doi": "10.1038/s41746-026-02735-x",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-05-13",
+      "dir": "10.1038_s41746-026-02735-x",
+      "n_files": 40,
+      "title": "Multimodal interpretable deep learning for transcriptome-informed precision oncology and drug mechanism analysis."
+    },
+    {
+      "doi": "10.1038/s41746-026-02774-4",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-05-19",
+      "dir": "10.1038_s41746-026-02774-4",
+      "n_files": 3,
+      "title": "Heart failure detection in electrocardiograms using artificial intelligence and pragmatic labelling."
+    },
+    {
+      "doi": "10.1038/s41746-026-02868-z",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-06-13",
+      "dir": "10.1038_s41746-026-02868-z",
+      "n_files": 40,
+      "title": "FairGen: preference-aligned diffusion for demographically equitable medical image synthesis."
+    },
+    {
+      "doi": "10.1038/s41746-026-02879-w",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-06-08",
+      "dir": "10.1038_s41746-026-02879-w",
+      "n_files": 3,
+      "title": "A deep learning system for bacterial identification and resistance prediction from MALDI-TOF data."
+    },
+    {
+      "doi": "10.1038/s41746-026-02915-9",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-07-06",
+      "dir": "10.1038_s41746-026-02915-9",
+      "n_files": 40,
+      "title": "Large language models are powerful electronic health record encoders."
+    },
+    {
+      "doi": "10.1038/s41746-026-03010-9",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-07-15",
+      "dir": "10.1038_s41746-026-03010-9",
+      "n_files": 40,
+      "title": "Deep multimodal fusion of temporal bone CT and clinical variables for hearing outcomes after cholesteatoma surgery."
+    },
+    {
+      "doi": "10.1038/s41746-026-03065-8",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-07-28",
+      "dir": "10.1038_s41746-026-03065-8",
+      "n_files": 32,
+      "title": "Population-specific dementia risk prediction using deep transfer learning in diverse populations."
+    },
+    {
+      "doi": "10.1038/s41746-026-03079-2",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2026-08-06",
+      "dir": "10.1038_s41746-026-03079-2",
+      "n_files": 20,
+      "title": "An explainable generative AI system for video-to-report generation in capsule endoscopy."
+    },
+    {
+      "doi": "10.1371/journal.pmed.1004868",
+      "journal_key": "plos_medicine",
+      "pub_date": "2026-06-02",
+      "dir": "10.1371_journal.pmed.1004868",
+      "n_files": 1,
+      "title": "Plasma proteomic signatures of early retinal neurodegeneration in diabetes: A multi-cohort study."
+    }
+  ]
+}

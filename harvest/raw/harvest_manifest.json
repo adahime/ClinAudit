@@ -1,0 +1,64 @@
+{
+  "protocol_version": "1.0-frozen",
+  "harvest_utc": "2026-11-25T04:03:27.592704+00:00",
+  "date_window": [
+    "2026-01-01",
+    "2026-11-25"
+  ],
+  "journals": {
+    "plos_medicine": {
+      "issn": "1549-1676",
+      "crossref_total": 273,
+      "crossref_fetched": 273,
+      "epmc_total": 275,
+      "epmc_fetched": 275
+    },
+    "npj_digital_medicine": {
+      "issn": "2398-6352",
+      "crossref_total": 1184,
+      "crossref_fetched": 1184,
+      "epmc_total": 869,
+      "epmc_fetched": 869
+    },
+    "nature_communications": {
+      "issn": "2041-1723",
+      "crossref_total_all_disciplines": 11675,
+      "epmc_clinical_ml_query": "ISSN:\"2041-1723\" AND FIRST_PDATE:[2026-01-01 TO 2026-11-25] AND (\"machine learning\" OR \"deep learning\" OR \"foundation model\" OR \"prediction model\" OR \"prognostic model\") AND (patient OR patients OR clinical OR cohort OR pathology OR oncology)",
+      "epmc_clinical_ml_total": 860,
+      "epmc_clinical_ml_fetched": 860,
+      "crossref_oct15_nov25_lag_fetched": 1123
+    }
+  },
+  "files": [
+    {
+      "file": "plos_medicine_crossref_2026.json",
+      "bytes": 651269,
+      "sha256": "2ec5683c93732a3e18e27d0a44c38ccc846790f25dd3e30f091087c824f70720"
+    },
+    {
+      "file": "plos_medicine_epmc_2026.json",
+      "bytes": 790553,
+      "sha256": "3c0cc09759d9fe5a94ce2ed2918aa0cb0762afdc470fe50b06662ad97bdf9f3c"
+    },
+    {
+      "file": "npj_digital_medicine_crossref_2026.json",
+      "bytes": 891004,
+      "sha256": "db7168010467e00a7f5b83f3dd303d6939b53ccbb0b6b35e2e345432ff5c5ce8"
+    },
+    {
+      "file": "npj_digital_medicine_epmc_2026.json",
+      "bytes": 1643354,
+      "sha256": "dfd602a0e24fc5b64db8a28bd04015d8a8033baaabb600013e34e2dafec657a2"
+    },
+    {
+      "file": "nature_communications_epmc_clinical_ml_2026.json",
+      "bytes": 1701361,
+      "sha256": "743b30e5b1f7bd4045146b3eb5aa9f99fbf353001b5a5922d16d42de8e138d1f"
+    },
+    {
+      "file": "nature_communications_crossref_oct15_nov25_2026.json",
+      "bytes": 951564,
+      "sha256": "3ad9f2d0f528db55d0a9491e6e5007c38a429db1044f01cd656871d2ecc706ff"
+    }
+  ]
+}

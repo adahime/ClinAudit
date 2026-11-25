@@ -1,0 +1,1392 @@
+{
+  "summary": {
+    "window": [
+      "2025-09-01",
+      "2025-12-31"
+    ],
+    "clinaudit_version": "0.2.0",
+    "N0_screened": 759,
+    "N1_eligible": 95,
+    "N_candidate_auditable": 58,
+    "N_scanned": 46,
+    "total_files": 522,
+    "n_errors": 0,
+    "median_runtime_ms": 367.99,
+    "papers_flagged": 4,
+    "flag_rate_pct": 8.7,
+    "breakdown": {
+      "sep_oct_2025": {
+        "N0": 243,
+        "N1": 23,
+        "N_fulltext": 21,
+        "N_auditable": 17,
+        "N_scanned": 12,
+        "total_files": 135,
+        "flagged": 1
+      },
+      "nov_dec_2025": {
+        "N0": 516,
+        "N1": 72,
+        "N_auditable": 41,
+        "N_scanned": 34,
+        "total_files": 387,
+        "flagged": 3
+      }
+    },
+    "flagged_summary": [
+      {
+        "doi": "10.1038/s41467-025-63846-9",
+        "journal": "nature_communications",
+        "pub_date": "2025-10-07",
+        "pmcid": "PMC12504713",
+        "n_alerts": 2,
+        "rules": [
+          "STAT-001"
+        ],
+        "title": "A histomorphological atlas of resected mesothelioma discovered by self-supervised learning from"
+      },
+      {
+        "doi": "10.1038/s41746-025-02189-7",
+        "journal": "npj_digital_medicine",
+        "pub_date": "2025-12-02",
+        "pmcid": "PMC12780281",
+        "n_alerts": 1,
+        "rules": [
+          "STAT-004"
+        ],
+        "title": "An MRI radiomics approach using invasion-based weak supervision for identifying and evaluating "
+      },
+      {
+        "doi": "10.1038/s41467-025-66483-4",
+        "journal": "nature_communications",
+        "pub_date": "2025-12-12",
+        "pmcid": "PMC12749172",
+        "n_alerts": 1,
+        "rules": [
+          "STAT-004"
+        ],
+        "title": "Plasma proteomic profiles identify biomarkers predicting Crohn's disease up to 16 years before "
+      },
+      {
+        "doi": "10.1038/s41467-025-67656-x",
+        "journal": "nature_communications",
+        "pub_date": "2025-12-24",
+        "pmcid": "PMC12830939",
+        "n_alerts": 6,
+        "rules": [
+          "EVAL-004",
+          "STAT-002",
+          "STAT-004"
+        ],
+        "title": "Proteomic signatures of smoking and their associations with risk of incident diseases and morta"
+      }
+    ]
+  },
+  "papers": [
+    {
+      "doi": "10.1038/s41467-025-63799-z",
+      "journal_key": "nature_communications",
+      "pub_date": "2025-09-30",
+      "pmcid": "PMC12484809",
+      "title": "Temporal nutrition analysis associates dietary regularity and quality with gut microbiome diversity: insights from the Food &amp; You digital cohort.",
+      "github_repos": [
+        "digitalepidemiologylab/dietary-consistency-and-quality-associated-with-gut-microbiota-diversity-paper"
+      ],
+      "esm_tabular_urls": [
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-63799-z/MediaObjects/41467_2025_63799_MOESM4_ESM.xls",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-63799-z/MediaObjects/41467_2025_63799_MOESM6_ESM.xlsx"
+      ],
+      "dir": "10.1038_s41467-025-63799-z",
+      "n_files": 2,
+      "runtime_ms": 96.63,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41746-025-01957-9",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2025-09-30",
+      "pmcid": "PMC12484881",
+      "title": "Optimizing retinal images based carotid atherosclerosis prediction with explainable foundation models.",
+      "github_repos": [
+        "hyeok-jong/retinal_fundus_training"
+      ],
+      "esm_tabular_urls": [],
+      "dir": "10.1038_s41746-025-01957-9",
+      "n_files": 9,
+      "runtime_ms": 244.15,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41467-025-63846-9",
+      "journal_key": "nature_communications",
+      "pub_date": "2025-10-07",
+      "pmcid": "PMC12504713",
+      "title": "A histomorphological atlas of resected mesothelioma discovered by self-supervised learning from 3446 whole-slide images.",
+      "github_repos": [
+        "measty/MesoGraph",
+        "FarzanehSeyedshahi/Histomorphological-Phenotype-Learning"
+      ],
+      "esm_tabular_urls": [
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-63846-9/MediaObjects/41467_2025_63846_MOESM4_ESM.xlsx"
+      ],
+      "dir": "10.1038_s41467-025-63846-9",
+      "n_files": 10,
+      "runtime_ms": 896.09,
+      "error": null,
+      "n_alerts": 2,
+      "rules": [
+        "STAT-001"
+      ],
+      "modules": [
+        "statcheck"
+      ],
+      "alerts": [
+        {
+          "module": "statcheck",
+          "rule_id": "STAT-001",
+          "severity": "CRITICAL",
+          "title": "Inverted confidence interval bounds (hi < lo)",
+          "message": "Found 498 row(s) with upper CI bound strictly less than lower bound.",
+          "file": "harvest/external_2025/artifacts/10.1038_s41467-025-63846-9/esm_1.xlsx",
+          "location": "sheet 'figure4'",
+          "evidence": {
+            "rows": [
+              49,
+              51,
+              53,
+              56,
+              58,
+              64,
+              66,
+              69,
+              72,
+              74
+            ]
+          }
+        },
+        {
+          "module": "statcheck",
+          "rule_id": "STAT-001",
+          "severity": "HIGH",
+          "title": "Fixed-width / zero-variance placeholder confidence intervals",
+          "message": "301/322 (93%) rows for 'exp(coef)95%' in 'figure4' share the exact same CI half-width (±0) despite estimate span=0.000 and cohort N ratio=1.00x.",
+          "file": "harvest/external_2025/artifacts/10.1038_s41467-025-63846-9/esm_1.xlsx",
+          "location": "sheet 'figure4' col 'exp(coef)95%'",
+          "evidence": {
+            "metric": "exp(coef)95%",
+            "modal_half_width": 0.0,
+            "modal_count": 301,
+            "total_rows": 322,
+            "modal_fraction": 0.9348,
+            "median_decimals": 4,
+            "estimate_span": 0.0,
+            "n_ratio": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "doi": "10.1038/s41746-025-01977-5",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2025-10-07",
+      "pmcid": "PMC12504733",
+      "title": "Metagenomic fingerprints in bronchoalveolar lavage differentiate pulmonary diseases.",
+      "github_repos": [
+        "whybeeVM/Metagenomic-Analysis-of-Lung-Cancer-and-Pulmonary-Infections"
+      ],
+      "esm_tabular_urls": [
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41746-025-01977-5/MediaObjects/41746_2025_1977_MOESM2_ESM.xlsx"
+      ],
+      "dir": "10.1038_s41746-025-01977-5",
+      "n_files": 1,
+      "runtime_ms": 93.08,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41746-025-01970-y",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2025-10-13",
+      "pmcid": "PMC12518521",
+      "title": "Deep learning CT model for stratified diagnosis of pancreatic cystic neoplasms: multicenter development, validation, and real-world clinical impact.",
+      "github_repos": [
+        "CHANGHAI-AILab/PCN"
+      ],
+      "esm_tabular_urls": [],
+      "dir": "10.1038_s41746-025-01970-y",
+      "n_files": 40,
+      "runtime_ms": 553.27,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41467-025-64237-w",
+      "journal_key": "nature_communications",
+      "pub_date": "2025-10-16",
+      "pmcid": "PMC12533184",
+      "title": "Image-based DNA sequencing encoding for detecting low-mosaicism somatic mobile element insertions.",
+      "github_repos": [
+        "Czhuofu/RetroNet"
+      ],
+      "esm_tabular_urls": [
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-64237-w/MediaObjects/41467_2025_64237_MOESM13_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-64237-w/MediaObjects/41467_2025_64237_MOESM14_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-64237-w/MediaObjects/41467_2025_64237_MOESM16_ESM.zip",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-64237-w/MediaObjects/41467_2025_64237_MOESM3_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-64237-w/MediaObjects/41467_2025_64237_MOESM7_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-64237-w/MediaObjects/41467_2025_64237_MOESM8_ESM.xlsx"
+      ],
+      "dir": "10.1038_s41467-025-64237-w",
+      "n_files": 2,
+      "runtime_ms": 427.45,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41746-025-01989-1",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2025-10-17",
+      "pmcid": "PMC12534672",
+      "title": "Semi-automated surveillance of surgical site infections using machine learning and rule-based classification models.",
+      "github_repos": [
+        "etiennechlt/ssi-detect"
+      ],
+      "esm_tabular_urls": [],
+      "dir": "10.1038_s41746-025-01989-1",
+      "n_files": 9,
+      "runtime_ms": 155.15,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41467-025-64304-2",
+      "journal_key": "nature_communications",
+      "pub_date": "2025-10-20",
+      "pmcid": "PMC12537934",
+      "title": "Artificial intelligence coupled to pharmacometrics modelling to tailor malaria and tuberculosis treatment in Africa.",
+      "github_repos": [
+        "ersilia-os/pharmacogx-embeddings",
+        "ersilia-os/pharmacogx-arsa",
+        "ersilia-os/pharmacogx-app"
+      ],
+      "esm_tabular_urls": [
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-64304-2/MediaObjects/41467_2025_64304_MOESM4_ESM.xlsx"
+      ],
+      "dir": "10.1038_s41467-025-64304-2",
+      "n_files": 1,
+      "runtime_ms": 202.14,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41746-025-02003-4",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2025-10-23",
+      "pmcid": "PMC12549884",
+      "title": "HONeYBEE: enabling scalable multimodal AI in oncology through foundation model-driven embeddings.",
+      "github_repos": [
+        "lab-rasool/MINDS",
+        "lab-rasool/HoneyBeeunder",
+        "lab-rasool/HoneyBee"
+      ],
+      "esm_tabular_urls": [],
+      "dir": "10.1038_s41746-025-02003-4",
+      "n_files": 15,
+      "runtime_ms": 367.99,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41467-025-64459-y",
+      "journal_key": "nature_communications",
+      "pub_date": "2025-10-24",
+      "pmcid": "PMC12552729",
+      "title": "Addressing data heterogeneity in distributed medical imaging with heterosync learning.",
+      "github_repos": [
+        "MedAI-UAIX/HeteroSync_Learning-HSL",
+        "easezyc/Multitask-Recommendation-Library"
+      ],
+      "esm_tabular_urls": [
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-64459-y/MediaObjects/41467_2025_64459_MOESM4_ESM.zip",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-64459-y/MediaObjects/41467_2025_64459_MOESM6_ESM.xlsx"
+      ],
+      "dir": "10.1038_s41467-025-64459-y",
+      "n_files": 7,
+      "runtime_ms": 254.42,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41467-025-64391-1",
+      "journal_key": "nature_communications",
+      "pub_date": "2025-10-27",
+      "pmcid": "PMC12559312",
+      "title": "Multi-view deep learning framework for the detection of chest X-rays compatible with pediatric pulmonary tuberculosis.",
+      "github_repos": [
+        "dani-capellan/pTBLightNet"
+      ],
+      "esm_tabular_urls": [
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-64391-1/MediaObjects/41467_2025_64391_MOESM4_ESM.zip"
+      ],
+      "dir": "10.1038_s41467-025-64391-1",
+      "n_files": 18,
+      "runtime_ms": 389.4,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41467-025-64903-z",
+      "journal_key": "nature_communications",
+      "pub_date": "2025-10-27",
+      "pmcid": "PMC12559183",
+      "title": "The diagnostic potential of proteomics and machine learning in Lyme neuroborreliosis.",
+      "github_repos": [
+        "WewerAlbrechtsenLab/LymeNeuroborreliosis"
+      ],
+      "esm_tabular_urls": [],
+      "dir": "10.1038_s41467-025-64903-z",
+      "n_files": 21,
+      "runtime_ms": 16844.24,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41746-025-02011-4",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2025-11-12",
+      "pmcid": "PMC12612177",
+      "title": "SPEED-TR: a self-distilled and pre-trained transformer model for enhanced ECG detection of tricuspid regurgitation.",
+      "github_repos": [
+        "fwaiaccount/MTECG-SPEED-TR",
+        "fwaiaccount/MTECG-"
+      ],
+      "esm_tabular_urls": [],
+      "dir": "10.1038_s41746-025-02011-4",
+      "n_files": 3,
+      "runtime_ms": 56.62,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41746-025-02018-x",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2025-11-14",
+      "pmcid": "PMC12618496",
+      "title": "GlioSurv: interpretable transformer for multimodal, individualized survival prediction in diffuse glioma.",
+      "github_repos": [
+        "snuh-rad-aicon/GlioSurv"
+      ],
+      "esm_tabular_urls": [],
+      "dir": "10.1038_s41746-025-02018-x",
+      "n_files": 31,
+      "runtime_ms": 638.08,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41746-025-02026-x",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2025-11-17",
+      "pmcid": "PMC12623413",
+      "title": "SpeechCARE: dynamic multimodal modeling for cognitive screening in diverse linguistic and speech task contexts.",
+      "github_repos": [
+        "SpeechCARE/SpeechCARE-NIA-Phase2"
+      ],
+      "esm_tabular_urls": [],
+      "dir": "10.1038_s41746-025-02026-x",
+      "n_files": 40,
+      "runtime_ms": 1008.1,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41746-025-02033-y",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2025-11-17",
+      "pmcid": "PMC12623934",
+      "title": "Development of a deep learning-based prediction model for postoperative delirium using intraoperative electroencephalogram in adults.",
+      "github_repos": [
+        "oskumd2/EEG_Delirium"
+      ],
+      "esm_tabular_urls": [],
+      "dir": "10.1038_s41746-025-02033-y",
+      "n_files": 4,
+      "runtime_ms": 512.44,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41746-025-02049-4",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2025-11-18",
+      "pmcid": "PMC12627842",
+      "title": "Enhancing post-kidney transplant prognostication: an interpretable machine learning approach for longitudinal outcome prediction.",
+      "github_repos": [
+        "uzh-dqbm-cmi/Post-Transplant-Prognostication"
+      ],
+      "esm_tabular_urls": [],
+      "dir": "10.1038_s41746-025-02049-4",
+      "n_files": 6,
+      "runtime_ms": 386.92,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41746-025-02050-x",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2025-11-18",
+      "pmcid": "PMC12627499",
+      "title": "Artificial intelligence prediction of age from echocardiography as a marker for cardiovascular disease.",
+      "github_repos": [
+        "echonet/aging"
+      ],
+      "esm_tabular_urls": [],
+      "dir": "10.1038_s41746-025-02050-x",
+      "n_files": 3,
+      "runtime_ms": 73.64,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41746-025-02058-3",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2025-11-18",
+      "pmcid": "PMC12627545",
+      "title": "Deep learning-enabled multiphoton microscopy predicts colorectal cancer recurrence from routine FFPE specimens.",
+      "github_repos": [
+        "yyb2020/MPMRecNet"
+      ],
+      "esm_tabular_urls": [],
+      "dir": "10.1038_s41746-025-02058-3",
+      "n_files": 10,
+      "runtime_ms": 139.3,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41746-025-02100-4",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2025-11-19",
+      "pmcid": "PMC12630902",
+      "title": "Deep learning model for assessing survival benefits in hepatocellular carcinoma patients undergoing intra-arterial therapies based on proliferative subtype.",
+      "github_repos": [
+        "Issory/-Multitask-PMN-for-HCC"
+      ],
+      "esm_tabular_urls": [],
+      "dir": "10.1038_s41746-025-02100-4",
+      "n_files": 1,
+      "runtime_ms": 176.69,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41746-025-02062-7",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2025-11-20",
+      "pmcid": "PMC12635282",
+      "title": "ROFI: a deep learning-based ophthalmic sign-preserving and reversible patient face anonymizer.",
+      "github_repos": [
+        "tianyuan168326/PatientFaceAnonymizer-Pytorch"
+      ],
+      "esm_tabular_urls": [],
+      "dir": "10.1038_s41746-025-02062-7",
+      "n_files": 16,
+      "runtime_ms": 329.6,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41746-025-02085-0",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2025-11-21",
+      "pmcid": "PMC12638949",
+      "title": "From pretraining to privacy: federated ultrasound foundation model with self-supervised learning.",
+      "github_repos": [
+        "jhl-Det/CVA-Net",
+        "lemondan/Focal-liver-lesions-dataset-in-CEUS",
+        "NinaWie/COVID-BLUES"
+      ],
+      "esm_tabular_urls": [
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41746-025-02085-0/MediaObjects/41746_2025_2085_MOESM2_ESM.zip"
+      ],
+      "dir": "10.1038_s41746-025-02085-0",
+      "n_files": 32,
+      "runtime_ms": 673.31,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41746-025-02088-x",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2025-11-21",
+      "pmcid": "PMC12638872",
+      "title": "Leveraging AI and transfer learning to enhance out-of-hospital cardiac arrest outcome prediction in diverse setting.",
+      "github_repos": [
+        "nliulab/Clinical-Transfer-Learning"
+      ],
+      "esm_tabular_urls": [],
+      "dir": "10.1038_s41746-025-02088-x",
+      "n_files": 3,
+      "runtime_ms": 16.11,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41467-025-65365-z",
+      "journal_key": "nature_communications",
+      "pub_date": "2025-11-24",
+      "pmcid": "PMC12644763",
+      "title": "Explainable AI unravels sepsis heterogeneity via coagulation-inflammation profiles for prognosis and stratification.",
+      "github_repos": [
+        "zhuli19031218/SepsisFormer"
+      ],
+      "esm_tabular_urls": [
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-65365-z/MediaObjects/41467_2025_65365_MOESM4_ESM.xlsx"
+      ],
+      "dir": "10.1038_s41467-025-65365-z",
+      "n_files": 1,
+      "runtime_ms": 18969.27,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41467-025-66853-y",
+      "journal_key": "nature_communications",
+      "pub_date": "2025-11-26",
+      "pmcid": "PMC12749771",
+      "title": "AI-augmented intraoperative decision-making workflows in diffuse midline glioma biopsy using cryosection pathology.",
+      "github_repos": [
+        "DeepMIALab/AI-FFPE",
+        "hms-dbmi/CHIEF",
+        "prov-gigapath/prov-gigapath",
+        "openmedlab/PathoDuet",
+        "AMLab-Amsterdam/AttentionDeepMIL",
+        "szc19990412/TransMIL",
+        "MianxinLiu/CryoAID"
+      ],
+      "esm_tabular_urls": [
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66853-y/MediaObjects/41467_2025_66853_MOESM4_ESM.zip"
+      ],
+      "dir": "10.1038_s41467-025-66853-y",
+      "n_files": 1,
+      "runtime_ms": 0.42,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41746-025-02164-2",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2025-11-26",
+      "pmcid": "PMC12722369",
+      "title": "Artificial intelligence-enabled analysis of handheld single-lead electrocardiograms to predict incident atrial fibrillation: an analysis of the VITAL-AF randomized trial.",
+      "github_repos": [
+        "broadinstitute/ml4h",
+        "shaankhurshid/1l_ecg_ai"
+      ],
+      "esm_tabular_urls": [],
+      "dir": "10.1038_s41746-025-02164-2",
+      "n_files": 40,
+      "runtime_ms": 553.62,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41467-025-65654-7",
+      "journal_key": "nature_communications",
+      "pub_date": "2025-11-27",
+      "pmcid": "PMC12661053",
+      "title": "Enabling whole genome sequencing analysis from FFPE specimens in clinical oncology.",
+      "github_repos": [
+        "papaemmelab/Domenico_NC_FFPE",
+        "papaemmelab/nf-ffperase",
+        "cancerit/cgpBattenberg",
+        "Illumina/strelka",
+        "broadinstitute/gatk",
+        "cancerit/cgpCaVEManWrapper",
+        "cancerit/cgpCaVEManPostProcessing",
+        "cancerit/cgpPindel",
+        "walaj/svaba",
+        "PapenfussLab/gridss",
+        "cancerit/BRASS",
+        "broadinstitute/picard"
+      ],
+      "esm_tabular_urls": [
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-65654-7/MediaObjects/41467_2025_65654_MOESM3_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-65654-7/MediaObjects/41467_2025_65654_MOESM6_ESM.xlsx"
+      ],
+      "dir": "10.1038_s41467-025-65654-7",
+      "n_files": 7,
+      "runtime_ms": 5980.68,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41467-025-65693-0",
+      "journal_key": "nature_communications",
+      "pub_date": "2025-11-27",
+      "pmcid": "PMC12660402",
+      "title": "A noninvasive machine learning model using a complete blood count for screening of primary vitreoretinal lymphoma.",
+      "github_repos": [
+        "fudanRenjun/Primary-vitreoretinal-lymphoma"
+      ],
+      "esm_tabular_urls": [
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-65693-0/MediaObjects/41467_2025_65693_MOESM4_ESM.xlsx"
+      ],
+      "dir": "10.1038_s41467-025-65693-0",
+      "n_files": 1,
+      "runtime_ms": 20.76,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41746-025-02109-9",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2025-11-27",
+      "pmcid": "PMC12661004",
+      "title": "Clinical validation of an AI-assisted system for real-time kidney stone detection during flexible ureteroscopic surgery.",
+      "github_repos": [
+        "lyuwenyu/RT-DETR",
+        "Peterande/D-FINE",
+        "NirAharon/BoT-SORT",
+        "Jamie-HM/AiFURS"
+      ],
+      "esm_tabular_urls": [],
+      "dir": "10.1038_s41746-025-02109-9",
+      "n_files": 40,
+      "runtime_ms": 349.87,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41746-025-02110-2",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2025-11-27",
+      "pmcid": "PMC12660861",
+      "title": "A multi-criterion feature integration framework for accurate diagnosis of Sjögren's disease using routine laboratory tests.",
+      "github_repos": [
+        "guanhaowu123/SMFIF"
+      ],
+      "esm_tabular_urls": [],
+      "dir": "10.1038_s41746-025-02110-2",
+      "n_files": 5,
+      "runtime_ms": 45.24,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41467-025-66947-7",
+      "journal_key": "nature_communications",
+      "pub_date": "2025-12-01",
+      "pmcid": "PMC12783782",
+      "title": "Machine learning for risk stratification in the emergency department (MARS-ED): a randomized controlled trial.",
+      "github_repos": [
+        "wptmdoorn/marsedstudy"
+      ],
+      "esm_tabular_urls": [],
+      "dir": "10.1038_s41467-025-66947-7",
+      "n_files": 28,
+      "runtime_ms": 276.81,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41746-025-02189-7",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2025-12-02",
+      "pmcid": "PMC12780281",
+      "title": "An MRI radiomics approach using invasion-based weak supervision for identifying and evaluating aggressive PitNETs.",
+      "github_repos": [
+        "ttyywyy/identifying-and-evaluating-aggressive-behaviors-in-PitNETs"
+      ],
+      "esm_tabular_urls": [
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41746-025-02189-7/MediaObjects/41746_2025_2189_MOESM2_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41746-025-02189-7/MediaObjects/41746_2025_2189_MOESM3_ESM.xlsx"
+      ],
+      "dir": "10.1038_s41746-025-02189-7",
+      "n_files": 26,
+      "runtime_ms": 614.57,
+      "error": null,
+      "n_alerts": 1,
+      "rules": [
+        "STAT-004"
+      ],
+      "modules": [
+        "statcheck"
+      ],
+      "alerts": [
+        {
+          "module": "statcheck",
+          "rule_id": "STAT-004",
+          "severity": "CRITICAL",
+          "title": "Bootstrap-pseudoreplication / implausibly microscopic P-value alert",
+          "message": "41 row(s) in 'Sheet1' report extreme P-values (e.g., P=2.16914e-22) incompatible with sample size/effect size (classic signature of running paired tests across bootstrap resamples).",
+          "file": "harvest/external_2025/artifacts/10.1038_s41746-025-02189-7/esm_2.xlsx",
+          "location": "sheet 'Sheet1'",
+          "evidence": {
+            "violations": [
+              {
+                "row": 49,
+                "p_reported": 2.1691393635003616e-22,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              },
+              {
+                "row": 49,
+                "p_reported": 4.84260362901475e-18,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              },
+              {
+                "row": 106,
+                "p_reported": 8.465669780349295e-39,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              },
+              {
+                "row": 106,
+                "p_reported": 1.8899607784626126e-34,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              },
+              {
+                "row": 107,
+                "p_reported": 2.2389226959447485e-32,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              },
+              {
+                "row": 107,
+                "p_reported": 1.4523296307068115e-28,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              },
+              {
+                "row": 108,
+                "p_reported": 1.40163484393018e-24,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              },
+              {
+                "row": 108,
+                "p_reported": 2.2351069921960762e-21,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              },
+              {
+                "row": 109,
+                "p_reported": 1.920227208831829e-24,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              },
+              {
+                "row": 109,
+                "p_reported": 2.85793816247805e-21,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "doi": "10.1038/s41746-025-02183-z",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2025-12-03",
+      "pmcid": "PMC12775138",
+      "title": "A transformer-based prognostic signature integrating tumor and body composition CT images predicts postoperative recurrence in gastric cancer.",
+      "github_repos": [
+        "MedAI-Lab/SMAT-TC"
+      ],
+      "esm_tabular_urls": [],
+      "dir": "10.1038_s41746-025-02183-z",
+      "n_files": 11,
+      "runtime_ms": 176.37,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41746-025-02193-x",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2025-12-03",
+      "pmcid": "PMC12780265",
+      "title": "Clinically informed intermediate reasoning enables generalizable prostate cancer prognostication through machine learning in limited settings.",
+      "github_repos": [
+        "AIP-BSS/Clinically-Informed-Intermediate-Reasoning"
+      ],
+      "esm_tabular_urls": [],
+      "dir": "10.1038_s41746-025-02193-x",
+      "n_files": 3,
+      "runtime_ms": 49.87,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41467-025-66046-7",
+      "journal_key": "nature_communications",
+      "pub_date": "2025-12-04",
+      "pmcid": "PMC12678775",
+      "title": "Faecal metabolites as a readout of habitual diet capture dietary interactions with the gut microbiome.",
+      "github_repos": [
+        "alesssia/YAMP"
+      ],
+      "esm_tabular_urls": [
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66046-7/MediaObjects/41467_2025_66046_MOESM10_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66046-7/MediaObjects/41467_2025_66046_MOESM11_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66046-7/MediaObjects/41467_2025_66046_MOESM12_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66046-7/MediaObjects/41467_2025_66046_MOESM13_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66046-7/MediaObjects/41467_2025_66046_MOESM14_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66046-7/MediaObjects/41467_2025_66046_MOESM15_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66046-7/MediaObjects/41467_2025_66046_MOESM16_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66046-7/MediaObjects/41467_2025_66046_MOESM3_ESM.xlsx"
+      ],
+      "dir": "10.1038_s41467-025-66046-7",
+      "n_files": 3,
+      "runtime_ms": 185.03,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41467-025-66994-0",
+      "journal_key": "nature_communications",
+      "pub_date": "2025-12-05",
+      "pmcid": "PMC12686480",
+      "title": "Machine learning-supported framework for the classification of mpox infection and MVA immunization from multiplexed serology data.",
+      "github_repos": [
+        "RKI-ZBS/bead-based_multiplex",
+        "ZKI-PH-ImageAnalysis/Mpox_Multiplex_Assay"
+      ],
+      "esm_tabular_urls": [
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66994-0/MediaObjects/41467_2025_66994_MOESM4_ESM.xlsx"
+      ],
+      "dir": "10.1038_s41467-025-66994-0",
+      "n_files": 1,
+      "runtime_ms": 16445.79,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41467-025-65930-6",
+      "journal_key": "nature_communications",
+      "pub_date": "2025-12-08",
+      "pmcid": "PMC12686440",
+      "title": "Precise diagnosis of small invasive pulmonary nodules driven by single-cell immune signatures in peripheral blood.",
+      "github_repos": [
+        "Xia-Lab0001/SMART-Pulmonary-Nodule-Diagnosis"
+      ],
+      "esm_tabular_urls": [
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-65930-6/MediaObjects/41467_2025_65930_MOESM2_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-65930-6/MediaObjects/41467_2025_65930_MOESM5_ESM.xlsx"
+      ],
+      "dir": "10.1038_s41467-025-65930-6",
+      "n_files": 1,
+      "runtime_ms": 50.41,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41746-025-02161-5",
+      "journal_key": "npj_digital_medicine",
+      "pub_date": "2025-12-08",
+      "pmcid": "PMC12686522",
+      "title": "Deep learning-based brain age predicts stroke recurrence in acute ischemic cerebrovascular disease.",
+      "github_repos": [
+        "liuziyang1106/MBA_Net_for_ContexualBrainAge"
+      ],
+      "esm_tabular_urls": [],
+      "dir": "10.1038_s41746-025-02161-5",
+      "n_files": 14,
+      "runtime_ms": 284.17,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41467-025-66243-4",
+      "journal_key": "nature_communications",
+      "pub_date": "2025-12-09",
+      "pmcid": "PMC12764852",
+      "title": "Multiplexed detection of febrile infections using CARMEN.",
+      "github_repos": [],
+      "esm_tabular_urls": [
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66243-4/MediaObjects/41467_2025_66243_MOESM3_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66243-4/MediaObjects/41467_2025_66243_MOESM6_ESM.xlsx"
+      ],
+      "dir": "10.1038_s41467-025-66243-4",
+      "n_files": 1,
+      "runtime_ms": 2059.14,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41467-025-66340-4",
+      "journal_key": "nature_communications",
+      "pub_date": "2025-12-11",
+      "pmcid": "PMC12764486",
+      "title": "Echo-Vision-FM: a pre-training and fine-tuning framework for echocardiogram video vision foundation model.",
+      "github_repos": [
+        "ZiyangZhang0511/Echo-Vison-FM"
+      ],
+      "esm_tabular_urls": [],
+      "dir": "10.1038_s41467-025-66340-4",
+      "n_files": 22,
+      "runtime_ms": 404.71,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41467-025-66483-4",
+      "journal_key": "nature_communications",
+      "pub_date": "2025-12-12",
+      "pmcid": "PMC12749172",
+      "title": "Plasma proteomic profiles identify biomarkers predicting Crohn's disease up to 16 years before onset.",
+      "github_repos": [
+        "ChenHao-gdph/UKBproteomicsCD53",
+        "ChenHao-gdph/UKBproteomicsCD"
+      ],
+      "esm_tabular_urls": [
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66483-4/MediaObjects/41467_2025_66483_MOESM10_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66483-4/MediaObjects/41467_2025_66483_MOESM11_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66483-4/MediaObjects/41467_2025_66483_MOESM13_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66483-4/MediaObjects/41467_2025_66483_MOESM3_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66483-4/MediaObjects/41467_2025_66483_MOESM4_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66483-4/MediaObjects/41467_2025_66483_MOESM5_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66483-4/MediaObjects/41467_2025_66483_MOESM6_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66483-4/MediaObjects/41467_2025_66483_MOESM7_ESM.xlsx"
+      ],
+      "dir": "10.1038_s41467-025-66483-4",
+      "n_files": 3,
+      "runtime_ms": 7255.58,
+      "error": null,
+      "n_alerts": 1,
+      "rules": [
+        "STAT-004"
+      ],
+      "modules": [
+        "statcheck"
+      ],
+      "alerts": [
+        {
+          "module": "statcheck",
+          "rule_id": "STAT-004",
+          "severity": "CRITICAL",
+          "title": "Bootstrap-pseudoreplication / implausibly microscopic P-value alert",
+          "message": "3 row(s) in 'Figure 2b' report extreme P-values (e.g., P=1.56346e-17) incompatible with sample size/effect size (classic signature of running paired tests across bootstrap resamples).",
+          "file": "harvest/external_2025/artifacts/10.1038_s41467-025-66483-4/esm_3.xlsx",
+          "location": "sheet 'Figure 2b'",
+          "evidence": {
+            "violations": [
+              {
+                "row": 93,
+                "p_reported": 1.56345978960588e-17,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              },
+              {
+                "row": 94,
+                "p_reported": 3.61392106095183e-16,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              },
+              {
+                "row": 129,
+                "p_reported": 7.96430169444681e-17,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "doi": "10.1038/s41467-025-66106-y",
+      "journal_key": "nature_communications",
+      "pub_date": "2025-12-16",
+      "pmcid": "PMC12708718",
+      "title": "An unbiased comparison of 14 epigenetic clocks in relation to 174 incident disease outcomes.",
+      "github_repos": [],
+      "esm_tabular_urls": [
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66106-y/MediaObjects/41467_2025_66106_MOESM12_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66106-y/MediaObjects/41467_2025_66106_MOESM13_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66106-y/MediaObjects/41467_2025_66106_MOESM14_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66106-y/MediaObjects/41467_2025_66106_MOESM2_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66106-y/MediaObjects/41467_2025_66106_MOESM3_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66106-y/MediaObjects/41467_2025_66106_MOESM4_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66106-y/MediaObjects/41467_2025_66106_MOESM5_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66106-y/MediaObjects/41467_2025_66106_MOESM6_ESM.xlsx"
+      ],
+      "dir": "10.1038_s41467-025-66106-y",
+      "n_files": 3,
+      "runtime_ms": 995.83,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41467-025-66218-5",
+      "journal_key": "nature_communications",
+      "pub_date": "2025-12-16",
+      "pmcid": "PMC12708615",
+      "title": "Integrating a host biomarker with a large language model for diagnosis of lower respiratory tract infection.",
+      "github_repos": [
+        "infectiousdisease-langelier-lab/LRTI_FABP4_GPT4_classifier"
+      ],
+      "esm_tabular_urls": [
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66218-5/MediaObjects/41467_2025_66218_MOESM4_ESM.xlsx"
+      ],
+      "dir": "10.1038_s41467-025-66218-5",
+      "n_files": 9,
+      "runtime_ms": 13295.42,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41467-025-66996-y",
+      "journal_key": "nature_communications",
+      "pub_date": "2025-12-16",
+      "pmcid": "PMC12783191",
+      "title": "Rapid culture-free diagnosis of clinical pathogens via integrated microfluidic-Raman micro-spectroscopy.",
+      "github_repos": [],
+      "esm_tabular_urls": [
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66996-y/MediaObjects/41467_2025_66996_MOESM21_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66996-y/MediaObjects/41467_2025_66996_MOESM4_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66996-y/MediaObjects/41467_2025_66996_MOESM5_ESM.csv",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66996-y/MediaObjects/41467_2025_66996_MOESM6_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66996-y/MediaObjects/41467_2025_66996_MOESM7_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-66996-y/MediaObjects/41467_2025_66996_MOESM8_ESM.xlsx"
+      ],
+      "dir": "10.1038_s41467-025-66996-y",
+      "n_files": 3,
+      "runtime_ms": 74.06,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41467-025-67391-3",
+      "journal_key": "nature_communications",
+      "pub_date": "2025-12-19",
+      "pmcid": "PMC12796348",
+      "title": "MIDAS: rapid, multiplexed molecular profiling for integrated host-pathogen analysis.",
+      "github_repos": [
+        "Cgruich/AI4SepsisMultiplexAssay"
+      ],
+      "esm_tabular_urls": [
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-67391-3/MediaObjects/41467_2025_67391_MOESM4_ESM.xlsx"
+      ],
+      "dir": "10.1038_s41467-025-67391-3",
+      "n_files": 1,
+      "runtime_ms": 2084.38,
+      "error": null,
+      "n_alerts": 0,
+      "rules": [],
+      "modules": [],
+      "alerts": []
+    },
+    {
+      "doi": "10.1038/s41467-025-67656-x",
+      "journal_key": "nature_communications",
+      "pub_date": "2025-12-24",
+      "pmcid": "PMC12830939",
+      "title": "Proteomic signatures of smoking and their associations with risk of incident diseases and mortality in diverse populations.",
+      "github_repos": [
+        "xiaosihao/ProteomicSmoking"
+      ],
+      "esm_tabular_urls": [
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-67656-x/MediaObjects/41467_2025_67656_MOESM3_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-67656-x/MediaObjects/41467_2025_67656_MOESM6_ESM.xlsx"
+      ],
+      "dir": "10.1038_s41467-025-67656-x",
+      "n_files": 14,
+      "runtime_ms": 4170.41,
+      "error": null,
+      "n_alerts": 6,
+      "rules": [
+        "EVAL-004",
+        "STAT-002",
+        "STAT-004"
+      ],
+      "modules": [
+        "evalcheck",
+        "statcheck"
+      ],
+      "alerts": [
+        {
+          "module": "evalcheck",
+          "rule_id": "EVAL-004",
+          "severity": "CRITICAL",
+          "title": "Preprocessor fitted directly on test set",
+          "message": "`RandomUnderSampler.fit_resample()` is called directly on test data (x_test), leaking test distribution parameters.",
+          "file": "harvest/external_2025/artifacts/10.1038_s41467-025-67656-x/gh_UKB_by_sex_and_undersampling.py",
+          "location": "line 150",
+          "evidence": {
+            "transformer": "RandomUnderSampler",
+            "method": "fit_resample",
+            "args": [
+              "x_test"
+            ]
+          }
+        },
+        {
+          "module": "evalcheck",
+          "rule_id": "EVAL-004",
+          "severity": "CRITICAL",
+          "title": "Preprocessor fitted directly on test set",
+          "message": "`RandomUnderSampler.fit_resample()` is called directly on test data (x_test_male), leaking test distribution parameters.",
+          "file": "harvest/external_2025/artifacts/10.1038_s41467-025-67656-x/gh_UKB_by_sex_and_undersampling.py",
+          "location": "line 324",
+          "evidence": {
+            "transformer": "RandomUnderSampler",
+            "method": "fit_resample",
+            "args": [
+              "x_test_male"
+            ]
+          }
+        },
+        {
+          "module": "evalcheck",
+          "rule_id": "EVAL-004",
+          "severity": "CRITICAL",
+          "title": "Preprocessor fitted directly on test set",
+          "message": "`RandomUnderSampler.fit_resample()` is called directly on test data (x_test_female), leaking test distribution parameters.",
+          "file": "harvest/external_2025/artifacts/10.1038_s41467-025-67656-x/gh_UKB_by_sex_and_undersampling.py",
+          "location": "line 377",
+          "evidence": {
+            "transformer": "RandomUnderSampler",
+            "method": "fit_resample",
+            "args": [
+              "x_test_female"
+            ]
+          }
+        },
+        {
+          "module": "statcheck",
+          "rule_id": "STAT-004",
+          "severity": "CRITICAL",
+          "title": "Bootstrap-pseudoreplication / implausibly microscopic P-value alert",
+          "message": "5 row(s) in 'SD1' report extreme P-values (e.g., P=3.44201e-26) incompatible with sample size/effect size (classic signature of running paired tests across bootstrap resamples).",
+          "file": "harvest/external_2025/artifacts/10.1038_s41467-025-67656-x/esm_1.xlsx",
+          "location": "sheet 'SD1'",
+          "evidence": {
+            "violations": [
+              {
+                "row": 1,
+                "p_reported": 3.44201287419802e-26,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              },
+              {
+                "row": 2,
+                "p_reported": 1.63687501601009e-71,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              },
+              {
+                "row": 4,
+                "p_reported": 2.82437216192388e-236,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              },
+              {
+                "row": 11,
+                "p_reported": 1.85027100653088e-60,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              },
+              {
+                "row": 22,
+                "p_reported": 4.33123769538459e-98,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              }
+            ]
+          }
+        },
+        {
+          "module": "statcheck",
+          "rule_id": "STAT-002",
+          "severity": "CRITICAL",
+          "title": "Zero-width confidence interval (lo == hi) on finite-sample metric",
+          "message": "Detected 1 zero-width CI(s) (1 interior) in 'SD9' (e.g., metric 'OR or BETA' = 1.5151515, CI [1.52, 1.52]).",
+          "file": "harvest/external_2025/artifacts/10.1038_s41467-025-67656-x/esm_1.xlsx",
+          "location": "sheet 'SD9'",
+          "evidence": {
+            "n_zero_width_interior": 1,
+            "n_zero_width_boundary": 0,
+            "example_rows": [
+              3986
+            ]
+          }
+        },
+        {
+          "module": "statcheck",
+          "rule_id": "STAT-004",
+          "severity": "CRITICAL",
+          "title": "Bootstrap-pseudoreplication / implausibly microscopic P-value alert",
+          "message": "28 row(s) in 'SD11' report extreme P-values (e.g., P=1.49015e-80) incompatible with sample size/effect size (classic signature of running paired tests across bootstrap resamples).",
+          "file": "harvest/external_2025/artifacts/10.1038_s41467-025-67656-x/esm_1.xlsx",
+          "location": "sheet 'SD11'",
+          "evidence": {
+            "violations": [
+              {
+                "row": 0,
+                "p_reported": 1.49015375854644e-80,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              },
+              {
+                "row": 1,
+                "p_reported": 5.31300202564664e-66,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              },
+              {
+                "row": 2,
+                "p_reported": 1.68797627847588e-64,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              },
+              {
+                "row": 3,
+                "p_reported": 2.2947726547632e-55,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              },
+              {
+                "row": 4,
+                "p_reported": 4.19065823362052e-55,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              },
+              {
+                "row": 5,
+                "p_reported": 1.27847973372486e-49,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              },
+              {
+                "row": 6,
+                "p_reported": 2.13587835972069e-46,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              },
+              {
+                "row": 7,
+                "p_reported": 6.86427045556855e-42,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              },
+              {
+                "row": 8,
+                "p_reported": 2.9934700392792e-39,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              },
+              {
+                "row": 9,
+                "p_reported": 3.96657357252773e-37,
+                "reason": "extreme_microscopic_p_in_metric_table"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

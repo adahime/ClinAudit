@@ -1,0 +1,5039 @@
+{
+  "benchmark": "clinaudit_synthetic_fault_injection_v1",
+  "clinaudit_version": "0.2.0",
+  "seed": 2026,
+  "total_cases": 400,
+  "total_wall_ms": 855.2,
+  "overall": {
+    "module": "overall",
+    "n_cases": 400,
+    "n_clean": 200,
+    "n_faulty": 200,
+    "TP": 198,
+    "FP": 0,
+    "TN": 200,
+    "FN": 2,
+    "sensitivity": 0.99,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.995,
+    "median_runtime_ms": 0.6599,
+    "p95_runtime_ms": 6.0587,
+    "mean_runtime_ms": 1.9749,
+    "by_intensity": {
+      "mild": {
+        "n": 68,
+        "detected": 66,
+        "sensitivity": 0.9706
+      },
+      "moderate": {
+        "n": 68,
+        "detected": 68,
+        "sensitivity": 1.0
+      },
+      "severe": {
+        "n": 64,
+        "detected": 64,
+        "sensitivity": 1.0
+      }
+    }
+  },
+  "modules": {
+    "leakage": {
+      "module": "leakage",
+      "n_cases": 100,
+      "n_clean": 50,
+      "n_faulty": 50,
+      "TP": 50,
+      "FP": 0,
+      "TN": 50,
+      "FN": 0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "precision": 1.0,
+      "f1": 1.0,
+      "median_runtime_ms": 3.5868,
+      "p95_runtime_ms": 6.8742,
+      "mean_runtime_ms": 3.9562,
+      "by_intensity": {
+        "mild": {
+          "n": 17,
+          "detected": 17,
+          "sensitivity": 1.0
+        },
+        "moderate": {
+          "n": 17,
+          "detected": 17,
+          "sensitivity": 1.0
+        },
+        "severe": {
+          "n": 16,
+          "detected": 16,
+          "sensitivity": 1.0
+        }
+      }
+    },
+    "evalcheck": {
+      "module": "evalcheck",
+      "n_cases": 100,
+      "n_clean": 50,
+      "n_faulty": 50,
+      "TP": 50,
+      "FP": 0,
+      "TN": 50,
+      "FN": 0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "precision": 1.0,
+      "f1": 1.0,
+      "median_runtime_ms": 0.2569,
+      "p95_runtime_ms": 1.0671,
+      "mean_runtime_ms": 0.3947,
+      "by_intensity": {
+        "mild": {
+          "n": 17,
+          "detected": 17,
+          "sensitivity": 1.0
+        },
+        "moderate": {
+          "n": 16,
+          "detected": 16,
+          "sensitivity": 1.0
+        },
+        "severe": {
+          "n": 17,
+          "detected": 17,
+          "sensitivity": 1.0
+        }
+      }
+    },
+    "statcheck": {
+      "module": "statcheck",
+      "n_cases": 100,
+      "n_clean": 50,
+      "n_faulty": 50,
+      "TP": 48,
+      "FP": 0,
+      "TN": 50,
+      "FN": 2,
+      "sensitivity": 0.96,
+      "specificity": 1.0,
+      "precision": 1.0,
+      "f1": 0.9796,
+      "median_runtime_ms": 0.2707,
+      "p95_runtime_ms": 0.618,
+      "mean_runtime_ms": 0.3097,
+      "by_intensity": {
+        "mild": {
+          "n": 17,
+          "detected": 15,
+          "sensitivity": 0.8824
+        },
+        "moderate": {
+          "n": 17,
+          "detected": 17,
+          "sensitivity": 1.0
+        },
+        "severe": {
+          "n": 16,
+          "detected": 16,
+          "sensitivity": 1.0
+        }
+      }
+    },
+    "deploycheck": {
+      "module": "deploycheck",
+      "n_cases": 100,
+      "n_clean": 50,
+      "n_faulty": 50,
+      "TP": 50,
+      "FP": 0,
+      "TN": 50,
+      "FN": 0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "precision": 1.0,
+      "f1": 1.0,
+      "median_runtime_ms": 3.0109,
+      "p95_runtime_ms": 6.503,
+      "mean_runtime_ms": 3.2392,
+      "by_intensity": {
+        "mild": {
+          "n": 17,
+          "detected": 17,
+          "sensitivity": 1.0
+        },
+        "moderate": {
+          "n": 18,
+          "detected": 18,
+          "sensitivity": 1.0
+        },
+        "severe": {
+          "n": 15,
+          "detected": 15,
+          "sensitivity": 1.0
+        }
+      }
+    }
+  },
+  "errors": [
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_pairedz_00",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "paired_z_ci_contradiction",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.0946
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_pairedz_01",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "paired_z_ci_contradiction",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.0901
+    }
+  ],
+  "cases": [
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_std_00",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "standard_mixed_split",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 20.0405
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_std_01",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "standard_mixed_split",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 2.9735
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_std_02",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "standard_mixed_split",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 4.7989
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_std_03",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "standard_mixed_split",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 5.0281
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_std_04",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "standard_mixed_split",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 2.1512
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_std_05",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "standard_mixed_split",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 3.3355
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_std_06",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "standard_mixed_split",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 3.9202
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_std_07",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "standard_mixed_split",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 6.251
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_std_08",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "standard_mixed_split",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 4.9242
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_std_09",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "standard_mixed_split",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 5.7531
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_std_10",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "standard_mixed_split",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 3.4501
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_std_11",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "standard_mixed_split",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 4.4179
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_std_12",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "standard_mixed_split",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 9.8529
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_std_13",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "standard_mixed_split",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 3.9589
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_std_14",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "standard_mixed_split",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 6.4054
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_lowcard_00",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "low_cardinality_binary",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 2.4656
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_lowcard_01",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "low_cardinality_binary",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 2.3204
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_lowcard_02",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "low_cardinality_binary",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 1.9805
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_lowcard_03",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "low_cardinality_binary",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 1.385
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_lowcard_04",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "low_cardinality_binary",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 1.4712
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_lowcard_05",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "low_cardinality_binary",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 3.7034
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_lowcard_06",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "low_cardinality_binary",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 2.5817
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_lowcard_07",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "low_cardinality_binary",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 2.7184
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_lowcard_08",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "low_cardinality_binary",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 1.6482
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_lowcard_09",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "low_cardinality_binary",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 1.3775
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_lowcard_10",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "low_cardinality_binary",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 1.6102
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_lowcard_11",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "low_cardinality_binary",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 2.3899
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_lowcard_12",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "low_cardinality_binary",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 2.3083
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_lowcard_13",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "low_cardinality_binary",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 2.5236
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_lowcard_14",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "low_cardinality_binary",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 2.0642
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_natdup_00",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "rounded_natural_1_2_dups",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 2.6252
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_natdup_01",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "rounded_natural_1_2_dups",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 2.5826
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_natdup_02",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "rounded_natural_1_2_dups",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 5.6637
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_natdup_03",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "rounded_natural_1_2_dups",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 4.6897
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_natdup_04",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "rounded_natural_1_2_dups",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 2.5959
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_natdup_05",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "rounded_natural_1_2_dups",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 3.8802
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_natdup_06",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "rounded_natural_1_2_dups",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 4.3864
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_natdup_07",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "rounded_natural_1_2_dups",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 2.9266
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_natdup_08",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "rounded_natural_1_2_dups",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 4.2981
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_natdup_09",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "rounded_natural_1_2_dups",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 4.7255
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_imbal_00",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "imbalanced_high_dim",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 4.5744
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_imbal_01",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "imbalanced_high_dim",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 7.5161
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_imbal_02",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "imbalanced_high_dim",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 2.7903
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_imbal_03",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "imbalanced_high_dim",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 8.4336
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_imbal_04",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "imbalanced_high_dim",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 5.8616
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_imbal_05",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "imbalanced_high_dim",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 6.8609
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_imbal_06",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "imbalanced_high_dim",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 3.7587
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_imbal_07",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "imbalanced_high_dim",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 4.5181
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_imbal_08",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "imbalanced_high_dim",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 7.1266
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_clean_imbal_09",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "imbalanced_high_dim",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 5.7891
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_exact_00",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "exact_row_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "LEAK-001"
+      ],
+      "runtime_ms": 2.7357
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_exact_01",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "exact_row_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "LEAK-001"
+      ],
+      "runtime_ms": 4.56
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_exact_02",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "exact_row_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "LEAK-001"
+      ],
+      "runtime_ms": 4.8177
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_exact_03",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "exact_row_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "LEAK-001"
+      ],
+      "runtime_ms": 3.5651
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_exact_04",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "exact_row_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "LEAK-001"
+      ],
+      "runtime_ms": 3.407
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_exact_05",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "exact_row_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "LEAK-001"
+      ],
+      "runtime_ms": 4.9355
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_exact_06",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "exact_row_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002"
+      ],
+      "runtime_ms": 4.0826
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_exact_07",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "exact_row_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002"
+      ],
+      "runtime_ms": 3.2548
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_exact_08",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "exact_row_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002"
+      ],
+      "runtime_ms": 2.8725
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_exact_09",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "exact_row_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002"
+      ],
+      "runtime_ms": 4.5784
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_exact_10",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "exact_row_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002"
+      ],
+      "runtime_ms": 4.0867
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_exact_11",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "exact_row_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002"
+      ],
+      "runtime_ms": 2.3909
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_exact_12",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "exact_row_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002"
+      ],
+      "runtime_ms": 3.1652
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_exact_13",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "exact_row_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002"
+      ],
+      "runtime_ms": 4.8504
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_exact_14",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "exact_row_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002"
+      ],
+      "runtime_ms": 4.6725
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_exact_15",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "exact_row_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002"
+      ],
+      "runtime_ms": 2.312
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_exact_16",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "exact_row_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002"
+      ],
+      "runtime_ms": 2.4529
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_exact_17",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "exact_row_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002"
+      ],
+      "runtime_ms": 5.1957
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_near_00",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "near_exact_float_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "LEAK-001"
+      ],
+      "runtime_ms": 3.0477
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_near_01",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "near_exact_float_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "LEAK-001"
+      ],
+      "runtime_ms": 3.5876
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_near_02",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "near_exact_float_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "LEAK-001"
+      ],
+      "runtime_ms": 4.3343
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_near_03",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "near_exact_float_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "LEAK-001"
+      ],
+      "runtime_ms": 3.6902
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_near_04",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "near_exact_float_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002"
+      ],
+      "runtime_ms": 4.073
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_near_05",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "near_exact_float_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002"
+      ],
+      "runtime_ms": 2.7726
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_near_06",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "near_exact_float_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002"
+      ],
+      "runtime_ms": 3.9274
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_near_07",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "near_exact_float_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002"
+      ],
+      "runtime_ms": 4.1139
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_near_08",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "near_exact_float_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002"
+      ],
+      "runtime_ms": 3.0097
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_near_09",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "near_exact_float_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002"
+      ],
+      "runtime_ms": 3.062
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_near_10",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "near_exact_float_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002"
+      ],
+      "runtime_ms": 3.4906
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_near_11",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "near_exact_float_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002"
+      ],
+      "runtime_ms": 2.6736
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_mirror_00",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "mirror_clone_parity",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "LEAK-002"
+      ],
+      "runtime_ms": 4.0817
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_mirror_01",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "mirror_clone_parity",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002"
+      ],
+      "runtime_ms": 2.4533
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_mirror_02",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "mirror_clone_parity",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "LEAK-002"
+      ],
+      "runtime_ms": 2.8183
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_mirror_03",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "mirror_clone_parity",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002"
+      ],
+      "runtime_ms": 3.1307
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_mirror_04",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "mirror_clone_parity",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "LEAK-002"
+      ],
+      "runtime_ms": 2.7018
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_mirror_05",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "mirror_clone_parity",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002"
+      ],
+      "runtime_ms": 4.3354
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_mirror_06",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "mirror_clone_parity",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "LEAK-002"
+      ],
+      "runtime_ms": 3.5859
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_mirror_07",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "mirror_clone_parity",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002"
+      ],
+      "runtime_ms": 3.4994
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_mirror_08",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "mirror_clone_parity",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "LEAK-002"
+      ],
+      "runtime_ms": 4.8869
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_mirror_09",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "mirror_clone_parity",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002"
+      ],
+      "runtime_ms": 4.8425
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_conflict_00",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "conflicting_labels",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "LEAK-003"
+      ],
+      "runtime_ms": 3.1591
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_conflict_01",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "conflicting_labels",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "LEAK-003"
+      ],
+      "runtime_ms": 3.7161
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_conflict_02",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "conflicting_labels",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "LEAK-003"
+      ],
+      "runtime_ms": 2.9206
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_conflict_03",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "conflicting_labels",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "LEAK-003"
+      ],
+      "runtime_ms": 3.9103
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_conflict_04",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "conflicting_labels",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-003"
+      ],
+      "runtime_ms": 2.6712
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_conflict_05",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "conflicting_labels",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-003"
+      ],
+      "runtime_ms": 2.4329
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_conflict_06",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "conflicting_labels",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "LEAK-003"
+      ],
+      "runtime_ms": 2.7699
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_conflict_07",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "conflicting_labels",
+      "predicted_faulty": true,
+      "n_alerts": 3,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002",
+        "LEAK-003"
+      ],
+      "runtime_ms": 3.2244
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_conflict_08",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "conflicting_labels",
+      "predicted_faulty": true,
+      "n_alerts": 3,
+      "rule_ids": [
+        "LEAK-001",
+        "LEAK-002",
+        "LEAK-003"
+      ],
+      "runtime_ms": 5.2846
+    },
+    {
+      "module": "leakage",
+      "case_id": "M1_fault_conflict_09",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "conflicting_labels",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "LEAK-003"
+      ],
+      "runtime_ms": 4.0683
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_pipe_00",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_pipeline",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.9951
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_pipe_01",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_pipeline",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.6136
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_pipe_02",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_pipeline",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.5947
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_pipe_03",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_pipeline",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.5777
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_pipe_04",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_pipeline",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.5796
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_pipe_05",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_pipeline",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.5755
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_pipe_06",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_pipeline",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.6168
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_pipe_07",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_pipeline",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.582
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_pipe_08",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_pipeline",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 1.0915
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_pipe_09",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_pipeline",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.8733
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_score_00",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_clinical_score",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.438
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_score_01",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_clinical_score",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.3999
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_score_02",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_clinical_score",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.3962
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_score_03",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_clinical_score",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.395
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_score_04",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_clinical_score",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.3921
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_score_05",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_clinical_score",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.393
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_score_06",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_clinical_score",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.3821
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_score_07",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_clinical_score_r",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 1.5406
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_score_08",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_clinical_score_r",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.0839
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_score_09",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_clinical_score_r",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.075
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_dca_code_00",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_dca_code",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 1.3103
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_dca_code_01",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_dca_code",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 1.0069
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_dca_code_02",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_dca_code",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.9872
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_dca_code_03",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_dca_code",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.9516
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_dca_tab_00",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_dca_tabular",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.4427
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_dca_tab_01",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_dca_tabular",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.2145
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_dca_tab_02",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_dca_tabular",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.5317
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_dca_tab_03",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_dca_tabular",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.1913
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_dca_tab_04",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_dca_tabular",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.1851
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_dca_tab_05",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_dca_tabular",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.1876
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_surv_00",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_survival",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 1.0664
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_surv_01",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_survival",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.1891
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_surv_02",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_survival",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.5099
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_surv_03",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_survival",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.1904
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_surv_04",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_survival",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.0397
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_surv_05",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_survival",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 1.357
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_surv_06",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_survival",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.4062
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_surv_07",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_survival",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.4621
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_surv_08",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_survival",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.0798
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_surv_09",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_survival",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.035
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_val_00",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_val_and_prob",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.665
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_val_01",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_val_and_prob",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.3673
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_val_02",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_val_and_prob",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.6991
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_val_03",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_val_and_prob",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.2992
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_val_04",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_val_and_prob",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.5173
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_val_05",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_val_and_prob",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.2547
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_val_06",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_val_and_prob",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.497
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_val_07",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_val_and_prob",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.243
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_val_08",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_val_and_prob",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.7651
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_clean_val_09",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_val_and_prob",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.2463
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_binscore_00",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "binarized_clinical_score",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-001"
+      ],
+      "runtime_ms": 0.1648
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_binscore_01",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "binarized_clinical_score",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-001"
+      ],
+      "runtime_ms": 0.1831
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_binscore_02",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "binarized_clinical_score",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-001"
+      ],
+      "runtime_ms": 0.1469
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_binscore_03",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "binarized_clinical_score",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-001"
+      ],
+      "runtime_ms": 0.1169
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_binscore_04",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "binarized_clinical_score",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-001"
+      ],
+      "runtime_ms": 0.1818
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_binscore_05",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "binarized_clinical_score",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-001"
+      ],
+      "runtime_ms": 0.1088
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_binscore_06",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "binarized_clinical_score",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-001"
+      ],
+      "runtime_ms": 0.1001
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_binscore_07",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "binarized_clinical_score",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-001"
+      ],
+      "runtime_ms": 0.123
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_binscore_08",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "binarized_clinical_score",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-001"
+      ],
+      "runtime_ms": 0.0852
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_dcacode_00",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "hardcoded_dca_code",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-002"
+      ],
+      "runtime_ms": 0.5816
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_dcacode_01",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "hardcoded_dca_code",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-002"
+      ],
+      "runtime_ms": 0.6014
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_dcacode_02",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "hardcoded_dca_code",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-002"
+      ],
+      "runtime_ms": 0.1089
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_dcacode_03",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "hardcoded_dca_code",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-002"
+      ],
+      "runtime_ms": 0.0873
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_dcaflat_00",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "flat_constant_dca",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-002"
+      ],
+      "runtime_ms": 0.1618
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_dcaflat_01",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "flat_constant_dca",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-002"
+      ],
+      "runtime_ms": 0.1043
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_dcafixed_00",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "fixed_binary_dca_line",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-002"
+      ],
+      "runtime_ms": 0.1936
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_dcafixed_01",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "fixed_binary_dca_line",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-002"
+      ],
+      "runtime_ms": 0.1555
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_dcabound_00",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "dca_exceeds_prevalence",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-002"
+      ],
+      "runtime_ms": 0.1519
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_dcabound_01",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "dca_impossible_monotonicity",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-002"
+      ],
+      "runtime_ms": 0.1879
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_bincal_00",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "binary_calibration_or_nri",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-003"
+      ],
+      "runtime_ms": 0.2133
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_bincal_01",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "binary_calibration_or_nri",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-003"
+      ],
+      "runtime_ms": 0.1858
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_bincal_02",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "binary_calibration_or_nri",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-003"
+      ],
+      "runtime_ms": 0.3764
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_bincal_03",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "binary_calibration_or_nri",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-003"
+      ],
+      "runtime_ms": 0.1744
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_bincal_04",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "binary_calibration_or_nri",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-003"
+      ],
+      "runtime_ms": 0.1184
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_bincal_05",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "binary_calibration_or_nri",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-003"
+      ],
+      "runtime_ms": 0.0738
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_bincal_06",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "binary_calibration_or_nri",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "EVAL-003"
+      ],
+      "runtime_ms": 0.2461
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_bincal_07",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "binary_calibration_or_nri",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-003"
+      ],
+      "runtime_ms": 0.2504
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_presplit_00",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "presplit_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-004"
+      ],
+      "runtime_ms": 0.2289
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_presplit_01",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "presplit_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-004"
+      ],
+      "runtime_ms": 0.1759
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_presplit_02",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "presplit_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-004"
+      ],
+      "runtime_ms": 0.1606
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_presplit_03",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "presplit_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-004"
+      ],
+      "runtime_ms": 0.4372
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_presplit_04",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "presplit_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-004"
+      ],
+      "runtime_ms": 0.259
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_presplit_05",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "presplit_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-004"
+      ],
+      "runtime_ms": 0.0803
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_presplit_06",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "presplit_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-004"
+      ],
+      "runtime_ms": 0.2532
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_presplit_07",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "presplit_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-004"
+      ],
+      "runtime_ms": 0.2073
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_presplit_08",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "presplit_leakage",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-004"
+      ],
+      "runtime_ms": 0.0756
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_immortal_00",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "immortal_time_bias",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-005"
+      ],
+      "runtime_ms": 0.3813
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_immortal_01",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "immortal_time_bias",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-005"
+      ],
+      "runtime_ms": 0.6737
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_immortal_02",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "immortal_time_bias",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-005"
+      ],
+      "runtime_ms": 0.1852
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_immortal_03",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "immortal_time_bias",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-005"
+      ],
+      "runtime_ms": 0.4855
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_immortal_04",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "immortal_time_bias",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-005"
+      ],
+      "runtime_ms": 0.0593
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_immortal_05",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "immortal_time_bias",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-005"
+      ],
+      "runtime_ms": 0.3863
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_immortal_06",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "immortal_time_bias",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-005"
+      ],
+      "runtime_ms": 0.0634
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_testsel_00",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "test_set_selection",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-006"
+      ],
+      "runtime_ms": 0.2616
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_testsel_01",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "test_set_selection",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-006"
+      ],
+      "runtime_ms": 0.1429
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_testsel_02",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "test_set_selection",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-006"
+      ],
+      "runtime_ms": 1.0811
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_testsel_03",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "test_set_selection",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-006"
+      ],
+      "runtime_ms": 0.2434
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_testsel_04",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "test_set_selection",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-006"
+      ],
+      "runtime_ms": 0.7266
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_testsel_05",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "test_set_selection",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-006"
+      ],
+      "runtime_ms": 0.3972
+    },
+    {
+      "module": "evalcheck",
+      "case_id": "M2_fault_testsel_06",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "test_set_selection",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "EVAL-006"
+      ],
+      "runtime_ms": 0.8269
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_hm_00",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "genuine_hanley_mcneil",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.9413
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_hm_01",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "genuine_hanley_mcneil",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.2906
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_hm_02",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "genuine_hanley_mcneil",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.3138
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_hm_03",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "genuine_hanley_mcneil",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.3006
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_hm_04",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "genuine_hanley_mcneil",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.2349
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_hm_05",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "genuine_hanley_mcneil",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.2785
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_hm_06",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "genuine_hanley_mcneil",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.1775
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_hm_07",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "genuine_hanley_mcneil",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.2297
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_hm_08",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "genuine_hanley_mcneil",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.2635
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_hm_09",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "genuine_hanley_mcneil",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.1631
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_hm_10",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "genuine_hanley_mcneil",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.1661
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_hm_11",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "genuine_hanley_mcneil",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.2348
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_2dec_00",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_2dec_rounding_ties",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.1751
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_2dec_01",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_2dec_rounding_ties",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.209
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_2dec_02",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_2dec_rounding_ties",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.1639
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_2dec_03",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_2dec_rounding_ties",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.1656
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_2dec_04",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_2dec_rounding_ties",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.166
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_2dec_05",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_2dec_rounding_ties",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.1802
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_2dec_06",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_2dec_rounding_ties",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.149
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_2dec_07",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_2dec_rounding_ties",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.1642
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_2dec_08",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_2dec_rounding_ties",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.1462
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_2dec_09",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_2dec_rounding_ties",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.1683
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_2dec_10",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_2dec_rounding_ties",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.1544
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_2dec_11",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_2dec_rounding_ties",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.1644
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_largeN_00",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "large_cohort_narrow_ci",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.4081
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_largeN_01",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "large_cohort_narrow_ci",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.3658
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_largeN_02",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "large_cohort_narrow_ci",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.3623
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_largeN_03",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "large_cohort_narrow_ci",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.3635
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_largeN_04",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "large_cohort_narrow_ci",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.4302
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_largeN_05",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "large_cohort_narrow_ci",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.5191
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_largeN_06",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "large_cohort_narrow_ci",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.6812
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_largeN_07",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "large_cohort_narrow_ci",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.5356
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_largeN_08",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "large_cohort_narrow_ci",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.5319
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_largeN_09",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "large_cohort_narrow_ci",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.5238
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_multi_00",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "consistent_multi_sheet",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.6547
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_multi_01",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "consistent_multi_sheet",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.616
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_multi_02",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "consistent_multi_sheet",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.6052
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_multi_03",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "consistent_multi_sheet",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.6161
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_multi_04",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "consistent_multi_sheet",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.6178
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_multi_05",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "consistent_multi_sheet",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.6169
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_multi_06",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "consistent_multi_sheet",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.6167
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_multi_07",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "consistent_multi_sheet",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.6217
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_wilcox_00",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "valid_wilcoxon_and_boundary",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.339
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_wilcox_01",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "valid_wilcoxon_and_boundary",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.3064
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_wilcox_02",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "valid_wilcoxon_and_boundary",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.3317
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_wilcox_03",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "valid_wilcoxon_and_boundary",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.3071
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_wilcox_04",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "valid_wilcoxon_and_boundary",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.3288
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_wilcox_05",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "valid_wilcoxon_and_boundary",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.3058
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_wilcox_06",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "valid_wilcoxon_and_boundary",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.3312
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_clean_wilcox_07",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "valid_wilcoxon_and_boundary",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.3053
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_fixedci_00",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "fixed_width_placeholder_ci",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-001"
+      ],
+      "runtime_ms": 0.2676
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_fixedci_01",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "fixed_width_placeholder_ci",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-001"
+      ],
+      "runtime_ms": 0.2473
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_fixedci_02",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "fixed_width_placeholder_ci",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-001"
+      ],
+      "runtime_ms": 0.2526
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_fixedci_03",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "fixed_width_placeholder_ci",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-001"
+      ],
+      "runtime_ms": 0.2397
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_fixedci_04",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "fixed_width_placeholder_ci",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-001"
+      ],
+      "runtime_ms": 0.2958
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_fixedci_05",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "fixed_width_placeholder_ci",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-001"
+      ],
+      "runtime_ms": 0.2737
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_fixedci_06",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "fixed_width_placeholder_ci",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-001"
+      ],
+      "runtime_ms": 0.2949
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_fixedci_07",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "fixed_width_placeholder_ci",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-001"
+      ],
+      "runtime_ms": 0.2745
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_fixedci_08",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "fixed_width_placeholder_ci",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-001"
+      ],
+      "runtime_ms": 0.3848
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_fixedci_09",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "fixed_width_placeholder_ci",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-001"
+      ],
+      "runtime_ms": 0.3516
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_fixedci_10",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "fixed_width_placeholder_ci",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-001"
+      ],
+      "runtime_ms": 0.3775
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_zeroci_00",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "zero_width_ci",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-002"
+      ],
+      "runtime_ms": 0.2427
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_zeroci_01",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "zero_width_ci",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-002"
+      ],
+      "runtime_ms": 0.2388
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_zeroci_02",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "zero_width_ci",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-002"
+      ],
+      "runtime_ms": 0.3194
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_zeroci_03",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "zero_width_ci",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-002"
+      ],
+      "runtime_ms": 0.2267
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_zeroci_04",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "zero_width_ci",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-002"
+      ],
+      "runtime_ms": 0.2251
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_zeroci_05",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "zero_width_ci",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-002"
+      ],
+      "runtime_ms": 0.2248
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_zeroci_06",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "zero_width_ci",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-002"
+      ],
+      "runtime_ms": 0.2234
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_zeroci_07",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "zero_width_ci",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-002"
+      ],
+      "runtime_ms": 0.1667
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_zeroci_08",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "zero_width_ci",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-002"
+      ],
+      "runtime_ms": 0.162
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_zeroci_09",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "zero_width_ci",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-002"
+      ],
+      "runtime_ms": 0.1651
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_cross_00",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "cross_sheet_ci_contradiction",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-003"
+      ],
+      "runtime_ms": 0.6935
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_cross_01",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "cross_sheet_ci_contradiction",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-003"
+      ],
+      "runtime_ms": 0.4944
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_cross_02",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "cross_sheet_ci_contradiction",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-003"
+      ],
+      "runtime_ms": 0.5697
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_cross_03",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "cross_sheet_ci_contradiction",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-003"
+      ],
+      "runtime_ms": 0.4729
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_cross_04",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "cross_sheet_ci_contradiction",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-003"
+      ],
+      "runtime_ms": 0.4582
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_cross_05",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "cross_sheet_ci_contradiction",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-003"
+      ],
+      "runtime_ms": 0.4617
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_cross_06",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "cross_sheet_ci_contradiction",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-003"
+      ],
+      "runtime_ms": 0.4535
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_cross_07",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "cross_sheet_ci_contradiction",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-003"
+      ],
+      "runtime_ms": 0.4675
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_cross_08",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "cross_sheet_ci_contradiction",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-003"
+      ],
+      "runtime_ms": 0.4528
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_cross_09",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "cross_sheet_ci_contradiction",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-003"
+      ],
+      "runtime_ms": 0.4602
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_cross_10",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "cross_sheet_ci_contradiction",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-003"
+      ],
+      "runtime_ms": 0.4546
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_wilcox_00",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "impossible_5fold_wilcoxon",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "STAT-001",
+        "STAT-004"
+      ],
+      "runtime_ms": 0.226
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_wilcox_01",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "impossible_5fold_wilcoxon",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "STAT-001",
+        "STAT-004"
+      ],
+      "runtime_ms": 0.2076
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_wilcox_02",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "impossible_5fold_wilcoxon",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "STAT-001",
+        "STAT-004"
+      ],
+      "runtime_ms": 0.205
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_wilcox_03",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "impossible_5fold_wilcoxon",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "STAT-001",
+        "STAT-004"
+      ],
+      "runtime_ms": 0.2043
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_wilcox_04",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "impossible_5fold_wilcoxon",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "STAT-001",
+        "STAT-004"
+      ],
+      "runtime_ms": 0.2083
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_pseudo_00",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "bootstrap_pseudoreplication_p",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-004"
+      ],
+      "runtime_ms": 0.1017
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_pseudo_01",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "bootstrap_pseudoreplication_p",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-004"
+      ],
+      "runtime_ms": 0.0894
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_pseudo_02",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "bootstrap_pseudoreplication_p",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-004"
+      ],
+      "runtime_ms": 0.0875
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_pseudo_03",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "bootstrap_pseudoreplication_p",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-004"
+      ],
+      "runtime_ms": 0.0868
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_pseudo_04",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "bootstrap_pseudoreplication_p",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-004"
+      ],
+      "runtime_ms": 0.0861
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_pseudo_05",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "bootstrap_pseudoreplication_p",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-004"
+      ],
+      "runtime_ms": 0.0866
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_pseudo_06",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "bootstrap_pseudoreplication_p",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-004"
+      ],
+      "runtime_ms": 0.0832
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_pairedz_00",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "paired_z_ci_contradiction",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.0946
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_pairedz_01",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "paired_z_ci_contradiction",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.0901
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_pairedz_02",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "paired_z_ci_contradiction",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-005"
+      ],
+      "runtime_ms": 0.093
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_pairedz_03",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "paired_z_ci_contradiction",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "STAT-005"
+      ],
+      "runtime_ms": 0.0928
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_pairedz_04",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "paired_z_ci_contradiction",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "STAT-004",
+        "STAT-005"
+      ],
+      "runtime_ms": 0.093
+    },
+    {
+      "module": "statcheck",
+      "case_id": "M3_fault_pairedz_05",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "paired_z_ci_contradiction",
+      "predicted_faulty": true,
+      "n_alerts": 2,
+      "rule_ids": [
+        "STAT-004",
+        "STAT-005"
+      ],
+      "runtime_ms": 0.0933
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_multi_00",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_multi_endpoint",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 4.8579
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_multi_01",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_multi_endpoint",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 6.236
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_multi_02",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_multi_endpoint",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 6.5401
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_multi_03",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_multi_endpoint",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 6.2108
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_multi_04",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_multi_endpoint",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 5.6106
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_multi_05",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_multi_endpoint",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 4.5629
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_multi_06",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_multi_endpoint",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 4.9578
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_multi_07",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_multi_endpoint",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 5.5322
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_multi_08",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_multi_endpoint",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 5.0145
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_multi_09",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_multi_endpoint",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 4.9106
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_multi_10",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_multi_endpoint",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 6.501
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_multi_11",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_multi_endpoint",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 5.9342
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_multi_12",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_multi_endpoint",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 4.8965
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_multi_13",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_multi_endpoint",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 6.8081
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_multi_14",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_multi_endpoint",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 5.293
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_multi_15",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_multi_endpoint",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 4.7715
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_multi_16",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_multi_endpoint",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 5.6323
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_multi_17",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_multi_endpoint",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 6.3834
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_noisy_00",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_noisy_tree_model",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 3.5844
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_noisy_01",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_noisy_tree_model",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 3.1519
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_noisy_02",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_noisy_tree_model",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 2.921
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_noisy_03",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_noisy_tree_model",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 3.6916
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_noisy_04",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_noisy_tree_model",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 2.8979
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_noisy_05",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_noisy_tree_model",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 3.399
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_noisy_06",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_noisy_tree_model",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 3.2318
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_noisy_07",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_noisy_tree_model",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 2.4642
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_noisy_08",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_noisy_tree_model",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 2.3851
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_noisy_09",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_noisy_tree_model",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 2.2669
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_noisy_10",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_noisy_tree_model",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 2.2423
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_noisy_11",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_noisy_tree_model",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 2.2534
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_ushape_00",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_ushaped_biomarkers",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 1.0388
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_ushape_01",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_ushaped_biomarkers",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 1.3452
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_ushape_02",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_ushaped_biomarkers",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 1.3747
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_ushape_03",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_ushaped_biomarkers",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 1.3905
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_ushape_04",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_ushaped_biomarkers",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 1.3085
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_ushape_05",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_ushaped_biomarkers",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 1.613
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_ushape_06",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_ushaped_biomarkers",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 1.1719
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_ushape_07",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_ushaped_biomarkers",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 1.0762
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_ushape_08",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_ushaped_biomarkers",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 1.062
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_ushape_09",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_ushaped_biomarkers",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 1.8204
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_imp_00",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_abs_feature_importance",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 14.9559
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_imp_01",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_abs_feature_importance",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.1416
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_imp_02",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_abs_feature_importance",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.1105
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_imp_03",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_abs_feature_importance",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.0948
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_imp_04",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_abs_feature_importance",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.3609
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_imp_05",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_abs_feature_importance",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.1788
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_imp_06",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_abs_feature_importance",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.0988
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_imp_07",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_abs_feature_importance",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.0949
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_imp_08",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_abs_feature_importance",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.0881
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_clean_imp_09",
+      "ground_truth_faulty": false,
+      "intensity": "clean",
+      "subtype": "clean_abs_feature_importance",
+      "predicted_faulty": false,
+      "n_alerts": 0,
+      "rule_ids": [],
+      "runtime_ms": 0.0384
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_bounds_00",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "probability_bounds_violation",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-001"
+      ],
+      "runtime_ms": 2.4707
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_bounds_01",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "probability_bounds_violation",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-001"
+      ],
+      "runtime_ms": 2.259
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_bounds_02",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "probability_bounds_violation",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-001"
+      ],
+      "runtime_ms": 2.905
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_bounds_03",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "probability_bounds_violation",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-001"
+      ],
+      "runtime_ms": 2.7046
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_bounds_04",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "probability_bounds_violation",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-001"
+      ],
+      "runtime_ms": 2.2311
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_bounds_05",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "probability_bounds_violation",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-001"
+      ],
+      "runtime_ms": 2.1818
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_bounds_06",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "probability_bounds_violation",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-001"
+      ],
+      "runtime_ms": 2.2413
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_bounds_07",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "probability_bounds_violation",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-001"
+      ],
+      "runtime_ms": 2.2225
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_bounds_08",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "probability_bounds_violation",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-001"
+      ],
+      "runtime_ms": 2.5788
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_hier_00",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "hierarchy_violation",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-001"
+      ],
+      "runtime_ms": 6.96
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_hier_01",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "hierarchy_violation",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-001"
+      ],
+      "runtime_ms": 5.0115
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_hier_02",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "hierarchy_violation",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-001"
+      ],
+      "runtime_ms": 4.5644
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_hier_03",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "hierarchy_violation",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-001"
+      ],
+      "runtime_ms": 5.4067
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_hier_04",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "hierarchy_violation",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-001"
+      ],
+      "runtime_ms": 5.097
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_hier_05",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "hierarchy_violation",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-001"
+      ],
+      "runtime_ms": 4.5065
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_hier_06",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "hierarchy_violation",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-001"
+      ],
+      "runtime_ms": 4.9972
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_hier_07",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "hierarchy_violation",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-001"
+      ],
+      "runtime_ms": 4.3574
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_hier_08",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "hierarchy_violation",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-001"
+      ],
+      "runtime_ms": 4.3659
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_hier_09",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "hierarchy_violation",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-001"
+      ],
+      "runtime_ms": 4.792
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_hier_10",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "hierarchy_violation",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-001"
+      ],
+      "runtime_ms": 6.2421
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_hier_11",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "hierarchy_violation",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-001"
+      ],
+      "runtime_ms": 4.4723
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_hier_12",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "hierarchy_violation",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-001"
+      ],
+      "runtime_ms": 4.44
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_encshift_00",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "encoding_01_vs_12_mismatch",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-002"
+      ],
+      "runtime_ms": 6.1145
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_encshift_01",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "encoding_01_vs_12_mismatch",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-002"
+      ],
+      "runtime_ms": 4.4082
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_encshift_02",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "encoding_01_vs_12_mismatch",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-002"
+      ],
+      "runtime_ms": 4.4319
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_encshift_03",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "encoding_01_vs_12_mismatch",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-002"
+      ],
+      "runtime_ms": 5.1752
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_encrev_00",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "encoding_polarity_reversal",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-002"
+      ],
+      "runtime_ms": 6.0558
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_encrev_01",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "encoding_polarity_reversal",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-002"
+      ],
+      "runtime_ms": 6.422
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_encrev_02",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "encoding_polarity_reversal",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-002"
+      ],
+      "runtime_ms": 7.5543
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_encstatic_00",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "static_encoding_contradiction",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-002"
+      ],
+      "runtime_ms": 0.5931
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_encstatic_01",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "static_encoding_contradiction",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-002"
+      ],
+      "runtime_ms": 0.0643
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_mono_00",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "monotonicity_sign_inversion",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-003"
+      ],
+      "runtime_ms": 3.1926
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_mono_01",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "monotonicity_sign_inversion",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-003"
+      ],
+      "runtime_ms": 2.7053
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_mono_02",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "monotonicity_sign_inversion",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-003"
+      ],
+      "runtime_ms": 3.101
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_mono_03",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "monotonicity_sign_inversion",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-003"
+      ],
+      "runtime_ms": 3.073
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_mono_04",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "monotonicity_sign_inversion",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-003"
+      ],
+      "runtime_ms": 3.2781
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_mono_05",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "monotonicity_sign_inversion",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-003"
+      ],
+      "runtime_ms": 2.9488
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_mono_06",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "monotonicity_sign_inversion",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-003"
+      ],
+      "runtime_ms": 2.5354
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_mono_07",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "monotonicity_sign_inversion",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-003"
+      ],
+      "runtime_ms": 2.3871
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_mono_08",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "monotonicity_sign_inversion",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-003"
+      ],
+      "runtime_ms": 3.256
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_mono_09",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "monotonicity_sign_inversion",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-003"
+      ],
+      "runtime_ms": 3.324
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_abscoef_00",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "static_abs_coef_destruction",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-004"
+      ],
+      "runtime_ms": 0.2807
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_abscoef_01",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "static_abs_coef_destruction",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-004"
+      ],
+      "runtime_ms": 0.1446
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_abscoef_02",
+      "ground_truth_faulty": true,
+      "intensity": "mild",
+      "subtype": "static_abs_coef_destruction",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-004"
+      ],
+      "runtime_ms": 0.3127
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_abscoef_03",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "static_abs_coef_destruction",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-004"
+      ],
+      "runtime_ms": 0.3789
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_abscoef_04",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "static_abs_coef_destruction",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-004"
+      ],
+      "runtime_ms": 0.148
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_abscoef_05",
+      "ground_truth_faulty": true,
+      "intensity": "moderate",
+      "subtype": "static_abs_coef_destruction",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-004"
+      ],
+      "runtime_ms": 0.0792
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_abscoef_06",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "static_abs_coef_destruction",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-004"
+      ],
+      "runtime_ms": 0.2558
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_abscoef_07",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "static_abs_coef_destruction",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-004"
+      ],
+      "runtime_ms": 0.1466
+    },
+    {
+      "module": "deploycheck",
+      "case_id": "M4_fault_abscoef_08",
+      "ground_truth_faulty": true,
+      "intensity": "severe",
+      "subtype": "static_abs_coef_destruction",
+      "predicted_faulty": true,
+      "n_alerts": 1,
+      "rule_ids": [
+        "DEPLOY-004"
+      ],
+      "runtime_ms": 0.037
+    }
+  ]
+}

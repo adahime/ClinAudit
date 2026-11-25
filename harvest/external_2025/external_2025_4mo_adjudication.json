@@ -1,0 +1,59 @@
+{
+  "cohort": "out_of_time_4month_sep_dec_2025",
+  "window": ["2025-09-01", "2025-12-31"],
+  "clinaudit_version_frozen": "0.2.0",
+  "N0_screened": 759,
+  "N1_eligible": 95,
+  "N_fulltext_retrieved": 76,
+  "N_candidate_auditable": 58,
+  "N_downloaded": 46,
+  "N_directly_parsed": 45,
+  "N_zip_only_unextracted": 1,
+  "zip_only_secondary_check": "10.1038/s41467-025-66853-y (esm_1.zip extracted: 177 supported files, 0 alerts)",
+  "total_files_downloaded": 522,
+  "total_files_directly_parsed": 514,
+  "n_errors": 0,
+  "median_runtime_ms": 367.99,
+  "n_flagged": 4,
+  "flag_rate_downloaded_pct": 8.70,
+  "flag_rate_parsed_pct": 8.89,
+  "triage_yield_pct": 25.0,
+  "adjudicated_flagged_papers": [
+    {
+      "idx": 1,
+      "doi": "10.1038/s41467-025-63846-9",
+      "journal": "nature_communications",
+      "pub_date": "2025-10-07",
+      "rules": ["STAT-001"],
+      "verdict": "FALSE_POSITIVE",
+      "reason": "esm_1.xlsx sheet 'figure4' vertically stacks multiple distinct sub-tables ((a) Cox model rows 0-48, (c) LogRank tests rows 49-55, (d) TCGA LogRank rows 56-60, (e) SHAP decision values rows 61+) inside the same Excel columns, causing STAT-001 to read LogRank/SHAP values beneath the Cox CI headers. Illustrates the need for one-table-per-sheet Source Data formatting."
+    },
+    {
+      "idx": 2,
+      "doi": "10.1038/s41746-025-02189-7",
+      "journal": "npj_digital_medicine",
+      "pub_date": "2025-12-02",
+      "rules": ["STAT-004"],
+      "verdict": "FALSE_POSITIVE",
+      "reason": "esm_2.xlsx Sheet1 is a GSVA biological-process correlation table (Features vs Related Process, Pearson r, p_value), not an ML model-comparison table."
+    },
+    {
+      "idx": 3,
+      "doi": "10.1038/s41467-025-66483-4",
+      "journal": "nature_communications",
+      "pub_date": "2025-12-12",
+      "rules": ["STAT-004"],
+      "verdict": "FALSE_POSITIVE",
+      "reason": "esm_3.xlsx Figure 2b is a Gene Ontology (GOTERM_BP_DIRECT) enrichment table (PValue, FDR), not an ML model-comparison table."
+    },
+    {
+      "idx": 4,
+      "doi": "10.1038/s41467-025-67656-x",
+      "journal": "nature_communications",
+      "pub_date": "2025-12-24",
+      "rules": ["EVAL-004", "STAT-002", "STAT-004"],
+      "verdict": "CONFIRMED_TECHNICAL_MATCH_AND_COLLATERAL_UNDISCLOSED_BUG",
+      "reason": "EVAL-004 accurately flagged RandomUnderSampler().fit_resample(x_test/x_test_male/x_test_female) in UKB_by_sex_and_undersampling.py (L150, 324, 377). Full-text XML (PMC12830939) confirmed balanced test undersampling was disclosed as a sensitivity analysis—yet inspecting that flagged block exposed an undisclosed constant-seed bootstrap bug across all 11 loops in UKB_by_sex_and_undersampling.py and external_validation.py (resample(..., random_state=1996)), collapsing np.std() to IEEE-754 float64 machine epsilon (1.11-4.44e-16; 21 times) and subnormal underflow (2.06e-296; 4 times)—25 zero-variance uncertainty estimates printed verbatim in the published main text (0 corrections on Crossref)."
+    }
+  ]
+}
