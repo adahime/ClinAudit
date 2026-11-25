@@ -10,6 +10,11 @@
 
 `clinaudit` requires **only the Python standard library and NumPy** (zero `pandas`, `scipy`, `scikit-learn`, or `openpyxl` dependencies), enabling sub-second deterministic integration into journal editorial screening, peer-review workflows, and CI/CD pipelines across Python 3.10–3.15.
 
+> [!NOTE]
+> **Post-`v0.2.0` Blind Q1 Expansion (Wave 1 — Nov 2026):** Running frozen `ClinAudit v0.2.0` across a zero-overlap 2020–2026 blind expansion (**464** clinical ML studies / **6,676** files in **217.3 s**, **0 crashes**) brings the combined empirical audit to **677 directly parsed clinical ML studies across 28 flagship Q1 medical journals** and **23 independently verified, line-reproducible defects** (**7** JCE/Zenodo primary & temporal cases + **16** Wave-1 blind-expansion cases: **6** Tier-1 high-severity, **4** Tier-2 pre-split/test-gated, **6** Tier-3 secondary/ablation; all **14** non-actionable false positives strictly excluded; **0/60** false alarms on clean cross-disciplinary repositories).
+>
+> **Responsible Disclosure & Archival Status:** All 16 Wave-1 blind-expansion repositories are preserved offline with full `.git` history, exact 40-character commit SHAs, and SHA-256 manifests pending ongoing multi-year cohort verification and responsible disclosure. Verbatim public primary-source logs for the 7 JCE/Zenodo study cases remain in [`PRIMARY_SOURCE_VERIFICATION.md`](PRIMARY_SOURCE_VERIFICATION.md), and the frozen `v0.2.0` tag / Zenodo DOI archives remain untouched.
+
 ### Headline Empirical Findings (2026 Cross-Journal Audit & Late-2025 Validation)
 
 - **2026 Cross-Journal Auditability (`N0 = 3,380` screened → `N1 = 306` eligible; 100% full-text retrieved):** Across *PLOS Medicine*, *npj Digital Medicine*, and *Nature Communications*, 74.5% (228/306) claimed public artifacts, yet only **65.0% (199/306)** provided live auditable code or data, and **5.65% (10/177)** of newly published GitHub links were already unreachable or code-free.
