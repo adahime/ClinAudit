@@ -1,9 +1,9 @@
 {
   "benchmark": "clinaudit_synthetic_fault_injection_v1",
-  "clinaudit_version": "0.2.0",
+  "clinaudit_version": "0.3.1",
   "seed": 2026,
   "total_cases": 400,
-  "total_wall_ms": 855.2,
+  "total_wall_ms": 803.13,
   "overall": {
     "module": "overall",
     "n_cases": 400,
@@ -17,9 +17,9 @@
     "specificity": 1.0,
     "precision": 1.0,
     "f1": 0.995,
-    "median_runtime_ms": 0.6599,
-    "p95_runtime_ms": 6.0587,
-    "mean_runtime_ms": 1.9749,
+    "median_runtime_ms": 0.8102,
+    "p95_runtime_ms": 5.4243,
+    "mean_runtime_ms": 1.8471,
     "by_intensity": {
       "mild": {
         "n": 68,
@@ -52,9 +52,9 @@
       "specificity": 1.0,
       "precision": 1.0,
       "f1": 1.0,
-      "median_runtime_ms": 3.5868,
-      "p95_runtime_ms": 6.8742,
-      "mean_runtime_ms": 3.9562,
+      "median_runtime_ms": 3.2368,
+      "p95_runtime_ms": 5.2636,
+      "mean_runtime_ms": 3.4389,
       "by_intensity": {
         "mild": {
           "n": 17,
@@ -86,9 +86,9 @@
       "specificity": 1.0,
       "precision": 1.0,
       "f1": 1.0,
-      "median_runtime_ms": 0.2569,
-      "p95_runtime_ms": 1.0671,
-      "mean_runtime_ms": 0.3947,
+      "median_runtime_ms": 0.2737,
+      "p95_runtime_ms": 0.8162,
+      "mean_runtime_ms": 0.3583,
       "by_intensity": {
         "mild": {
           "n": 17,
@@ -120,9 +120,9 @@
       "specificity": 1.0,
       "precision": 1.0,
       "f1": 0.9796,
-      "median_runtime_ms": 0.2707,
-      "p95_runtime_ms": 0.618,
-      "mean_runtime_ms": 0.3097,
+      "median_runtime_ms": 0.3767,
+      "p95_runtime_ms": 1.0741,
+      "mean_runtime_ms": 0.492,
       "by_intensity": {
         "mild": {
           "n": 17,
@@ -154,9 +154,9 @@
       "specificity": 1.0,
       "precision": 1.0,
       "f1": 1.0,
-      "median_runtime_ms": 3.0109,
-      "p95_runtime_ms": 6.503,
-      "mean_runtime_ms": 3.2392,
+      "median_runtime_ms": 2.7575,
+      "p95_runtime_ms": 5.9115,
+      "mean_runtime_ms": 3.099,
       "by_intensity": {
         "mild": {
           "n": 17,
@@ -186,7 +186,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.0946
+      "runtime_ms": 0.2278
     },
     {
       "module": "statcheck",
@@ -197,7 +197,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.0901
+      "runtime_ms": 0.1758
     }
   ],
   "cases": [
@@ -210,7 +210,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 20.0405
+      "runtime_ms": 15.0419
     },
     {
       "module": "leakage",
@@ -221,7 +221,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 2.9735
+      "runtime_ms": 2.947
     },
     {
       "module": "leakage",
@@ -232,7 +232,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 4.7989
+      "runtime_ms": 3.7048
     },
     {
       "module": "leakage",
@@ -243,7 +243,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 5.0281
+      "runtime_ms": 6.3039
     },
     {
       "module": "leakage",
@@ -254,7 +254,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 2.1512
+      "runtime_ms": 2.1992
     },
     {
       "module": "leakage",
@@ -265,7 +265,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 3.3355
+      "runtime_ms": 3.2138
     },
     {
       "module": "leakage",
@@ -276,7 +276,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 3.9202
+      "runtime_ms": 2.2253
     },
     {
       "module": "leakage",
@@ -287,7 +287,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 6.251
+      "runtime_ms": 4.7723
     },
     {
       "module": "leakage",
@@ -298,7 +298,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 4.9242
+      "runtime_ms": 3.8166
     },
     {
       "module": "leakage",
@@ -309,7 +309,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 5.7531
+      "runtime_ms": 3.5491
     },
     {
       "module": "leakage",
@@ -320,7 +320,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 3.4501
+      "runtime_ms": 2.9683
     },
     {
       "module": "leakage",
@@ -331,7 +331,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 4.4179
+      "runtime_ms": 3.2325
     },
     {
       "module": "leakage",
@@ -342,7 +342,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 9.8529
+      "runtime_ms": 5.5306
     },
     {
       "module": "leakage",
@@ -353,7 +353,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 3.9589
+      "runtime_ms": 2.8341
     },
     {
       "module": "leakage",
@@ -364,7 +364,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 6.4054
+      "runtime_ms": 3.8201
     },
     {
       "module": "leakage",
@@ -375,7 +375,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 2.4656
+      "runtime_ms": 1.8783
     },
     {
       "module": "leakage",
@@ -386,7 +386,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 2.3204
+      "runtime_ms": 2.2552
     },
     {
       "module": "leakage",
@@ -397,7 +397,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 1.9805
+      "runtime_ms": 1.857
     },
     {
       "module": "leakage",
@@ -408,7 +408,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 1.385
+      "runtime_ms": 1.302
     },
     {
       "module": "leakage",
@@ -419,7 +419,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 1.4712
+      "runtime_ms": 1.5674
     },
     {
       "module": "leakage",
@@ -430,7 +430,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 3.7034
+      "runtime_ms": 2.0621
     },
     {
       "module": "leakage",
@@ -441,7 +441,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 2.5817
+      "runtime_ms": 1.9273
     },
     {
       "module": "leakage",
@@ -452,7 +452,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 2.7184
+      "runtime_ms": 1.9436
     },
     {
       "module": "leakage",
@@ -463,7 +463,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 1.6482
+      "runtime_ms": 1.6661
     },
     {
       "module": "leakage",
@@ -474,7 +474,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 1.3775
+      "runtime_ms": 1.3981
     },
     {
       "module": "leakage",
@@ -485,7 +485,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 1.6102
+      "runtime_ms": 1.5915
     },
     {
       "module": "leakage",
@@ -496,7 +496,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 2.3899
+      "runtime_ms": 1.7867
     },
     {
       "module": "leakage",
@@ -507,7 +507,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 2.3083
+      "runtime_ms": 1.2212
     },
     {
       "module": "leakage",
@@ -518,7 +518,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 2.5236
+      "runtime_ms": 1.9856
     },
     {
       "module": "leakage",
@@ -529,7 +529,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 2.0642
+      "runtime_ms": 2.071
     },
     {
       "module": "leakage",
@@ -540,7 +540,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 2.6252
+      "runtime_ms": 2.768
     },
     {
       "module": "leakage",
@@ -551,7 +551,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 2.5826
+      "runtime_ms": 2.6588
     },
     {
       "module": "leakage",
@@ -562,7 +562,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 5.6637
+      "runtime_ms": 3.4998
     },
     {
       "module": "leakage",
@@ -573,7 +573,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 4.6897
+      "runtime_ms": 4.1435
     },
     {
       "module": "leakage",
@@ -584,7 +584,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 2.5959
+      "runtime_ms": 2.6505
     },
     {
       "module": "leakage",
@@ -595,7 +595,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 3.8802
+      "runtime_ms": 2.9368
     },
     {
       "module": "leakage",
@@ -606,7 +606,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 4.3864
+      "runtime_ms": 3.2645
     },
     {
       "module": "leakage",
@@ -617,7 +617,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 2.9266
+      "runtime_ms": 2.9637
     },
     {
       "module": "leakage",
@@ -628,7 +628,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 4.2981
+      "runtime_ms": 4.4774
     },
     {
       "module": "leakage",
@@ -639,7 +639,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 4.7255
+      "runtime_ms": 4.5678
     },
     {
       "module": "leakage",
@@ -650,7 +650,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 4.5744
+      "runtime_ms": 3.3644
     },
     {
       "module": "leakage",
@@ -661,7 +661,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 7.5161
+      "runtime_ms": 5.8676
     },
     {
       "module": "leakage",
@@ -672,7 +672,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 2.7903
+      "runtime_ms": 2.8465
     },
     {
       "module": "leakage",
@@ -683,7 +683,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 8.4336
+      "runtime_ms": 5.2496
     },
     {
       "module": "leakage",
@@ -694,7 +694,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 5.8616
+      "runtime_ms": 4.3384
     },
     {
       "module": "leakage",
@@ -705,7 +705,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 6.8609
+      "runtime_ms": 4.0749
     },
     {
       "module": "leakage",
@@ -716,7 +716,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 3.7587
+      "runtime_ms": 3.2411
     },
     {
       "module": "leakage",
@@ -727,7 +727,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 4.5181
+      "runtime_ms": 4.6437
     },
     {
       "module": "leakage",
@@ -738,7 +738,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 7.1266
+      "runtime_ms": 4.2867
     },
     {
       "module": "leakage",
@@ -749,7 +749,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 5.7891
+      "runtime_ms": 13.5397
     },
     {
       "module": "leakage",
@@ -762,7 +762,7 @@
       "rule_ids": [
         "LEAK-001"
       ],
-      "runtime_ms": 2.7357
+      "runtime_ms": 2.8595
     },
     {
       "module": "leakage",
@@ -775,7 +775,7 @@
       "rule_ids": [
         "LEAK-001"
       ],
-      "runtime_ms": 4.56
+      "runtime_ms": 3.1158
     },
     {
       "module": "leakage",
@@ -788,7 +788,7 @@
       "rule_ids": [
         "LEAK-001"
       ],
-      "runtime_ms": 4.8177
+      "runtime_ms": 4.3301
     },
     {
       "module": "leakage",
@@ -801,7 +801,7 @@
       "rule_ids": [
         "LEAK-001"
       ],
-      "runtime_ms": 3.5651
+      "runtime_ms": 3.6821
     },
     {
       "module": "leakage",
@@ -814,7 +814,7 @@
       "rule_ids": [
         "LEAK-001"
       ],
-      "runtime_ms": 3.407
+      "runtime_ms": 3.4272
     },
     {
       "module": "leakage",
@@ -827,7 +827,7 @@
       "rule_ids": [
         "LEAK-001"
       ],
-      "runtime_ms": 4.9355
+      "runtime_ms": 3.4722
     },
     {
       "module": "leakage",
@@ -841,7 +841,7 @@
         "LEAK-001",
         "LEAK-002"
       ],
-      "runtime_ms": 4.0826
+      "runtime_ms": 4.2621
     },
     {
       "module": "leakage",
@@ -855,7 +855,7 @@
         "LEAK-001",
         "LEAK-002"
       ],
-      "runtime_ms": 3.2548
+      "runtime_ms": 3.6483
     },
     {
       "module": "leakage",
@@ -869,7 +869,7 @@
         "LEAK-001",
         "LEAK-002"
       ],
-      "runtime_ms": 2.8725
+      "runtime_ms": 2.8254
     },
     {
       "module": "leakage",
@@ -883,7 +883,7 @@
         "LEAK-001",
         "LEAK-002"
       ],
-      "runtime_ms": 4.5784
+      "runtime_ms": 3.2687
     },
     {
       "module": "leakage",
@@ -897,7 +897,7 @@
         "LEAK-001",
         "LEAK-002"
       ],
-      "runtime_ms": 4.0867
+      "runtime_ms": 4.2602
     },
     {
       "module": "leakage",
@@ -911,7 +911,7 @@
         "LEAK-001",
         "LEAK-002"
       ],
-      "runtime_ms": 2.3909
+      "runtime_ms": 2.6423
     },
     {
       "module": "leakage",
@@ -925,7 +925,7 @@
         "LEAK-001",
         "LEAK-002"
       ],
-      "runtime_ms": 3.1652
+      "runtime_ms": 3.414
     },
     {
       "module": "leakage",
@@ -939,7 +939,7 @@
         "LEAK-001",
         "LEAK-002"
       ],
-      "runtime_ms": 4.8504
+      "runtime_ms": 3.7161
     },
     {
       "module": "leakage",
@@ -953,7 +953,7 @@
         "LEAK-001",
         "LEAK-002"
       ],
-      "runtime_ms": 4.6725
+      "runtime_ms": 4.0954
     },
     {
       "module": "leakage",
@@ -967,7 +967,7 @@
         "LEAK-001",
         "LEAK-002"
       ],
-      "runtime_ms": 2.312
+      "runtime_ms": 2.2878
     },
     {
       "module": "leakage",
@@ -981,7 +981,7 @@
         "LEAK-001",
         "LEAK-002"
       ],
-      "runtime_ms": 2.4529
+      "runtime_ms": 2.6285
     },
     {
       "module": "leakage",
@@ -995,7 +995,7 @@
         "LEAK-001",
         "LEAK-002"
       ],
-      "runtime_ms": 5.1957
+      "runtime_ms": 3.534
     },
     {
       "module": "leakage",
@@ -1008,7 +1008,7 @@
       "rule_ids": [
         "LEAK-001"
       ],
-      "runtime_ms": 3.0477
+      "runtime_ms": 2.9868
     },
     {
       "module": "leakage",
@@ -1021,7 +1021,7 @@
       "rule_ids": [
         "LEAK-001"
       ],
-      "runtime_ms": 3.5876
+      "runtime_ms": 3.8119
     },
     {
       "module": "leakage",
@@ -1034,7 +1034,7 @@
       "rule_ids": [
         "LEAK-001"
       ],
-      "runtime_ms": 4.3343
+      "runtime_ms": 4.4386
     },
     {
       "module": "leakage",
@@ -1047,7 +1047,7 @@
       "rule_ids": [
         "LEAK-001"
       ],
-      "runtime_ms": 3.6902
+      "runtime_ms": 2.6215
     },
     {
       "module": "leakage",
@@ -1061,7 +1061,7 @@
         "LEAK-001",
         "LEAK-002"
       ],
-      "runtime_ms": 4.073
+      "runtime_ms": 4.2012
     },
     {
       "module": "leakage",
@@ -1075,7 +1075,7 @@
         "LEAK-001",
         "LEAK-002"
       ],
-      "runtime_ms": 2.7726
+      "runtime_ms": 2.9415
     },
     {
       "module": "leakage",
@@ -1089,7 +1089,7 @@
         "LEAK-001",
         "LEAK-002"
       ],
-      "runtime_ms": 3.9274
+      "runtime_ms": 3.9917
     },
     {
       "module": "leakage",
@@ -1103,7 +1103,7 @@
         "LEAK-001",
         "LEAK-002"
       ],
-      "runtime_ms": 4.1139
+      "runtime_ms": 3.0969
     },
     {
       "module": "leakage",
@@ -1117,7 +1117,7 @@
         "LEAK-001",
         "LEAK-002"
       ],
-      "runtime_ms": 3.0097
+      "runtime_ms": 2.7449
     },
     {
       "module": "leakage",
@@ -1131,7 +1131,7 @@
         "LEAK-001",
         "LEAK-002"
       ],
-      "runtime_ms": 3.062
+      "runtime_ms": 3.5604
     },
     {
       "module": "leakage",
@@ -1145,7 +1145,7 @@
         "LEAK-001",
         "LEAK-002"
       ],
-      "runtime_ms": 3.4906
+      "runtime_ms": 3.7429
     },
     {
       "module": "leakage",
@@ -1159,7 +1159,7 @@
         "LEAK-001",
         "LEAK-002"
       ],
-      "runtime_ms": 2.6736
+      "runtime_ms": 2.7841
     },
     {
       "module": "leakage",
@@ -1172,7 +1172,7 @@
       "rule_ids": [
         "LEAK-002"
       ],
-      "runtime_ms": 4.0817
+      "runtime_ms": 3.0336
     },
     {
       "module": "leakage",
@@ -1186,7 +1186,7 @@
         "LEAK-001",
         "LEAK-002"
       ],
-      "runtime_ms": 2.4533
+      "runtime_ms": 2.6354
     },
     {
       "module": "leakage",
@@ -1199,7 +1199,7 @@
       "rule_ids": [
         "LEAK-002"
       ],
-      "runtime_ms": 2.8183
+      "runtime_ms": 2.9551
     },
     {
       "module": "leakage",
@@ -1213,7 +1213,7 @@
         "LEAK-001",
         "LEAK-002"
       ],
-      "runtime_ms": 3.1307
+      "runtime_ms": 3.3101
     },
     {
       "module": "leakage",
@@ -1226,7 +1226,7 @@
       "rule_ids": [
         "LEAK-002"
       ],
-      "runtime_ms": 2.7018
+      "runtime_ms": 2.7177
     },
     {
       "module": "leakage",
@@ -1240,7 +1240,7 @@
         "LEAK-001",
         "LEAK-002"
       ],
-      "runtime_ms": 4.3354
+      "runtime_ms": 3.2995
     },
     {
       "module": "leakage",
@@ -1253,7 +1253,7 @@
       "rule_ids": [
         "LEAK-002"
       ],
-      "runtime_ms": 3.5859
+      "runtime_ms": 3.4015
     },
     {
       "module": "leakage",
@@ -1267,7 +1267,7 @@
         "LEAK-001",
         "LEAK-002"
       ],
-      "runtime_ms": 3.4994
+      "runtime_ms": 3.1144
     },
     {
       "module": "leakage",
@@ -1280,7 +1280,7 @@
       "rule_ids": [
         "LEAK-002"
       ],
-      "runtime_ms": 4.8869
+      "runtime_ms": 3.6375
     },
     {
       "module": "leakage",
@@ -1294,7 +1294,7 @@
         "LEAK-001",
         "LEAK-002"
       ],
-      "runtime_ms": 4.8425
+      "runtime_ms": 3.6479
     },
     {
       "module": "leakage",
@@ -1307,7 +1307,7 @@
       "rule_ids": [
         "LEAK-003"
       ],
-      "runtime_ms": 3.1591
+      "runtime_ms": 3.4206
     },
     {
       "module": "leakage",
@@ -1320,7 +1320,7 @@
       "rule_ids": [
         "LEAK-003"
       ],
-      "runtime_ms": 3.7161
+      "runtime_ms": 2.6257
     },
     {
       "module": "leakage",
@@ -1333,7 +1333,7 @@
       "rule_ids": [
         "LEAK-003"
       ],
-      "runtime_ms": 2.9206
+      "runtime_ms": 2.5315
     },
     {
       "module": "leakage",
@@ -1346,7 +1346,7 @@
       "rule_ids": [
         "LEAK-003"
       ],
-      "runtime_ms": 3.9103
+      "runtime_ms": 3.3421
     },
     {
       "module": "leakage",
@@ -1360,7 +1360,7 @@
         "LEAK-001",
         "LEAK-003"
       ],
-      "runtime_ms": 2.6712
+      "runtime_ms": 2.7581
     },
     {
       "module": "leakage",
@@ -1374,7 +1374,7 @@
         "LEAK-001",
         "LEAK-003"
       ],
-      "runtime_ms": 2.4329
+      "runtime_ms": 2.8109
     },
     {
       "module": "leakage",
@@ -1387,7 +1387,7 @@
       "rule_ids": [
         "LEAK-003"
       ],
-      "runtime_ms": 2.7699
+      "runtime_ms": 3.0366
     },
     {
       "module": "leakage",
@@ -1402,7 +1402,7 @@
         "LEAK-002",
         "LEAK-003"
       ],
-      "runtime_ms": 3.2244
+      "runtime_ms": 3.2801
     },
     {
       "module": "leakage",
@@ -1417,7 +1417,7 @@
         "LEAK-002",
         "LEAK-003"
       ],
-      "runtime_ms": 5.2846
+      "runtime_ms": 3.5656
     },
     {
       "module": "leakage",
@@ -1430,7 +1430,7 @@
       "rule_ids": [
         "LEAK-003"
       ],
-      "runtime_ms": 4.0683
+      "runtime_ms": 4.3205
     },
     {
       "module": "evalcheck",
@@ -1441,7 +1441,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.9951
+      "runtime_ms": 1.041
     },
     {
       "module": "evalcheck",
@@ -1452,7 +1452,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.6136
+      "runtime_ms": 0.7169
     },
     {
       "module": "evalcheck",
@@ -1463,7 +1463,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.5947
+      "runtime_ms": 0.6981
     },
     {
       "module": "evalcheck",
@@ -1474,7 +1474,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.5777
+      "runtime_ms": 0.8128
     },
     {
       "module": "evalcheck",
@@ -1485,7 +1485,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.5796
+      "runtime_ms": 0.6608
     },
     {
       "module": "evalcheck",
@@ -1496,7 +1496,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.5755
+      "runtime_ms": 0.6297
     },
     {
       "module": "evalcheck",
@@ -1507,7 +1507,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.6168
+      "runtime_ms": 0.673
     },
     {
       "module": "evalcheck",
@@ -1518,7 +1518,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.582
+      "runtime_ms": 0.6253
     },
     {
       "module": "evalcheck",
@@ -1529,7 +1529,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 1.0915
+      "runtime_ms": 0.8804
     },
     {
       "module": "evalcheck",
@@ -1540,7 +1540,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.8733
+      "runtime_ms": 0.6276
     },
     {
       "module": "evalcheck",
@@ -1551,7 +1551,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.438
+      "runtime_ms": 0.3342
     },
     {
       "module": "evalcheck",
@@ -1562,7 +1562,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.3999
+      "runtime_ms": 0.3355
     },
     {
       "module": "evalcheck",
@@ -1573,7 +1573,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.3962
+      "runtime_ms": 0.3114
     },
     {
       "module": "evalcheck",
@@ -1584,7 +1584,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.395
+      "runtime_ms": 0.311
     },
     {
       "module": "evalcheck",
@@ -1595,7 +1595,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.3921
+      "runtime_ms": 0.309
     },
     {
       "module": "evalcheck",
@@ -1606,7 +1606,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.393
+      "runtime_ms": 0.3081
     },
     {
       "module": "evalcheck",
@@ -1617,7 +1617,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.3821
+      "runtime_ms": 0.3073
     },
     {
       "module": "evalcheck",
@@ -1628,7 +1628,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 1.5406
+      "runtime_ms": 1.3973
     },
     {
       "module": "evalcheck",
@@ -1639,7 +1639,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.0839
+      "runtime_ms": 0.0678
     },
     {
       "module": "evalcheck",
@@ -1650,7 +1650,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.075
+      "runtime_ms": 0.0549
     },
     {
       "module": "evalcheck",
@@ -1661,7 +1661,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 1.3103
+      "runtime_ms": 1.1604
     },
     {
       "module": "evalcheck",
@@ -1672,7 +1672,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 1.0069
+      "runtime_ms": 0.7707
     },
     {
       "module": "evalcheck",
@@ -1683,7 +1683,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.9872
+      "runtime_ms": 0.7579
     },
     {
       "module": "evalcheck",
@@ -1694,7 +1694,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.9516
+      "runtime_ms": 0.7508
     },
     {
       "module": "evalcheck",
@@ -1705,7 +1705,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.4427
+      "runtime_ms": 0.3923
     },
     {
       "module": "evalcheck",
@@ -1716,7 +1716,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.2145
+      "runtime_ms": 0.2089
     },
     {
       "module": "evalcheck",
@@ -1727,7 +1727,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.5317
+      "runtime_ms": 0.2036
     },
     {
       "module": "evalcheck",
@@ -1738,7 +1738,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.1913
+      "runtime_ms": 0.2038
     },
     {
       "module": "evalcheck",
@@ -1749,7 +1749,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.1851
+      "runtime_ms": 0.1957
     },
     {
       "module": "evalcheck",
@@ -1760,7 +1760,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.1876
+      "runtime_ms": 0.1865
     },
     {
       "module": "evalcheck",
@@ -1771,7 +1771,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 1.0664
+      "runtime_ms": 1.2757
     },
     {
       "module": "evalcheck",
@@ -1782,7 +1782,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.1891
+      "runtime_ms": 0.1657
     },
     {
       "module": "evalcheck",
@@ -1793,7 +1793,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.5099
+      "runtime_ms": 0.3997
     },
     {
       "module": "evalcheck",
@@ -1804,7 +1804,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.1904
+      "runtime_ms": 0.1517
     },
     {
       "module": "evalcheck",
@@ -1815,7 +1815,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.0397
+      "runtime_ms": 0.0295
     },
     {
       "module": "evalcheck",
@@ -1826,7 +1826,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 1.357
+      "runtime_ms": 0.6207
     },
     {
       "module": "evalcheck",
@@ -1837,7 +1837,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.4062
+      "runtime_ms": 0.145
     },
     {
       "module": "evalcheck",
@@ -1848,7 +1848,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.4621
+      "runtime_ms": 0.384
     },
     {
       "module": "evalcheck",
@@ -1859,7 +1859,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.0798
+      "runtime_ms": 0.0663
     },
     {
       "module": "evalcheck",
@@ -1870,7 +1870,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.035
+      "runtime_ms": 0.0272
     },
     {
       "module": "evalcheck",
@@ -1881,7 +1881,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.665
+      "runtime_ms": 0.5413
     },
     {
       "module": "evalcheck",
@@ -1892,7 +1892,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.3673
+      "runtime_ms": 0.2698
     },
     {
       "module": "evalcheck",
@@ -1903,7 +1903,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.6991
+      "runtime_ms": 0.5215
     },
     {
       "module": "evalcheck",
@@ -1914,7 +1914,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.2992
+      "runtime_ms": 0.2683
     },
     {
       "module": "evalcheck",
@@ -1925,7 +1925,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.5173
+      "runtime_ms": 0.5449
     },
     {
       "module": "evalcheck",
@@ -1936,7 +1936,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.2547
+      "runtime_ms": 0.2919
     },
     {
       "module": "evalcheck",
@@ -1947,7 +1947,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.497
+      "runtime_ms": 0.5503
     },
     {
       "module": "evalcheck",
@@ -1958,7 +1958,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.243
+      "runtime_ms": 0.2718
     },
     {
       "module": "evalcheck",
@@ -1969,7 +1969,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.7651
+      "runtime_ms": 0.5475
     },
     {
       "module": "evalcheck",
@@ -1980,7 +1980,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.2463
+      "runtime_ms": 0.2647
     },
     {
       "module": "evalcheck",
@@ -1993,7 +1993,7 @@
       "rule_ids": [
         "EVAL-001"
       ],
-      "runtime_ms": 0.1648
+      "runtime_ms": 0.4579
     },
     {
       "module": "evalcheck",
@@ -2006,7 +2006,7 @@
       "rule_ids": [
         "EVAL-001"
       ],
-      "runtime_ms": 0.1831
+      "runtime_ms": 0.2011
     },
     {
       "module": "evalcheck",
@@ -2019,7 +2019,7 @@
       "rule_ids": [
         "EVAL-001"
       ],
-      "runtime_ms": 0.1469
+      "runtime_ms": 0.1696
     },
     {
       "module": "evalcheck",
@@ -2032,7 +2032,7 @@
       "rule_ids": [
         "EVAL-001"
       ],
-      "runtime_ms": 0.1169
+      "runtime_ms": 0.1313
     },
     {
       "module": "evalcheck",
@@ -2045,7 +2045,7 @@
       "rule_ids": [
         "EVAL-001"
       ],
-      "runtime_ms": 0.1818
+      "runtime_ms": 0.1962
     },
     {
       "module": "evalcheck",
@@ -2058,7 +2058,7 @@
       "rule_ids": [
         "EVAL-001"
       ],
-      "runtime_ms": 0.1088
+      "runtime_ms": 0.1198
     },
     {
       "module": "evalcheck",
@@ -2071,7 +2071,7 @@
       "rule_ids": [
         "EVAL-001"
       ],
-      "runtime_ms": 0.1001
+      "runtime_ms": 0.1169
     },
     {
       "module": "evalcheck",
@@ -2084,7 +2084,7 @@
       "rule_ids": [
         "EVAL-001"
       ],
-      "runtime_ms": 0.123
+      "runtime_ms": 0.1404
     },
     {
       "module": "evalcheck",
@@ -2097,7 +2097,7 @@
       "rule_ids": [
         "EVAL-001"
       ],
-      "runtime_ms": 0.0852
+      "runtime_ms": 0.0861
     },
     {
       "module": "evalcheck",
@@ -2110,7 +2110,7 @@
       "rule_ids": [
         "EVAL-002"
       ],
-      "runtime_ms": 0.5816
+      "runtime_ms": 0.6178
     },
     {
       "module": "evalcheck",
@@ -2123,7 +2123,7 @@
       "rule_ids": [
         "EVAL-002"
       ],
-      "runtime_ms": 0.6014
+      "runtime_ms": 0.632
     },
     {
       "module": "evalcheck",
@@ -2136,7 +2136,7 @@
       "rule_ids": [
         "EVAL-002"
       ],
-      "runtime_ms": 0.1089
+      "runtime_ms": 0.1201
     },
     {
       "module": "evalcheck",
@@ -2149,7 +2149,7 @@
       "rule_ids": [
         "EVAL-002"
       ],
-      "runtime_ms": 0.0873
+      "runtime_ms": 0.0924
     },
     {
       "module": "evalcheck",
@@ -2162,7 +2162,7 @@
       "rule_ids": [
         "EVAL-002"
       ],
-      "runtime_ms": 0.1618
+      "runtime_ms": 0.1742
     },
     {
       "module": "evalcheck",
@@ -2175,7 +2175,7 @@
       "rule_ids": [
         "EVAL-002"
       ],
-      "runtime_ms": 0.1043
+      "runtime_ms": 0.1173
     },
     {
       "module": "evalcheck",
@@ -2188,7 +2188,7 @@
       "rule_ids": [
         "EVAL-002"
       ],
-      "runtime_ms": 0.1936
+      "runtime_ms": 0.2041
     },
     {
       "module": "evalcheck",
@@ -2201,7 +2201,7 @@
       "rule_ids": [
         "EVAL-002"
       ],
-      "runtime_ms": 0.1555
+      "runtime_ms": 0.1752
     },
     {
       "module": "evalcheck",
@@ -2214,7 +2214,7 @@
       "rule_ids": [
         "EVAL-002"
       ],
-      "runtime_ms": 0.1519
+      "runtime_ms": 0.1766
     },
     {
       "module": "evalcheck",
@@ -2227,7 +2227,7 @@
       "rule_ids": [
         "EVAL-002"
       ],
-      "runtime_ms": 0.1879
+      "runtime_ms": 0.303
     },
     {
       "module": "evalcheck",
@@ -2240,7 +2240,7 @@
       "rule_ids": [
         "EVAL-003"
       ],
-      "runtime_ms": 0.2133
+      "runtime_ms": 0.3577
     },
     {
       "module": "evalcheck",
@@ -2253,7 +2253,7 @@
       "rule_ids": [
         "EVAL-003"
       ],
-      "runtime_ms": 0.1858
+      "runtime_ms": 0.3287
     },
     {
       "module": "evalcheck",
@@ -2266,7 +2266,7 @@
       "rule_ids": [
         "EVAL-003"
       ],
-      "runtime_ms": 0.3764
+      "runtime_ms": 0.6457
     },
     {
       "module": "evalcheck",
@@ -2279,7 +2279,7 @@
       "rule_ids": [
         "EVAL-003"
       ],
-      "runtime_ms": 0.1744
+      "runtime_ms": 0.2051
     },
     {
       "module": "evalcheck",
@@ -2292,7 +2292,7 @@
       "rule_ids": [
         "EVAL-003"
       ],
-      "runtime_ms": 0.1184
+      "runtime_ms": 0.1348
     },
     {
       "module": "evalcheck",
@@ -2305,7 +2305,7 @@
       "rule_ids": [
         "EVAL-003"
       ],
-      "runtime_ms": 0.0738
+      "runtime_ms": 0.0931
     },
     {
       "module": "evalcheck",
@@ -2318,7 +2318,7 @@
       "rule_ids": [
         "EVAL-003"
       ],
-      "runtime_ms": 0.2461
+      "runtime_ms": 0.2868
     },
     {
       "module": "evalcheck",
@@ -2331,7 +2331,7 @@
       "rule_ids": [
         "EVAL-003"
       ],
-      "runtime_ms": 0.2504
+      "runtime_ms": 0.2822
     },
     {
       "module": "evalcheck",
@@ -2344,7 +2344,7 @@
       "rule_ids": [
         "EVAL-004"
       ],
-      "runtime_ms": 0.2289
+      "runtime_ms": 0.2529
     },
     {
       "module": "evalcheck",
@@ -2357,7 +2357,7 @@
       "rule_ids": [
         "EVAL-004"
       ],
-      "runtime_ms": 0.1759
+      "runtime_ms": 0.211
     },
     {
       "module": "evalcheck",
@@ -2370,7 +2370,7 @@
       "rule_ids": [
         "EVAL-004"
       ],
-      "runtime_ms": 0.1606
+      "runtime_ms": 0.1768
     },
     {
       "module": "evalcheck",
@@ -2383,7 +2383,7 @@
       "rule_ids": [
         "EVAL-004"
       ],
-      "runtime_ms": 0.4372
+      "runtime_ms": 0.2123
     },
     {
       "module": "evalcheck",
@@ -2396,7 +2396,7 @@
       "rule_ids": [
         "EVAL-004"
       ],
-      "runtime_ms": 0.259
+      "runtime_ms": 0.2756
     },
     {
       "module": "evalcheck",
@@ -2409,7 +2409,7 @@
       "rule_ids": [
         "EVAL-004"
       ],
-      "runtime_ms": 0.0803
+      "runtime_ms": 0.0821
     },
     {
       "module": "evalcheck",
@@ -2422,7 +2422,7 @@
       "rule_ids": [
         "EVAL-004"
       ],
-      "runtime_ms": 0.2532
+      "runtime_ms": 0.5275
     },
     {
       "module": "evalcheck",
@@ -2435,7 +2435,7 @@
       "rule_ids": [
         "EVAL-004"
       ],
-      "runtime_ms": 0.2073
+      "runtime_ms": 0.2265
     },
     {
       "module": "evalcheck",
@@ -2448,7 +2448,7 @@
       "rule_ids": [
         "EVAL-004"
       ],
-      "runtime_ms": 0.0756
+      "runtime_ms": 0.0864
     },
     {
       "module": "evalcheck",
@@ -2461,7 +2461,7 @@
       "rule_ids": [
         "EVAL-005"
       ],
-      "runtime_ms": 0.3813
+      "runtime_ms": 0.415
     },
     {
       "module": "evalcheck",
@@ -2474,7 +2474,7 @@
       "rule_ids": [
         "EVAL-005"
       ],
-      "runtime_ms": 0.6737
+      "runtime_ms": 0.2552
     },
     {
       "module": "evalcheck",
@@ -2487,7 +2487,7 @@
       "rule_ids": [
         "EVAL-005"
       ],
-      "runtime_ms": 0.1852
+      "runtime_ms": 0.0433
     },
     {
       "module": "evalcheck",
@@ -2500,7 +2500,7 @@
       "rule_ids": [
         "EVAL-005"
       ],
-      "runtime_ms": 0.4855
+      "runtime_ms": 0.3552
     },
     {
       "module": "evalcheck",
@@ -2513,7 +2513,7 @@
       "rule_ids": [
         "EVAL-005"
       ],
-      "runtime_ms": 0.0593
+      "runtime_ms": 0.039
     },
     {
       "module": "evalcheck",
@@ -2526,7 +2526,7 @@
       "rule_ids": [
         "EVAL-005"
       ],
-      "runtime_ms": 0.3863
+      "runtime_ms": 0.3063
     },
     {
       "module": "evalcheck",
@@ -2539,7 +2539,7 @@
       "rule_ids": [
         "EVAL-005"
       ],
-      "runtime_ms": 0.0634
+      "runtime_ms": 0.0472
     },
     {
       "module": "evalcheck",
@@ -2552,7 +2552,7 @@
       "rule_ids": [
         "EVAL-006"
       ],
-      "runtime_ms": 0.2616
+      "runtime_ms": 0.1226
     },
     {
       "module": "evalcheck",
@@ -2565,7 +2565,7 @@
       "rule_ids": [
         "EVAL-006"
       ],
-      "runtime_ms": 0.1429
+      "runtime_ms": 0.1058
     },
     {
       "module": "evalcheck",
@@ -2578,7 +2578,7 @@
       "rule_ids": [
         "EVAL-006"
       ],
-      "runtime_ms": 1.0811
+      "runtime_ms": 0.6212
     },
     {
       "module": "evalcheck",
@@ -2591,7 +2591,7 @@
       "rule_ids": [
         "EVAL-006"
       ],
-      "runtime_ms": 0.2434
+      "runtime_ms": 0.2473
     },
     {
       "module": "evalcheck",
@@ -2604,7 +2604,7 @@
       "rule_ids": [
         "EVAL-006"
       ],
-      "runtime_ms": 0.7266
+      "runtime_ms": 0.5855
     },
     {
       "module": "evalcheck",
@@ -2617,7 +2617,7 @@
       "rule_ids": [
         "EVAL-006"
       ],
-      "runtime_ms": 0.3972
+      "runtime_ms": 0.136
     },
     {
       "module": "evalcheck",
@@ -2630,7 +2630,7 @@
       "rule_ids": [
         "EVAL-006"
       ],
-      "runtime_ms": 0.8269
+      "runtime_ms": 0.6649
     },
     {
       "module": "statcheck",
@@ -2641,7 +2641,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.9413
+      "runtime_ms": 1.1791
     },
     {
       "module": "statcheck",
@@ -2652,7 +2652,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.2906
+      "runtime_ms": 0.3145
     },
     {
       "module": "statcheck",
@@ -2663,7 +2663,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.3138
+      "runtime_ms": 0.3552
     },
     {
       "module": "statcheck",
@@ -2674,7 +2674,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.3006
+      "runtime_ms": 0.2968
     },
     {
       "module": "statcheck",
@@ -2685,7 +2685,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.2349
+      "runtime_ms": 0.2388
     },
     {
       "module": "statcheck",
@@ -2696,7 +2696,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.2785
+      "runtime_ms": 0.3065
     },
     {
       "module": "statcheck",
@@ -2707,7 +2707,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.1775
+      "runtime_ms": 0.2846
     },
     {
       "module": "statcheck",
@@ -2718,7 +2718,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.2297
+      "runtime_ms": 0.2657
     },
     {
       "module": "statcheck",
@@ -2729,7 +2729,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.2635
+      "runtime_ms": 0.2884
     },
     {
       "module": "statcheck",
@@ -2740,7 +2740,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.1631
+      "runtime_ms": 0.2825
     },
     {
       "module": "statcheck",
@@ -2751,7 +2751,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.1661
+      "runtime_ms": 0.372
     },
     {
       "module": "statcheck",
@@ -2762,7 +2762,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.2348
+      "runtime_ms": 0.4022
     },
     {
       "module": "statcheck",
@@ -2773,7 +2773,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.1751
+      "runtime_ms": 0.6623
     },
     {
       "module": "statcheck",
@@ -2784,7 +2784,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.209
+      "runtime_ms": 0.4017
     },
     {
       "module": "statcheck",
@@ -2795,7 +2795,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.1639
+      "runtime_ms": 0.3458
     },
     {
       "module": "statcheck",
@@ -2806,7 +2806,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.1656
+      "runtime_ms": 0.3749
     },
     {
       "module": "statcheck",
@@ -2817,7 +2817,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.166
+      "runtime_ms": 0.3769
     },
     {
       "module": "statcheck",
@@ -2828,7 +2828,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.1802
+      "runtime_ms": 0.3808
     },
     {
       "module": "statcheck",
@@ -2839,7 +2839,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.149
+      "runtime_ms": 0.3424
     },
     {
       "module": "statcheck",
@@ -2850,7 +2850,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.1642
+      "runtime_ms": 0.3655
     },
     {
       "module": "statcheck",
@@ -2861,7 +2861,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.1462
+      "runtime_ms": 0.3424
     },
     {
       "module": "statcheck",
@@ -2872,7 +2872,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.1683
+      "runtime_ms": 0.3754
     },
     {
       "module": "statcheck",
@@ -2883,7 +2883,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.1544
+      "runtime_ms": 0.3534
     },
     {
       "module": "statcheck",
@@ -2894,7 +2894,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.1644
+      "runtime_ms": 0.3773
     },
     {
       "module": "statcheck",
@@ -2905,7 +2905,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.4081
+      "runtime_ms": 0.6658
     },
     {
       "module": "statcheck",
@@ -2916,7 +2916,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.3658
+      "runtime_ms": 0.6046
     },
     {
       "module": "statcheck",
@@ -2927,7 +2927,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.3623
+      "runtime_ms": 0.5926
     },
     {
       "module": "statcheck",
@@ -2938,7 +2938,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.3635
+      "runtime_ms": 0.5953
     },
     {
       "module": "statcheck",
@@ -2949,7 +2949,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.4302
+      "runtime_ms": 0.5724
     },
     {
       "module": "statcheck",
@@ -2960,7 +2960,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.5191
+      "runtime_ms": 0.5655
     },
     {
       "module": "statcheck",
@@ -2971,7 +2971,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.6812
+      "runtime_ms": 0.573
     },
     {
       "module": "statcheck",
@@ -2982,7 +2982,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.5356
+      "runtime_ms": 0.5722
     },
     {
       "module": "statcheck",
@@ -2993,7 +2993,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.5319
+      "runtime_ms": 0.5647
     },
     {
       "module": "statcheck",
@@ -3004,7 +3004,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.5238
+      "runtime_ms": 0.945
     },
     {
       "module": "statcheck",
@@ -3015,7 +3015,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.6547
+      "runtime_ms": 0.9485
     },
     {
       "module": "statcheck",
@@ -3026,7 +3026,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.616
+      "runtime_ms": 1.2528
     },
     {
       "module": "statcheck",
@@ -3037,7 +3037,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.6052
+      "runtime_ms": 0.8077
     },
     {
       "module": "statcheck",
@@ -3048,7 +3048,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.6161
+      "runtime_ms": 0.9633
     },
     {
       "module": "statcheck",
@@ -3059,7 +3059,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.6178
+      "runtime_ms": 1.1623
     },
     {
       "module": "statcheck",
@@ -3070,7 +3070,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.6169
+      "runtime_ms": 1.8428
     },
     {
       "module": "statcheck",
@@ -3081,7 +3081,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.6167
+      "runtime_ms": 1.0695
     },
     {
       "module": "statcheck",
@@ -3092,7 +3092,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.6217
+      "runtime_ms": 1.1665
     },
     {
       "module": "statcheck",
@@ -3103,7 +3103,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.339
+      "runtime_ms": 0.597
     },
     {
       "module": "statcheck",
@@ -3114,7 +3114,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.3064
+      "runtime_ms": 0.3684
     },
     {
       "module": "statcheck",
@@ -3125,7 +3125,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.3317
+      "runtime_ms": 0.3671
     },
     {
       "module": "statcheck",
@@ -3136,7 +3136,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.3071
+      "runtime_ms": 0.3647
     },
     {
       "module": "statcheck",
@@ -3147,7 +3147,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.3288
+      "runtime_ms": 0.3888
     },
     {
       "module": "statcheck",
@@ -3158,7 +3158,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.3058
+      "runtime_ms": 0.4294
     },
     {
       "module": "statcheck",
@@ -3169,7 +3169,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.3312
+      "runtime_ms": 0.4474
     },
     {
       "module": "statcheck",
@@ -3180,7 +3180,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.3053
+      "runtime_ms": 0.3685
     },
     {
       "module": "statcheck",
@@ -3193,7 +3193,7 @@
       "rule_ids": [
         "STAT-001"
       ],
-      "runtime_ms": 0.2676
+      "runtime_ms": 0.2768
     },
     {
       "module": "statcheck",
@@ -3206,7 +3206,7 @@
       "rule_ids": [
         "STAT-001"
       ],
-      "runtime_ms": 0.2473
+      "runtime_ms": 0.2799
     },
     {
       "module": "statcheck",
@@ -3219,7 +3219,7 @@
       "rule_ids": [
         "STAT-001"
       ],
-      "runtime_ms": 0.2526
+      "runtime_ms": 0.312
     },
     {
       "module": "statcheck",
@@ -3232,7 +3232,7 @@
       "rule_ids": [
         "STAT-001"
       ],
-      "runtime_ms": 0.2397
+      "runtime_ms": 0.2928
     },
     {
       "module": "statcheck",
@@ -3245,7 +3245,7 @@
       "rule_ids": [
         "STAT-001"
       ],
-      "runtime_ms": 0.2958
+      "runtime_ms": 0.281
     },
     {
       "module": "statcheck",
@@ -3258,7 +3258,7 @@
       "rule_ids": [
         "STAT-001"
       ],
-      "runtime_ms": 0.2737
+      "runtime_ms": 0.2803
     },
     {
       "module": "statcheck",
@@ -3271,7 +3271,7 @@
       "rule_ids": [
         "STAT-001"
       ],
-      "runtime_ms": 0.2949
+      "runtime_ms": 0.2803
     },
     {
       "module": "statcheck",
@@ -3284,7 +3284,7 @@
       "rule_ids": [
         "STAT-001"
       ],
-      "runtime_ms": 0.2745
+      "runtime_ms": 0.2938
     },
     {
       "module": "statcheck",
@@ -3297,7 +3297,7 @@
       "rule_ids": [
         "STAT-001"
       ],
-      "runtime_ms": 0.3848
+      "runtime_ms": 0.4037
     },
     {
       "module": "statcheck",
@@ -3310,7 +3310,7 @@
       "rule_ids": [
         "STAT-001"
       ],
-      "runtime_ms": 0.3516
+      "runtime_ms": 0.3693
     },
     {
       "module": "statcheck",
@@ -3323,7 +3323,7 @@
       "rule_ids": [
         "STAT-001"
       ],
-      "runtime_ms": 0.3775
+      "runtime_ms": 0.4164
     },
     {
       "module": "statcheck",
@@ -3336,7 +3336,7 @@
       "rule_ids": [
         "STAT-002"
       ],
-      "runtime_ms": 0.2427
+      "runtime_ms": 0.4897
     },
     {
       "module": "statcheck",
@@ -3349,7 +3349,7 @@
       "rule_ids": [
         "STAT-002"
       ],
-      "runtime_ms": 0.2388
+      "runtime_ms": 0.4305
     },
     {
       "module": "statcheck",
@@ -3362,7 +3362,7 @@
       "rule_ids": [
         "STAT-002"
       ],
-      "runtime_ms": 0.3194
+      "runtime_ms": 0.429
     },
     {
       "module": "statcheck",
@@ -3375,7 +3375,7 @@
       "rule_ids": [
         "STAT-002"
       ],
-      "runtime_ms": 0.2267
+      "runtime_ms": 0.3628
     },
     {
       "module": "statcheck",
@@ -3388,7 +3388,7 @@
       "rule_ids": [
         "STAT-002"
       ],
-      "runtime_ms": 0.2251
+      "runtime_ms": 0.3993
     },
     {
       "module": "statcheck",
@@ -3401,7 +3401,7 @@
       "rule_ids": [
         "STAT-002"
       ],
-      "runtime_ms": 0.2248
+      "runtime_ms": 0.3764
     },
     {
       "module": "statcheck",
@@ -3414,7 +3414,7 @@
       "rule_ids": [
         "STAT-002"
       ],
-      "runtime_ms": 0.2234
+      "runtime_ms": 0.3327
     },
     {
       "module": "statcheck",
@@ -3427,7 +3427,7 @@
       "rule_ids": [
         "STAT-002"
       ],
-      "runtime_ms": 0.1667
+      "runtime_ms": 0.219
     },
     {
       "module": "statcheck",
@@ -3440,7 +3440,7 @@
       "rule_ids": [
         "STAT-002"
       ],
-      "runtime_ms": 0.162
+      "runtime_ms": 0.2156
     },
     {
       "module": "statcheck",
@@ -3453,7 +3453,7 @@
       "rule_ids": [
         "STAT-002"
       ],
-      "runtime_ms": 0.1651
+      "runtime_ms": 0.213
     },
     {
       "module": "statcheck",
@@ -3466,7 +3466,7 @@
       "rule_ids": [
         "STAT-003"
       ],
-      "runtime_ms": 0.6935
+      "runtime_ms": 0.7744
     },
     {
       "module": "statcheck",
@@ -3479,7 +3479,7 @@
       "rule_ids": [
         "STAT-003"
       ],
-      "runtime_ms": 0.4944
+      "runtime_ms": 0.7543
     },
     {
       "module": "statcheck",
@@ -3492,7 +3492,7 @@
       "rule_ids": [
         "STAT-003"
       ],
-      "runtime_ms": 0.5697
+      "runtime_ms": 0.7738
     },
     {
       "module": "statcheck",
@@ -3505,7 +3505,7 @@
       "rule_ids": [
         "STAT-003"
       ],
-      "runtime_ms": 0.4729
+      "runtime_ms": 0.8447
     },
     {
       "module": "statcheck",
@@ -3518,7 +3518,7 @@
       "rule_ids": [
         "STAT-003"
       ],
-      "runtime_ms": 0.4582
+      "runtime_ms": 1.009
     },
     {
       "module": "statcheck",
@@ -3531,7 +3531,7 @@
       "rule_ids": [
         "STAT-003"
       ],
-      "runtime_ms": 0.4617
+      "runtime_ms": 0.9014
     },
     {
       "module": "statcheck",
@@ -3544,7 +3544,7 @@
       "rule_ids": [
         "STAT-003"
       ],
-      "runtime_ms": 0.4535
+      "runtime_ms": 1.0331
     },
     {
       "module": "statcheck",
@@ -3557,7 +3557,7 @@
       "rule_ids": [
         "STAT-003"
       ],
-      "runtime_ms": 0.4675
+      "runtime_ms": 0.8644
     },
     {
       "module": "statcheck",
@@ -3570,7 +3570,7 @@
       "rule_ids": [
         "STAT-003"
       ],
-      "runtime_ms": 0.4528
+      "runtime_ms": 0.7596
     },
     {
       "module": "statcheck",
@@ -3583,7 +3583,7 @@
       "rule_ids": [
         "STAT-003"
       ],
-      "runtime_ms": 0.4602
+      "runtime_ms": 0.8278
     },
     {
       "module": "statcheck",
@@ -3596,7 +3596,7 @@
       "rule_ids": [
         "STAT-003"
       ],
-      "runtime_ms": 0.4546
+      "runtime_ms": 0.7599
     },
     {
       "module": "statcheck",
@@ -3610,7 +3610,7 @@
         "STAT-001",
         "STAT-004"
       ],
-      "runtime_ms": 0.226
+      "runtime_ms": 0.4795
     },
     {
       "module": "statcheck",
@@ -3624,7 +3624,7 @@
         "STAT-001",
         "STAT-004"
       ],
-      "runtime_ms": 0.2076
+      "runtime_ms": 0.4119
     },
     {
       "module": "statcheck",
@@ -3638,7 +3638,7 @@
         "STAT-001",
         "STAT-004"
       ],
-      "runtime_ms": 0.205
+      "runtime_ms": 0.3922
     },
     {
       "module": "statcheck",
@@ -3652,7 +3652,7 @@
         "STAT-001",
         "STAT-004"
       ],
-      "runtime_ms": 0.2043
+      "runtime_ms": 0.581
     },
     {
       "module": "statcheck",
@@ -3666,7 +3666,7 @@
         "STAT-001",
         "STAT-004"
       ],
-      "runtime_ms": 0.2083
+      "runtime_ms": 0.3537
     },
     {
       "module": "statcheck",
@@ -3679,7 +3679,7 @@
       "rule_ids": [
         "STAT-004"
       ],
-      "runtime_ms": 0.1017
+      "runtime_ms": 0.2855
     },
     {
       "module": "statcheck",
@@ -3692,7 +3692,7 @@
       "rule_ids": [
         "STAT-004"
       ],
-      "runtime_ms": 0.0894
+      "runtime_ms": 0.2106
     },
     {
       "module": "statcheck",
@@ -3705,7 +3705,7 @@
       "rule_ids": [
         "STAT-004"
       ],
-      "runtime_ms": 0.0875
+      "runtime_ms": 0.2422
     },
     {
       "module": "statcheck",
@@ -3718,7 +3718,7 @@
       "rule_ids": [
         "STAT-004"
       ],
-      "runtime_ms": 0.0868
+      "runtime_ms": 0.1905
     },
     {
       "module": "statcheck",
@@ -3731,7 +3731,7 @@
       "rule_ids": [
         "STAT-004"
       ],
-      "runtime_ms": 0.0861
+      "runtime_ms": 0.1751
     },
     {
       "module": "statcheck",
@@ -3744,7 +3744,7 @@
       "rule_ids": [
         "STAT-004"
       ],
-      "runtime_ms": 0.0866
+      "runtime_ms": 0.1688
     },
     {
       "module": "statcheck",
@@ -3757,7 +3757,7 @@
       "rule_ids": [
         "STAT-004"
       ],
-      "runtime_ms": 0.0832
+      "runtime_ms": 0.1523
     },
     {
       "module": "statcheck",
@@ -3768,7 +3768,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.0946
+      "runtime_ms": 0.2278
     },
     {
       "module": "statcheck",
@@ -3779,7 +3779,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.0901
+      "runtime_ms": 0.1758
     },
     {
       "module": "statcheck",
@@ -3792,7 +3792,7 @@
       "rule_ids": [
         "STAT-005"
       ],
-      "runtime_ms": 0.093
+      "runtime_ms": 0.1812
     },
     {
       "module": "statcheck",
@@ -3805,7 +3805,7 @@
       "rule_ids": [
         "STAT-005"
       ],
-      "runtime_ms": 0.0928
+      "runtime_ms": 0.2168
     },
     {
       "module": "statcheck",
@@ -3819,7 +3819,7 @@
         "STAT-004",
         "STAT-005"
       ],
-      "runtime_ms": 0.093
+      "runtime_ms": 0.1868
     },
     {
       "module": "statcheck",
@@ -3833,7 +3833,7 @@
         "STAT-004",
         "STAT-005"
       ],
-      "runtime_ms": 0.0933
+      "runtime_ms": 0.2308
     },
     {
       "module": "deploycheck",
@@ -3844,7 +3844,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 4.8579
+      "runtime_ms": 5.8277
     },
     {
       "module": "deploycheck",
@@ -3855,7 +3855,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 6.236
+      "runtime_ms": 5.4697
     },
     {
       "module": "deploycheck",
@@ -3866,7 +3866,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 6.5401
+      "runtime_ms": 5.5976
     },
     {
       "module": "deploycheck",
@@ -3877,7 +3877,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 6.2108
+      "runtime_ms": 5.9015
     },
     {
       "module": "deploycheck",
@@ -3888,7 +3888,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 5.6106
+      "runtime_ms": 5.1871
     },
     {
       "module": "deploycheck",
@@ -3899,7 +3899,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 4.5629
+      "runtime_ms": 5.3274
     },
     {
       "module": "deploycheck",
@@ -3910,7 +3910,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 4.9578
+      "runtime_ms": 5.1248
     },
     {
       "module": "deploycheck",
@@ -3921,7 +3921,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 5.5322
+      "runtime_ms": 5.0956
     },
     {
       "module": "deploycheck",
@@ -3932,7 +3932,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 5.0145
+      "runtime_ms": 5.0831
     },
     {
       "module": "deploycheck",
@@ -3943,7 +3943,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 4.9106
+      "runtime_ms": 5.1984
     },
     {
       "module": "deploycheck",
@@ -3954,7 +3954,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 6.501
+      "runtime_ms": 5.1429
     },
     {
       "module": "deploycheck",
@@ -3965,7 +3965,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 5.9342
+      "runtime_ms": 5.1858
     },
     {
       "module": "deploycheck",
@@ -3976,7 +3976,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 4.8965
+      "runtime_ms": 5.2233
     },
     {
       "module": "deploycheck",
@@ -3987,7 +3987,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 6.8081
+      "runtime_ms": 5.23
     },
     {
       "module": "deploycheck",
@@ -3998,7 +3998,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 5.293
+      "runtime_ms": 5.1764
     },
     {
       "module": "deploycheck",
@@ -4009,7 +4009,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 4.7715
+      "runtime_ms": 5.1951
     },
     {
       "module": "deploycheck",
@@ -4020,7 +4020,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 5.6323
+      "runtime_ms": 5.3283
     },
     {
       "module": "deploycheck",
@@ -4031,7 +4031,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 6.3834
+      "runtime_ms": 5.4723
     },
     {
       "module": "deploycheck",
@@ -4042,7 +4042,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 3.5844
+      "runtime_ms": 2.8474
     },
     {
       "module": "deploycheck",
@@ -4053,7 +4053,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 3.1519
+      "runtime_ms": 2.7516
     },
     {
       "module": "deploycheck",
@@ -4064,7 +4064,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 2.921
+      "runtime_ms": 2.7482
     },
     {
       "module": "deploycheck",
@@ -4075,7 +4075,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 3.6916
+      "runtime_ms": 2.8893
     },
     {
       "module": "deploycheck",
@@ -4086,7 +4086,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 2.8979
+      "runtime_ms": 2.6448
     },
     {
       "module": "deploycheck",
@@ -4097,7 +4097,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 3.399
+      "runtime_ms": 2.8312
     },
     {
       "module": "deploycheck",
@@ -4108,7 +4108,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 3.2318
+      "runtime_ms": 2.7634
     },
     {
       "module": "deploycheck",
@@ -4119,7 +4119,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 2.4642
+      "runtime_ms": 2.792
     },
     {
       "module": "deploycheck",
@@ -4130,7 +4130,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 2.3851
+      "runtime_ms": 2.8512
     },
     {
       "module": "deploycheck",
@@ -4141,7 +4141,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 2.2669
+      "runtime_ms": 2.7263
     },
     {
       "module": "deploycheck",
@@ -4152,7 +4152,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 2.2423
+      "runtime_ms": 2.9103
     },
     {
       "module": "deploycheck",
@@ -4163,7 +4163,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 2.2534
+      "runtime_ms": 2.7074
     },
     {
       "module": "deploycheck",
@@ -4174,7 +4174,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 1.0388
+      "runtime_ms": 1.2157
     },
     {
       "module": "deploycheck",
@@ -4185,7 +4185,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 1.3452
+      "runtime_ms": 1.5557
     },
     {
       "module": "deploycheck",
@@ -4196,7 +4196,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 1.3747
+      "runtime_ms": 1.6079
     },
     {
       "module": "deploycheck",
@@ -4207,7 +4207,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 1.3905
+      "runtime_ms": 1.2849
     },
     {
       "module": "deploycheck",
@@ -4218,7 +4218,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 1.3085
+      "runtime_ms": 1.2226
     },
     {
       "module": "deploycheck",
@@ -4229,7 +4229,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 1.613
+      "runtime_ms": 1.1992
     },
     {
       "module": "deploycheck",
@@ -4240,7 +4240,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 1.1719
+      "runtime_ms": 1.2868
     },
     {
       "module": "deploycheck",
@@ -4251,7 +4251,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 1.0762
+      "runtime_ms": 1.2635
     },
     {
       "module": "deploycheck",
@@ -4262,7 +4262,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 1.062
+      "runtime_ms": 1.2303
     },
     {
       "module": "deploycheck",
@@ -4273,7 +4273,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 1.8204
+      "runtime_ms": 1.2346
     },
     {
       "module": "deploycheck",
@@ -4284,7 +4284,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 14.9559
+      "runtime_ms": 0.6219
     },
     {
       "module": "deploycheck",
@@ -4295,7 +4295,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.1416
+      "runtime_ms": 0.1278
     },
     {
       "module": "deploycheck",
@@ -4306,7 +4306,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.1105
+      "runtime_ms": 0.1266
     },
     {
       "module": "deploycheck",
@@ -4317,7 +4317,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.0948
+      "runtime_ms": 0.104
     },
     {
       "module": "deploycheck",
@@ -4328,7 +4328,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.3609
+      "runtime_ms": 0.4093
     },
     {
       "module": "deploycheck",
@@ -4339,7 +4339,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.1788
+      "runtime_ms": 0.1973
     },
     {
       "module": "deploycheck",
@@ -4350,7 +4350,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.0988
+      "runtime_ms": 0.1093
     },
     {
       "module": "deploycheck",
@@ -4361,7 +4361,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.0949
+      "runtime_ms": 0.1158
     },
     {
       "module": "deploycheck",
@@ -4372,7 +4372,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.0881
+      "runtime_ms": 0.1006
     },
     {
       "module": "deploycheck",
@@ -4383,7 +4383,7 @@
       "predicted_faulty": false,
       "n_alerts": 0,
       "rule_ids": [],
-      "runtime_ms": 0.0384
+      "runtime_ms": 0.035
     },
     {
       "module": "deploycheck",
@@ -4396,7 +4396,7 @@
       "rule_ids": [
         "DEPLOY-001"
       ],
-      "runtime_ms": 2.4707
+      "runtime_ms": 2.8771
     },
     {
       "module": "deploycheck",
@@ -4409,7 +4409,7 @@
       "rule_ids": [
         "DEPLOY-001"
       ],
-      "runtime_ms": 2.259
+      "runtime_ms": 2.7331
     },
     {
       "module": "deploycheck",
@@ -4422,7 +4422,7 @@
       "rule_ids": [
         "DEPLOY-001"
       ],
-      "runtime_ms": 2.905
+      "runtime_ms": 2.8404
     },
     {
       "module": "deploycheck",
@@ -4435,7 +4435,7 @@
       "rule_ids": [
         "DEPLOY-001"
       ],
-      "runtime_ms": 2.7046
+      "runtime_ms": 2.7348
     },
     {
       "module": "deploycheck",
@@ -4448,7 +4448,7 @@
       "rule_ids": [
         "DEPLOY-001"
       ],
-      "runtime_ms": 2.2311
+      "runtime_ms": 2.7303
     },
     {
       "module": "deploycheck",
@@ -4461,7 +4461,7 @@
       "rule_ids": [
         "DEPLOY-001"
       ],
-      "runtime_ms": 2.1818
+      "runtime_ms": 2.7296
     },
     {
       "module": "deploycheck",
@@ -4474,7 +4474,7 @@
       "rule_ids": [
         "DEPLOY-001"
       ],
-      "runtime_ms": 2.2413
+      "runtime_ms": 2.6369
     },
     {
       "module": "deploycheck",
@@ -4487,7 +4487,7 @@
       "rule_ids": [
         "DEPLOY-001"
       ],
-      "runtime_ms": 2.2225
+      "runtime_ms": 2.7316
     },
     {
       "module": "deploycheck",
@@ -4500,7 +4500,7 @@
       "rule_ids": [
         "DEPLOY-001"
       ],
-      "runtime_ms": 2.5788
+      "runtime_ms": 2.6766
     },
     {
       "module": "deploycheck",
@@ -4513,7 +4513,7 @@
       "rule_ids": [
         "DEPLOY-001"
       ],
-      "runtime_ms": 6.96
+      "runtime_ms": 6.0146
     },
     {
       "module": "deploycheck",
@@ -4526,7 +4526,7 @@
       "rule_ids": [
         "DEPLOY-001"
       ],
-      "runtime_ms": 5.0115
+      "runtime_ms": 5.5453
     },
     {
       "module": "deploycheck",
@@ -4539,7 +4539,7 @@
       "rule_ids": [
         "DEPLOY-001"
       ],
-      "runtime_ms": 4.5644
+      "runtime_ms": 5.2971
     },
     {
       "module": "deploycheck",
@@ -4552,7 +4552,7 @@
       "rule_ids": [
         "DEPLOY-001"
       ],
-      "runtime_ms": 5.4067
+      "runtime_ms": 5.2389
     },
     {
       "module": "deploycheck",
@@ -4565,7 +4565,7 @@
       "rule_ids": [
         "DEPLOY-001"
       ],
-      "runtime_ms": 5.097
+      "runtime_ms": 5.9466
     },
     {
       "module": "deploycheck",
@@ -4578,7 +4578,7 @@
       "rule_ids": [
         "DEPLOY-001"
       ],
-      "runtime_ms": 4.5065
+      "runtime_ms": 5.9097
     },
     {
       "module": "deploycheck",
@@ -4591,7 +4591,7 @@
       "rule_ids": [
         "DEPLOY-001"
       ],
-      "runtime_ms": 4.9972
+      "runtime_ms": 5.2509
     },
     {
       "module": "deploycheck",
@@ -4604,7 +4604,7 @@
       "rule_ids": [
         "DEPLOY-001"
       ],
-      "runtime_ms": 4.3574
+      "runtime_ms": 5.1611
     },
     {
       "module": "deploycheck",
@@ -4617,7 +4617,7 @@
       "rule_ids": [
         "DEPLOY-001"
       ],
-      "runtime_ms": 4.3659
+      "runtime_ms": 5.1831
     },
     {
       "module": "deploycheck",
@@ -4630,7 +4630,7 @@
       "rule_ids": [
         "DEPLOY-001"
       ],
-      "runtime_ms": 4.792
+      "runtime_ms": 5.5564
     },
     {
       "module": "deploycheck",
@@ -4643,7 +4643,7 @@
       "rule_ids": [
         "DEPLOY-001"
       ],
-      "runtime_ms": 6.2421
+      "runtime_ms": 6.0475
     },
     {
       "module": "deploycheck",
@@ -4656,7 +4656,7 @@
       "rule_ids": [
         "DEPLOY-001"
       ],
-      "runtime_ms": 4.4723
+      "runtime_ms": 5.4219
     },
     {
       "module": "deploycheck",
@@ -4669,7 +4669,7 @@
       "rule_ids": [
         "DEPLOY-001"
       ],
-      "runtime_ms": 4.44
+      "runtime_ms": 5.2503
     },
     {
       "module": "deploycheck",
@@ -4682,7 +4682,7 @@
       "rule_ids": [
         "DEPLOY-002"
       ],
-      "runtime_ms": 6.1145
+      "runtime_ms": 5.2574
     },
     {
       "module": "deploycheck",
@@ -4695,7 +4695,7 @@
       "rule_ids": [
         "DEPLOY-002"
       ],
-      "runtime_ms": 4.4082
+      "runtime_ms": 6.4373
     },
     {
       "module": "deploycheck",
@@ -4708,7 +4708,7 @@
       "rule_ids": [
         "DEPLOY-002"
       ],
-      "runtime_ms": 4.4319
+      "runtime_ms": 5.8029
     },
     {
       "module": "deploycheck",
@@ -4721,7 +4721,7 @@
       "rule_ids": [
         "DEPLOY-002"
       ],
-      "runtime_ms": 5.1752
+      "runtime_ms": 5.9994
     },
     {
       "module": "deploycheck",
@@ -4734,7 +4734,7 @@
       "rule_ids": [
         "DEPLOY-002"
       ],
-      "runtime_ms": 6.0558
+      "runtime_ms": 5.8841
     },
     {
       "module": "deploycheck",
@@ -4747,7 +4747,7 @@
       "rule_ids": [
         "DEPLOY-002"
       ],
-      "runtime_ms": 6.422
+      "runtime_ms": 5.0229
     },
     {
       "module": "deploycheck",
@@ -4760,7 +4760,7 @@
       "rule_ids": [
         "DEPLOY-002"
       ],
-      "runtime_ms": 7.5543
+      "runtime_ms": 5.0216
     },
     {
       "module": "deploycheck",
@@ -4773,7 +4773,7 @@
       "rule_ids": [
         "DEPLOY-002"
       ],
-      "runtime_ms": 0.5931
+      "runtime_ms": 0.3717
     },
     {
       "module": "deploycheck",
@@ -4786,7 +4786,7 @@
       "rule_ids": [
         "DEPLOY-002"
       ],
-      "runtime_ms": 0.0643
+      "runtime_ms": 0.0416
     },
     {
       "module": "deploycheck",
@@ -4799,7 +4799,7 @@
       "rule_ids": [
         "DEPLOY-003"
       ],
-      "runtime_ms": 3.1926
+      "runtime_ms": 2.7476
     },
     {
       "module": "deploycheck",
@@ -4812,7 +4812,7 @@
       "rule_ids": [
         "DEPLOY-003"
       ],
-      "runtime_ms": 2.7053
+      "runtime_ms": 2.6513
     },
     {
       "module": "deploycheck",
@@ -4825,7 +4825,7 @@
       "rule_ids": [
         "DEPLOY-003"
       ],
-      "runtime_ms": 3.101
+      "runtime_ms": 2.5768
     },
     {
       "module": "deploycheck",
@@ -4838,7 +4838,7 @@
       "rule_ids": [
         "DEPLOY-003"
       ],
-      "runtime_ms": 3.073
+      "runtime_ms": 2.7951
     },
     {
       "module": "deploycheck",
@@ -4851,7 +4851,7 @@
       "rule_ids": [
         "DEPLOY-003"
       ],
-      "runtime_ms": 3.2781
+      "runtime_ms": 2.6833
     },
     {
       "module": "deploycheck",
@@ -4864,7 +4864,7 @@
       "rule_ids": [
         "DEPLOY-003"
       ],
-      "runtime_ms": 2.9488
+      "runtime_ms": 2.7097
     },
     {
       "module": "deploycheck",
@@ -4877,7 +4877,7 @@
       "rule_ids": [
         "DEPLOY-003"
       ],
-      "runtime_ms": 2.5354
+      "runtime_ms": 2.5759
     },
     {
       "module": "deploycheck",
@@ -4890,7 +4890,7 @@
       "rule_ids": [
         "DEPLOY-003"
       ],
-      "runtime_ms": 2.3871
+      "runtime_ms": 2.5462
     },
     {
       "module": "deploycheck",
@@ -4903,7 +4903,7 @@
       "rule_ids": [
         "DEPLOY-003"
       ],
-      "runtime_ms": 3.256
+      "runtime_ms": 3.0624
     },
     {
       "module": "deploycheck",
@@ -4916,7 +4916,7 @@
       "rule_ids": [
         "DEPLOY-003"
       ],
-      "runtime_ms": 3.324
+      "runtime_ms": 2.7642
     },
     {
       "module": "deploycheck",
@@ -4929,7 +4929,7 @@
       "rule_ids": [
         "DEPLOY-004"
       ],
-      "runtime_ms": 0.2807
+      "runtime_ms": 0.2625
     },
     {
       "module": "deploycheck",
@@ -4942,7 +4942,7 @@
       "rule_ids": [
         "DEPLOY-004"
       ],
-      "runtime_ms": 0.1446
+      "runtime_ms": 0.2567
     },
     {
       "module": "deploycheck",
@@ -4955,7 +4955,7 @@
       "rule_ids": [
         "DEPLOY-004"
       ],
-      "runtime_ms": 0.3127
+      "runtime_ms": 0.3175
     },
     {
       "module": "deploycheck",
@@ -4968,7 +4968,7 @@
       "rule_ids": [
         "DEPLOY-004"
       ],
-      "runtime_ms": 0.3789
+      "runtime_ms": 0.429
     },
     {
       "module": "deploycheck",
@@ -4981,7 +4981,7 @@
       "rule_ids": [
         "DEPLOY-004"
       ],
-      "runtime_ms": 0.148
+      "runtime_ms": 0.2132
     },
     {
       "module": "deploycheck",
@@ -4994,7 +4994,7 @@
       "rule_ids": [
         "DEPLOY-004"
       ],
-      "runtime_ms": 0.0792
+      "runtime_ms": 0.0774
     },
     {
       "module": "deploycheck",
@@ -5007,7 +5007,7 @@
       "rule_ids": [
         "DEPLOY-004"
       ],
-      "runtime_ms": 0.2558
+      "runtime_ms": 0.3158
     },
     {
       "module": "deploycheck",
@@ -5020,7 +5020,7 @@
       "rule_ids": [
         "DEPLOY-004"
       ],
-      "runtime_ms": 0.1466
+      "runtime_ms": 0.2493
     },
     {
       "module": "deploycheck",
@@ -5033,7 +5033,7 @@
       "rule_ids": [
         "DEPLOY-004"
       ],
-      "runtime_ms": 0.037
+      "runtime_ms": 0.031
     }
   ]
 }

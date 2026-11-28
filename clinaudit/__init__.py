@@ -31,7 +31,7 @@ from .leakage import (
     confusion_matrix_unseen_bounds,
     exact_binomial_upper_tail_log10,
 )
-from .models import AuditAlert, AuditReport
+from .models import AuditAlert, AuditReport, PRIORITY_RANK, Priority
 from .scanner import VERSION as __version__, audit_directory, audit_files
 from .statcheck import (
     CIRecord,
@@ -50,6 +50,8 @@ __all__ = [
     "__version__",
     "AuditAlert",
     "AuditReport",
+    "PRIORITY_RANK",
+    "Priority",
     "CIRecord",
     "CodeDocument",
     "DEFAULT_CLINICAL_DIRECTIONS",

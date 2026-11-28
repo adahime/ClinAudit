@@ -44,6 +44,8 @@ class TableData:
     rows: list[list[Any]]
     raw_rows: list[list[str]] = field(default_factory=list)
     source_file: str | None = None
+    caption_lines: list[str] = field(default_factory=list)
+    sheet_base_name: str | None = None
 
     @property
     def n_rows(self) -> int:
@@ -203,11 +205,11 @@ def _resolve_sheet_targets(zf: zipfile.ZipFile) -> list[tuple[str, str]]:
     return sheets
 
 
-def _parse_xlsx_sheet(
+def _parse_xlsx_sheet_with_rownums(
     xml_bytes: bytes,
     shared_strings: list[str],
-) -> tuple[list[list[Any]], list[list[str]]]:
-    """Parse a single OOXML worksheet into rectangular typed rows and raw string rows."""
+) -> tuple[list[list[Any]], list[list[str]], list[int]]:
+    """Parse a single OOXML worksheet into rectangular typed rows, raw rows, and 1-based Excel row numbers."""
     root = ET.fromstring(xml_bytes)
     sheet_data = None
     for elem in root:
@@ -215,7 +217,7 @@ def _parse_xlsx_sheet(
             sheet_data = elem
             break
     if sheet_data is None:
-        return [], []
+        return [], [], []
 
     sparse_rows: list[tuple[int, dict[int, tuple[Any, str]]]] = []
     max_col = -1
@@ -295,12 +297,13 @@ def _parse_xlsx_sheet(
             sparse_rows.append((row_num, row_cells))
 
     if not sparse_rows or max_col < 0:
-        return [], []
+        return [], [], []
 
     width = max_col + 1
     typed_rows: list[list[Any]] = []
     raw_rows: list[list[str]] = []
-    for _, row_cells in sparse_rows:
+    row_nums: list[int] = []
+    for rnum, row_cells in sparse_rows:
         t_row = [None] * width
         r_row = [""] * width
         for c_idx, (v, r) in row_cells.items():
@@ -308,7 +311,17 @@ def _parse_xlsx_sheet(
             r_row[c_idx] = r
         typed_rows.append(t_row)
         raw_rows.append(r_row)
-    return typed_rows, raw_rows
+        row_nums.append(rnum)
+    return typed_rows, raw_rows, row_nums
+
+
+def _parse_xlsx_sheet(
+    xml_bytes: bytes,
+    shared_strings: list[str],
+) -> tuple[list[list[Any]], list[list[str]]]:
+    """Parse a single OOXML worksheet into rectangular typed rows and raw string rows."""
+    t_rows, r_rows, _ = _parse_xlsx_sheet_with_rownums(xml_bytes, shared_strings)
+    return t_rows, r_rows
 
 
 def read_xlsx(path: str | Path) -> dict[str, list[list[Any]]]:
@@ -328,6 +341,20 @@ def read_xlsx_with_raw(
         out: dict[str, tuple[list[list[Any]], list[list[str]]]] = {}
         for sheet_name, member in targets:
             out[sheet_name] = _parse_xlsx_sheet(zf.read(member), shared_strings)
+    return out
+
+
+def read_xlsx_with_raw_and_rownums(
+    path: str | Path,
+) -> dict[str, tuple[list[list[Any]], list[list[str]], list[int]]]:
+    """Read an .xlsx workbook returning typed rows, raw rows, and 1-based Excel row numbers."""
+    p = Path(path)
+    with zipfile.ZipFile(p, "r") as zf:
+        shared_strings = _read_shared_strings(zf)
+        targets = _resolve_sheet_targets(zf)
+        out: dict[str, tuple[list[list[Any]], list[list[str]], list[int]]] = {}
+        for sheet_name, member in targets:
+            out[sheet_name] = _parse_xlsx_sheet_with_rownums(zf.read(member), shared_strings)
     return out
 
 
@@ -522,21 +549,163 @@ def read_delimited(path: str | Path, delimiter: str | None = None) -> list[list[
     return typed_rows
 
 
+_STACKED_HDR_KW_RE = re.compile(
+    r"\b(p[-_\s]?val|pval|fdr|q[-_\s]?val|ci|95%|lower|upper|min|max|auc|auroc|auprc|"
+    r"sens|spec|sensitivity|specificity|acc|accuracy|ppv|npv|f1|hr|or|beta|se|sd|sem|iqr|"
+    r"mean|median|model|method|metric|cohort|group|dataset|cancer|stage|grade|endpoint|"
+    r"outcome|feature|gene|pathway|protein|variable|subgroup|class|type|sample|total|fold|"
+    r"score|estimate|value|ratio|diff|delta|test|comparison|name|id)\b",
+    re.IGNORECASE,
+)
+
+
+_PANEL_BANNER_RE = re.compile(
+    r"^(?:fig(?:ure)?|ext(?:ended)?\s+data\s+fig(?:ure)?|supp(?:lementary)?\s+(?:fig(?:ure)?|table|data)|"
+    r"table|panel)\s*\.?\s*[a-z0-9]{1,6}(?:[\s:.\-]|$)",
+    re.IGNORECASE,
+)
+
+
+def _is_banner_row(row: list[Any]) -> bool:
+    non_empty = [c for c in row if c is not None and str(c).strip() != ""]
+    if len(non_empty) == 1 and isinstance(non_empty[0], str):
+        s = non_empty[0].strip()
+        return len(s) >= 4
+    return False
+
+
+def _is_panel_banner_row(row: list[Any]) -> bool:
+    non_empty = [c for c in row if c is not None and str(c).strip() != ""]
+    if len(non_empty) == 1 and isinstance(non_empty[0], str):
+        s = non_empty[0].strip()
+        return bool(_PANEL_BANNER_RE.match(s))
+    return False
+
+
+def _is_pure_string_header_row(row: list[Any]) -> bool:
+    non_empty = [c for c in row if c is not None and str(c).strip() != ""]
+    if len(non_empty) < 2:
+        return False
+    str_cells = [c.strip() for c in non_empty if isinstance(c, str) and c.strip()]
+    return len(str_cells) >= max(2, int(0.80 * len(non_empty)))
+
+
+def _is_header_like_row(row: list[Any]) -> bool:
+    non_empty = [c for c in row if c is not None and str(c).strip() != ""]
+    if len(non_empty) < 2:
+        return False
+    str_cells = [c.strip() for c in non_empty if isinstance(c, str) and c.strip()]
+    if len(str_cells) < max(2, int(0.75 * len(non_empty))):
+        return False
+    return any(_STACKED_HDR_KW_RE.search(s) for s in str_cells)
+
+
+def _block_has_data_rows(typed_rows: list[list[Any]], start: int, end: int) -> bool:
+    """Return True if typed_rows[start:end] has a header-like row followed by >= 1 non-banner data row."""
+    if end - start < 2:
+        return False
+    hdr_pos: int | None = None
+    limit = min(end, start + 8)
+    for i in range(start, limit):
+        r = typed_rows[i]
+        cnt = 0
+        for c in r:
+            if c is not None and str(c).strip() != "":
+                cnt += 1
+                if cnt >= 2:
+                    hdr_pos = i
+                    break
+        if hdr_pos is not None:
+            break
+    if hdr_pos is None:
+        return False
+    for i in range(hdr_pos + 1, end):
+        r = typed_rows[i]
+        cnt = 0
+        for c in r:
+            if c is not None and str(c).strip() != "":
+                cnt += 1
+                if cnt >= 2:
+                    return True
+    return False
+
+
+def _split_stacked_blocks(
+    typed_rows: list[list[Any]],
+    raw_rows: list[list[str]],
+    row_nums: list[int],
+) -> list[tuple[list[list[Any]], list[list[str]]]]:
+    """Conservatively split vertically stacked sub-tables separated by blank Excel rows."""
+    n = len(typed_rows)
+    if n < 4 or len(row_nums) != n:
+        return [(typed_rows, raw_rows)]
+
+    split_indices: list[int] = [0]
+    curr_start = 0
+    for i in range(1, n):
+        gap = row_nums[i] - row_nums[i - 1]
+        row_i = typed_rows[i]
+        is_explicit_panel = _is_panel_banner_row(row_i)
+        if gap < 2 and not is_explicit_panel:
+            continue
+        if not _block_has_data_rows(typed_rows, curr_start, i):
+            continue
+        starts_new_block = False
+        if is_explicit_panel:
+            # Explicit Figure/Table/Panel banner followed within 2 rows by a string header row
+            for k in range(i + 1, min(n, i + 4)):
+                if _is_pure_string_header_row(typed_rows[k]):
+                    starts_new_block = True
+                    break
+        elif _is_header_like_row(row_i):
+            if i + 1 < n:
+                starts_new_block = True
+        elif _is_banner_row(row_i):
+            for k in range(i + 1, min(n, i + 4)):
+                if _is_header_like_row(typed_rows[k]):
+                    starts_new_block = True
+                    break
+        if starts_new_block:
+            split_indices.append(i)
+            curr_start = i
+
+    if len(split_indices) == 1:
+        return [(typed_rows, raw_rows)]
+
+    split_indices.append(n)
+    blocks: list[tuple[list[list[Any]], list[list[str]]]] = []
+    for s_idx in range(len(split_indices) - 1):
+        a, b = split_indices[s_idx], split_indices[s_idx + 1]
+        blocks.append((typed_rows[a:b], raw_rows[a:b] if raw_rows else []))
+    return blocks
+
+
 def _grid_to_table(
     name: str,
     typed_rows: list[list[Any]],
     raw_rows: list[list[str]],
     source_file: str | None = None,
+    sheet_base_name: str | None = None,
+    inherited_captions: list[str] | None = None,
 ) -> TableData:
     """Convert raw 2D grid into TableData by locating the most plausible header row."""
+    base = sheet_base_name or name
     if not typed_rows:
-        return TableData(name=name, headers=[], rows=[], raw_rows=[], source_file=source_file)
+        return TableData(
+            name=name,
+            headers=[],
+            rows=[],
+            raw_rows=[],
+            source_file=source_file,
+            caption_lines=list(inherited_captions or []),
+            sheet_base_name=base,
+        )
 
-    # Locate header row among the first 5 non-empty rows:
+    # Locate header row among the first 8 non-empty rows:
     # Prefer the first row that has >= 2 non-empty cells and is predominantly string labels
     # (skipping single-cell title banners like "Supplementary Table 1: ...").
     header_idx = 0
-    for idx in range(min(5, len(typed_rows))):
+    for idx in range(min(8, len(typed_rows))):
         row = typed_rows[idx]
         non_empty = [c for c in row if c is not None and str(c).strip() != ""]
         if len(non_empty) == 0:
@@ -545,6 +714,15 @@ def _grid_to_table(
         if len(non_empty) >= 2 and str_count >= max(1, len(non_empty) // 2):
             header_idx = idx
             break
+
+    # Capture banner / title lines appearing before the header row
+    caption_lines: list[str] = []
+    for idx in range(header_idx):
+        parts = [str(c).strip() for c in typed_rows[idx] if c is not None and str(c).strip() != ""]
+        if parts:
+            caption_lines.append(" ".join(parts))
+    if not caption_lines and inherited_captions:
+        caption_lines.extend(inherited_captions)
 
     hdr_row = typed_rows[header_idx]
     data_start = header_idx + 1
@@ -558,7 +736,12 @@ def _grid_to_table(
         sub_str_count = sum(1 for c in sub_non_empty if isinstance(c, str))
         sub_has_stat_kw = any(
             isinstance(c, str)
-            and re.search(r"\b(mean|median|ci|lower|upper|low|high|sd|se|auc|auroc|f1|acc|p[- ]?val|std)\b", c, re.I)
+            and re.search(
+                r"\b(mean|median|ci|lower|upper|low|high|min|max|sd|se|auc|auroc|f1|acc|"
+                r"sens|spec|sensitivity|specificity|p[- ]?val|std|estimate|hr|or|95%)\b",
+                c,
+                re.I,
+            )
             for c in sub_non_empty
         )
         if len(sub_non_empty) >= 2 and sub_str_count == len(sub_non_empty) and sub_has_stat_kw:
@@ -597,12 +780,29 @@ def _grid_to_table(
 
     data_typed = typed_rows[data_start:]
     data_raw = raw_rows[data_start:] if raw_rows else []
+
+    # Peel trailing single-cell footnote rows (common in journal supplementary tables) into caption_lines
+    while len(data_typed) >= 2:
+        last_row = data_typed[-1]
+        non_empty = [c for c in last_row if c is not None and str(c).strip() != ""]
+        if len(non_empty) == 1 and isinstance(non_empty[0], str):
+            s = non_empty[0].strip()
+            if len(s) >= 12 or s.startswith(("*", "†", "‡", "Note", "Abbreviations", "CI", "IQR")):
+                caption_lines.append(s)
+                data_typed = data_typed[:-1]
+                if data_raw:
+                    data_raw = data_raw[:-1]
+                continue
+        break
+
     return TableData(
         name=name,
         headers=headers,
         rows=data_typed,
         raw_rows=data_raw,
         source_file=source_file,
+        caption_lines=caption_lines,
+        sheet_base_name=base,
     )
 
 
@@ -611,14 +811,46 @@ def read_tables(path: str | Path) -> list[TableData]:
     p = Path(path)
     ext = p.suffix.lower()
     if ext == ".xlsx":
-        sheets = read_xlsx_with_raw(p)
+        sheets = read_xlsx_with_raw_and_rownums(p)
         tables: list[TableData] = []
-        for sheet_name, (t_rows, r_rows) in sheets.items():
-            tables.append(_grid_to_table(sheet_name, t_rows, r_rows, source_file=str(p)))
+        for sheet_name, (t_rows, r_rows, r_nums) in sheets.items():
+            blocks = _split_stacked_blocks(t_rows, r_rows, r_nums)
+            if len(blocks) == 1:
+                tables.append(
+                    _grid_to_table(
+                        sheet_name,
+                        blocks[0][0],
+                        blocks[0][1],
+                        source_file=str(p),
+                        sheet_base_name=sheet_name,
+                    )
+                )
+            else:
+                first_tbl = _grid_to_table(
+                    f"{sheet_name} [block 1]",
+                    blocks[0][0],
+                    blocks[0][1],
+                    source_file=str(p),
+                    sheet_base_name=sheet_name,
+                )
+                tables.append(first_tbl)
+                # Propagate sheet-level top banner to subsequent blocks that lack their own banner
+                sheet_caps = [c for c in first_tbl.caption_lines if len(c) >= 6]
+                for b_i, (bt, br) in enumerate(blocks[1:], start=2):
+                    tables.append(
+                        _grid_to_table(
+                            f"{sheet_name} [block {b_i}]",
+                            bt,
+                            br,
+                            source_file=str(p),
+                            sheet_base_name=sheet_name,
+                            inherited_captions=sheet_caps,
+                        )
+                    )
         return tables
     if ext in (".csv", ".tsv", ".txt"):
         t_rows, r_rows = read_delimited_with_raw(p)
-        return [_grid_to_table(p.stem, t_rows, r_rows, source_file=str(p))]
+        return [_grid_to_table(p.stem, t_rows, r_rows, source_file=str(p), sheet_base_name=p.stem)]
     raise ValueError(f"Unsupported tabular file extension: {ext}")
 
 

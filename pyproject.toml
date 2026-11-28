@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "clinaudit"
-version = "0.2.0"
+version = "0.3.1"
 description = "Lightweight, zero-heavy-dependency forensic auditing suite for clinical AI splits, evaluation pipelines, Source Data statistics, and deployed risk calculators."
 readme = "README.md"
 license = {text = "MIT"}

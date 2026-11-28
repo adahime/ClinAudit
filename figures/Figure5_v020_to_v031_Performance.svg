@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="490" viewBox="0 0 1240 490">
+<style>text { font-family: Arial, Helvetica, sans-serif; }</style>
+<rect x="0" y="0" width="1240" height="490" fill="#FFFFFF"/>
+<text x="28" y="34" font-size="18" font-weight="700" fill="#0F172A">ClinAudit Engine Evolution: v0.2.0 &#x2192; v0.3.0 &#x2192; v0.3.1 Empirical Benchmark</text>
+<text x="28" y="54" font-size="11.5" fill="#475569">Zero-regression recall lock across 51 verified publisher .xlsx defects (100.0%) &#xB7; 338-paper held-out validation &#xB7; 293-paper out-of-sample residual stress test &#xB7; 0 crashes / 0 timeouts</text>
+<line x1="28" y1="66" x2="1212" y2="66" stroke="#E2E8F0" stroke-width="1.2"/>
+<rect x="28" y="82" width="378" height="354" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<text x="42" y="106" font-size="15" font-weight="700" fill="#0F172A">a</text>
+<text x="58" y="106" font-size="13" font-weight="700" fill="#0F172A">Held-Out False Positives &amp; PPV</text>
+<text x="58" y="123" font-size="10.5" fill="#475569">Closed-code .xlsx cohort (N = 338 papers; 7 verified)</text>
+<rect x="284" y="92" width="110" height="22" rx="11" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1"/>
+<text x="339" y="107" text-anchor="middle" font-size="10" font-weight="700" fill="#166534">Recall: 7/7 (100%)</text>
+<line x1="76" y1="334.0" x2="388" y2="334.0" stroke="#CBD5E1" stroke-dasharray="3,3" stroke-width="0.9"/>
+<text x="70" y="338.0" text-anchor="end" font-size="10" fill="#475569">0</text>
+<line x1="76" y1="285.4" x2="388" y2="285.4" stroke="#CBD5E1" stroke-dasharray="3,3" stroke-width="0.9"/>
+<text x="70" y="289.4" text-anchor="end" font-size="10" fill="#475569">20</text>
+<line x1="76" y1="236.9" x2="388" y2="236.9" stroke="#CBD5E1" stroke-dasharray="3,3" stroke-width="0.9"/>
+<text x="70" y="240.9" text-anchor="end" font-size="10" fill="#475569">40</text>
+<line x1="76" y1="188.3" x2="388" y2="188.3" stroke="#CBD5E1" stroke-dasharray="3,3" stroke-width="0.9"/>
+<text x="70" y="192.3" text-anchor="end" font-size="10" fill="#475569">60</text>
+<line x1="76" y1="334" x2="388" y2="334" stroke="#334155" stroke-width="1.2"/>
+<text x="44" y="249.0" transform="rotate(-90 44 249.0)" text-anchor="middle" font-size="10.5" font-weight="600" fill="#334155">False-Positive Papers</text>
+<rect x="100" y="185.9" width="74" height="148.1" rx="4" fill="#D55E00"/>
+<text x="137.0" y="179.9" text-anchor="middle" font-size="10.5" font-weight="700" fill="#D55E00">61 FPs</text>
+<text x="137.0" y="350" text-anchor="middle" font-size="10.5" font-weight="700" fill="#0F172A">v0.2.0</text>
+<text x="137.0" y="364" text-anchor="middle" font-size="9.5" fill="#475569">All alerts</text>
+<rect x="96" y="373" width="82" height="34" rx="5" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+<text x="137.0" y="387" text-anchor="middle" font-size="10" font-weight="700" fill="#D55E00">PPV 10.3%</text>
+<text x="137.0" y="400" text-anchor="middle" font-size="9.5" fill="#475569">FPR 18.4%</text>
+<rect x="206" y="307.3" width="74" height="26.7" rx="4" fill="#0072B2"/>
+<text x="243.0" y="301.3" text-anchor="middle" font-size="10.5" font-weight="700" fill="#0072B2">11 (-82%)</text>
+<text x="243.0" y="350" text-anchor="middle" font-size="10.5" font-weight="700" fill="#0F172A">v0.3.0 / 0.3.1</text>
+<text x="243.0" y="364" text-anchor="middle" font-size="9.5" fill="#475569">P0 + P1</text>
+<rect x="202" y="373" width="82" height="34" rx="5" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+<text x="243.0" y="387" text-anchor="middle" font-size="10" font-weight="700" fill="#0072B2">PPV 38.9%</text>
+<text x="243.0" y="400" text-anchor="middle" font-size="9.5" fill="#475569">FPR 3.3%</text>
+<rect x="312" y="326.7" width="74" height="7.3" rx="4" fill="#009E73"/>
+<text x="349.0" y="320.7" text-anchor="middle" font-size="10.5" font-weight="700" fill="#009E73">3 (-95.1%)</text>
+<text x="349.0" y="350" text-anchor="middle" font-size="10.5" font-weight="700" fill="#0F172A">v0.3.0 / 0.3.1</text>
+<text x="349.0" y="364" text-anchor="middle" font-size="9.5" fill="#475569">P0 only</text>
+<rect x="308" y="373" width="82" height="34" rx="5" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+<text x="349.0" y="387" text-anchor="middle" font-size="10" font-weight="700" fill="#009E73">PPV 70.0%</text>
+<text x="349.0" y="400" text-anchor="middle" font-size="9.5" fill="#475569">FPR 0.91%</text>
+<rect x="178" y="156" width="198" height="24" rx="5" fill="#ECFDF5" stroke="#6EE7B7" stroke-width="1"/>
+<text x="277" y="172" text-anchor="middle" font-size="10.5" font-weight="700" fill="#065F46">P0 Precision: 10.3% &#x2192; 70.0% (6.8&#xD7;)</text>
+<rect x="424" y="82" width="386" height="354" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<text x="438" y="106" font-size="15" font-weight="700" fill="#0F172A">b</text>
+<text x="454" y="106" font-size="13" font-weight="700" fill="#0F172A">Out-of-Sample Tail Cut &amp; Recall Lock</text>
+<text x="454" y="123" font-size="10.5" fill="#475569">293 unseen Wave 4 .xlsx papers (10 new defects found)</text>
+<text x="440" y="150" font-size="10.5" font-weight="700" fill="#334155">Unseen Wave 4 Tail: P0 Alert Composition</text>
+<text x="504" y="183" text-anchor="end" font-size="11" font-weight="700" fill="#0F172A">v0.3.0 P0</text>
+<rect x="512" y="166" width="41.3" height="26" rx="3" fill="#009E73"/>
+<rect x="553.3" y="166" width="8.3" height="26" fill="#E69F00"/>
+<rect x="561.6" y="166" width="173.6" height="26" rx="3" fill="#FCA5A5" stroke="#D55E00" stroke-width="0.8"/>
+<text x="532.7" y="183" text-anchor="middle" font-size="10" font-weight="700" fill="#FFFFFF">10</text>
+<text x="648.4" y="183" text-anchor="middle" font-size="10" font-weight="700" fill="#991B1B">42 FPs</text>
+<text x="512" y="207" font-size="10" font-weight="600" fill="#475569">54 P0 (PPV 18.5%)</text>
+<text x="504" y="241" text-anchor="end" font-size="11" font-weight="700" fill="#0F172A">v0.3.1 P0</text>
+<rect x="512" y="224" width="41.3" height="26" rx="3" fill="#009E73"/>
+<rect x="553.3" y="224" width="8.3" height="26" fill="#E69F00"/>
+<rect x="561.6" y="224" width="78.5" height="26" rx="3" fill="#FCA5A5" stroke="#D55E00" stroke-width="0.8"/>
+<text x="532.7" y="241" text-anchor="middle" font-size="10" font-weight="700" fill="#FFFFFF">10</text>
+<text x="600.9" y="241" text-anchor="middle" font-size="10" font-weight="700" fill="#991B1B">19 FPs</text>
+<text x="512" y="265" font-size="10" font-weight="600" fill="#475569">31 P0 (PPV 32.3%)</text>
+<rect x="442" y="282" width="11" height="11" rx="2" fill="#009E73"/>
+<text x="458" y="291.5" font-size="9.8" fill="#334155">New Confirmed (10)</text>
+<rect x="568" y="282" width="11" height="11" rx="2" fill="#E69F00"/>
+<text x="584" y="291.5" font-size="9.8" fill="#334155">Borderline (2)</text>
+<rect x="666" y="282" width="11" height="11" rx="2" fill="#FCA5A5" stroke="#D55E00" stroke-width="0.8"/>
+<text x="682" y="291.5" font-size="9.8" fill="#334155">Residual P0 FP (-54.8%)</text>
+<rect x="438" y="310" width="114" height="110" rx="6" fill="#ECFDF5" stroke="#6EE7B7" stroke-width="1"/>
+<text x="495.0" y="340" text-anchor="middle" font-size="18" font-weight="700" fill="#009E73">51 / 51</text>
+<text x="495.0" y="359" text-anchor="middle" font-size="10" font-weight="700" fill="#0F172A">100.0% Recall Lock</text>
+<text x="495.0" y="380" text-anchor="middle" font-size="9" fill="#475569">34 W4 + 7 W5 + 10 W4b</text>
+<text x="495.0" y="395" text-anchor="middle" font-size="9" fill="#475569">0 misses · 0 downgrades</text>
+<rect x="560" y="310" width="114" height="110" rx="6" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1"/>
+<text x="617.0" y="340" text-anchor="middle" font-size="18" font-weight="700" fill="#0072B2">-54.8%</text>
+<text x="617.0" y="359" text-anchor="middle" font-size="10" font-weight="700" fill="#0F172A">Extra P0 FP Cut</text>
+<text x="617.0" y="380" text-anchor="middle" font-size="9" fill="#475569">v0.3.0 (42) &#x2192; v0.3.1 (19)</text>
+<text x="617.0" y="395" text-anchor="middle" font-size="9" fill="#475569">4 surgical parser guards</text>
+<rect x="682" y="310" width="114" height="110" rx="6" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+<text x="739.0" y="340" text-anchor="middle" font-size="18" font-weight="700" fill="#334155">0 / 409</text>
+<text x="739.0" y="359" text-anchor="middle" font-size="10" font-weight="700" fill="#0F172A">Timeouts &amp; Crashes</text>
+<text x="739.0" y="380" text-anchor="middle" font-size="9" fill="#475569">v0.2.0 had 22 (&gt;45s)</text>
+<text x="739.0" y="395" text-anchor="middle" font-size="9" fill="#475569">O(N&#xB2;) stall eliminated</text>
+<rect x="828" y="82" width="384" height="354" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<text x="842" y="106" font-size="15" font-weight="700" fill="#0F172A">c</text>
+<text x="858" y="106" font-size="13" font-weight="700" fill="#0F172A">Measured Adjudication Queue Shrinkage</text>
+<text x="858" y="123" font-size="10.5" fill="#475569">Exact papers requiring human/LLM review (0 estimates)</text>
+<text x="844" y="148" font-size="10.5" font-weight="700" fill="#334155">Wave 4 Full Cohort (N = 1,542 .xlsx papers; 44 verified)</text>
+<text x="902" y="172" text-anchor="end" font-size="10" font-weight="700" fill="#0F172A">v0.2.0</text>
+<rect x="910" y="158" width="216.1" height="20" rx="3.5" fill="#D55E00"/>
+<text x="1120.1" y="172" text-anchor="end" font-size="9.5" font-weight="700" fill="#FFFFFF">328 papers (10.4% PPV)</text>
+<text x="902" y="200" text-anchor="end" font-size="10" font-weight="700" fill="#0F172A">v0.3.0 P0</text>
+<rect x="910" y="186" width="54.7" height="20" rx="3.5" fill="#0072B2"/>
+<text x="970.7" y="200" font-size="9.5" font-weight="700" fill="#0072B2">83 (-74.7% · 47.0% PPV)</text>
+<text x="902" y="228" text-anchor="end" font-size="10" font-weight="700" fill="#0F172A">v0.3.1 P0</text>
+<rect x="910" y="214" width="39.5" height="20" rx="3.5" fill="#009E73"/>
+<text x="955.5" y="228" font-size="9.5" font-weight="700" fill="#009E73">60 (-81.7% · 65.0% PPV)</text>
+<text x="844" y="260" font-size="10.5" font-weight="700" fill="#334155">Wave 5 Held-Out Cohort (N = 338 .xlsx papers; 7 verified)</text>
+<text x="902" y="284" text-anchor="end" font-size="10" font-weight="700" fill="#0F172A">v0.2.0</text>
+<rect x="910" y="270" width="190.4" height="20" rx="3.5" fill="#D55E00"/>
+<text x="1094.4" y="284" text-anchor="end" font-size="9.5" font-weight="700" fill="#FFFFFF">68 papers (10.3% PPV)</text>
+<text x="902" y="312" text-anchor="end" font-size="10" font-weight="700" fill="#0F172A">v0.3.x P0+P1</text>
+<rect x="910" y="298" width="50.4" height="20" rx="3.5" fill="#0072B2"/>
+<text x="966.4" y="312" font-size="9.5" font-weight="700" fill="#0072B2">18 (-73.5% · 38.9% PPV)</text>
+<text x="902" y="340" text-anchor="end" font-size="10" font-weight="700" fill="#0F172A">v0.3.x P0</text>
+<rect x="910" y="326" width="28.0" height="20" rx="3.5" fill="#009E73"/>
+<text x="944.0" y="340" font-size="9.5" font-weight="700" fill="#009E73">10 (-85.3% · 70.0% PPV)</text>
+<rect x="842" y="360" width="356" height="64" rx="6" fill="#FFF7ED" stroke="#FDBA74" stroke-width="1"/>
+<text x="851" y="377" font-size="10" font-weight="700" fill="#9A3412">Why Not a Hypothetical "Blind LLM" Bar?</text>
+<text x="851" y="392" font-size="9.2" fill="#7C2D12">Blind LLM review cannot exhaustively scan massive multi-file .xlsx workbooks</text>
+<text x="851" y="405" font-size="9.2" fill="#7C2D12">or spontaneously test hidden axioms (mid-table row shifts, tail p &gt; 1, sqrt(B)).</text>
+<text x="851" y="418" font-size="9.2" font-weight="600" fill="#9A3412">ClinAudit deterministically flags exact (sheet, row, col) P0 coordinates.</text>
+<text x="28" y="468" font-size="10.2" fill="#475569">Deterministic 400-case synthetic benchmark: 99.0% sensitivity, 100.0% specificity, F1 = 0.995 (median 0.81 ms/case) &#xB7; 27/27 unit tests pass &#xB7; Zero-heavy-dependency (Python stdlib + NumPy) &#xB7; Immutable v0.2.0 Zenodo tag preserved.</text>
+</svg>

@@ -14,7 +14,7 @@ from .leakage import audit_tabular_split_tables, audit_xlsx_splits
 from .models import AuditAlert, AuditReport
 from .statcheck import audit_cross_table_ci_consistency, audit_table_stats
 
-VERSION = "0.2.0"
+VERSION = "0.3.1"
 
 _SKIP_DIRS = {
     ".git",

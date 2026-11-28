@@ -75,11 +75,13 @@ def main(argv: Sequence[str] | None = None) -> int:
 
         summary = report.summary
         if not args.quiet:
+            bp = summary["by_priority"]
             print(f"clinaudit v{report.version} | target: {report.target}")
             print(
                 f"Files scanned: {summary['files_scanned']} | "
                 f"Alerts: {summary['total_alerts']} "
-                f"(CRITICAL={summary['by_severity']['CRITICAL']}, "
+                f"(P0={bp['P0']}, P1={bp['P1']}, P2={bp['P2']}; "
+                f"CRITICAL={summary['by_severity']['CRITICAL']}, "
                 f"HIGH={summary['by_severity']['HIGH']}, "
                 f"MEDIUM={summary['by_severity']['MEDIUM']}) | "
                 f"Runtime: {report.total_runtime_ms:.2f} ms"
@@ -87,7 +89,10 @@ def main(argv: Sequence[str] | None = None) -> int:
             for alert in report.alerts:
                 loc = f" ({alert.location})" if alert.location else ""
                 finfo = f" [{alert.file}]" if alert.file else ""
-                print(f"  [{alert.severity}] {alert.rule_id} ({alert.module}){finfo}{loc}: {alert.title}")
+                print(
+                    f"  [{alert.priority}|{alert.severity}] {alert.rule_id} "
+                    f"({alert.module}){finfo}{loc}: {alert.title}"
+                )
                 print(f"      {alert.message}")
             if args.out:
                 print(f"JSON report written to: {args.out}")

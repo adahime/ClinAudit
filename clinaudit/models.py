@@ -7,11 +7,18 @@ import json
 from typing import Any, Literal
 
 Severity = Literal["CRITICAL", "HIGH", "MEDIUM"]
+Priority = Literal["P0", "P1", "P2"]
 
 SEVERITY_RANK: dict[str, int] = {
     "CRITICAL": 3,
     "HIGH": 2,
     "MEDIUM": 1,
+}
+
+PRIORITY_RANK: dict[str, int] = {
+    "P0": 3,
+    "P1": 2,
+    "P2": 1,
 }
 
 
@@ -27,12 +34,14 @@ class AuditAlert:
     file: str | None = None
     location: str | None = None
     evidence: dict[str, Any] = field(default_factory=dict)
+    priority: Priority = "P1"
 
     def to_dict(self) -> dict[str, Any]:
         return {
             "module": self.module,
             "rule_id": self.rule_id,
             "severity": self.severity,
+            "priority": self.priority,
             "title": self.title,
             "message": self.message,
             "file": self.file,
@@ -58,6 +67,7 @@ class AuditReport:
     @property
     def summary(self) -> dict[str, Any]:
         by_severity: dict[str, int] = {"CRITICAL": 0, "HIGH": 0, "MEDIUM": 0}
+        by_priority: dict[str, int] = {"P0": 0, "P1": 0, "P2": 0}
         by_module: dict[str, int] = {
             "leakage": 0,
             "evalcheck": 0,
@@ -66,19 +76,24 @@ class AuditReport:
         }
         for alert in self.alerts:
             by_severity[alert.severity] = by_severity.get(alert.severity, 0) + 1
+            by_priority[alert.priority] = by_priority.get(alert.priority, 0) + 1
             by_module[alert.module] = by_module.get(alert.module, 0) + 1
+        hc_alerts = by_priority["P0"] + by_priority["P1"]
         return {
             "total_alerts": len(self.alerts),
+            "high_confidence_alerts": hc_alerts,
             "files_scanned": len(self.files_scanned),
             "files_skipped": len(self.files_skipped),
             "parse_errors": len(self.parse_errors),
             "flagged": len(self.alerts) > 0,
+            "flagged_high_confidence": hc_alerts > 0,
             "max_severity": (
                 max(self.alerts, key=lambda a: SEVERITY_RANK.get(a.severity, 0)).severity
                 if self.alerts
                 else None
             ),
             "by_severity": by_severity,
+            "by_priority": by_priority,
             "by_module": by_module,
         }
 
